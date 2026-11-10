@@ -1,1 +1,10 @@
-{"saved":true,"scene":"Assets/Scenes/PlayableStage.unity","houseExteriorMeshColliders":true,"connectedInterior":false,"groundModelGenerated":false,"browserBlock":"Local browser use disabled in Work settings"}
+{
+  "saved": true,
+  "scene": "Assets/Scenes/PlayableStage.unity",
+  "houseExteriorMeshColliders": true,
+  "connectedInterior": false,
+  "groundModelGenerated": true,
+  "browserBlock": null,
+  "groundInstallationReport": "docs/ground-unity-install.json",
+  "interiorStatus": "Not connected, pending"
+}

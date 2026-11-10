@@ -1,0 +1,29 @@
+{
+  "source": "Assets/Models/Environments/Generated/ENV_SueloRural_A.glb",
+  "sha256": "c696a88d76af84004b187af701bc4d7d626dde53f857ed1615e111a136ee929c",
+  "sourceBoundsXYZ": [
+    0.8482750058174133,
+    0.8494381308555603,
+    0.05356710031628609
+  ],
+  "grid": 24,
+  "sampleCount": 625,
+  "missingSamples": [],
+  "method": "Retopology sampled from real generated mesh; inner 80 percent retained; UVs transferred barycentrically. Top relief constrained to \u00b115mm, edges leveled to zero for modular use. Not the unmodified Hunyuan original.",
+  "materialBake": "512 square diffuse sampled per texel from generated source atlas; new coherent top UVs, nonmetallic rough gameplay material, source normal atlas not reused",
+  "candidate": "Assets/Models/Optimized/ENV_SueloRural_A.glb",
+  "triangles": 1438,
+  "sizeMeters": [
+    4,
+    4,
+    0.135
+  ],
+  "edgeHeight": 0,
+  "geometryPrepared": true,
+  "unityVerified": true,
+  "actualUnityBoundsMeters": [
+    4,
+    0.125,
+    4
+  ]
+}

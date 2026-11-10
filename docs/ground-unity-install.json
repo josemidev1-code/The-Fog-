@@ -1,0 +1,14 @@
+{
+  "saved": true,
+  "tiles": 625,
+  "trianglesPerTile": 1438,
+  "source": "Assets/Models/Optimized/ENV_SueloRural_A.glb",
+  "prefab": "Assets/Prefabs/Modules/ENV_SueloRural_A.prefab",
+  "size": {
+    "x": 4.0,
+    "y": 0.125,
+    "z": 4.0
+  },
+  "originalPreserved": true,
+  "playModeVerified": true
+}

@@ -50,3 +50,5 @@ La validación comprueba que los 26 modelos se importan como GameObject, contien
 Revisión de modelos reales y pruebas del 11/11/2026: [progreso y límites](docs/real-assets-progress.md). Mesa propia integrada en DanielRoom; módulo de pared con hueco de puerta generado y probado como prefab independiente. Casa completa y puerta móvil pendientes.
 
 Entorno con los 26 modelos del escritorio: Assets/Scenes/DesktopEnvironment.unity. Exterior y zonas abiertas de revisión de mobiliario; no interiores terminados. [Estado y pruebas](docs/desktop-environment-notes.md).
+
+PlayableStage.unity incorpora ahora suelo 3D generado en Hunyuan, con original de 1,5M conservado y copia jugable validada. [Proceso, pruebas y pendientes](docs/ground-integration-notes.md).

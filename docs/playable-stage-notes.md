@@ -9,3 +9,5 @@ Bloqueo de navegador verificado: inventario de herramientas devuelve Local brows
 Constructor compiló y guardó la escena tras corregir una referencia de la prueba a un ensamblado de Editor. No añadir lore, diálogos ni torres inventadas. Falta generar el suelo 3D, validar medidas reales, normales, materiales, superficie transitable y uniones entre piezas; luego sustituir la superficie provisional. Interior, suelo y techo de casa, hoja de puerta y torre requieren trabajos posteriores, con recursos propios o generados y validados.
 
 Prueba de Play Mode actual: PlayableStageChecks pasó movimiento, apoyo en suelo, linterna, tres presets gráficos, pausa, cuatro puntos del recorrido exterior, interacción y reinicio. Informe playable-stage-play-mode.json. No cubre el interior ni el futuro suelo Hunyuan.
+
+Actualización posterior: el acceso a Chrome se recuperó. Una generación de suelo a 1,5M completada e integrada; quedan tres usos según último contador. Se retiraron suelo provisional y franjas de camino. Ver ground-integration-notes.md para medidas, textura, pruebas actuales y límites; el bloqueo y suelo pendiente descritos arriba corresponden a la fase anterior.
