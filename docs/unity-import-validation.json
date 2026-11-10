@@ -1,0 +1,215 @@
+{
+    "unityVersion": "6000.6.8f1",
+    "expected": 26,
+    "passed": true,
+    "assets": [
+        {
+            "path": "Assets/Models/Environments/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Environments/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 1,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Environments/ENV_CartelValdara-CARTEL DE ENTRADA A VALDARA.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Environments/ENV_CasaDaniel.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Environments/ENV_CasaRural01.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Environments/ENV_EntradaMina.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Environments/ENV_Farola-FAROLA DE VALDARA.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Environments/ENV_RejillaAlcantarillado-REJILLA DE VALDARA.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Environments/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 1,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Environments/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Interiors/INR_Nevera-NEVERA DE COCINA.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Interiors/INT_Armario-ARMARIO DE MADERA RURAL (armario ABIERTO).glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Interiors/INT_Armario-ARMARIO DE MADERA RURAL (armario cerrado).glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Interiors/INT_ArmartioCocina-ARMARIO SUPERIOR DE COCINA (abierto).glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Interiors/INT_ArmartioCocina-ARMARIO SUPERIOR DE COCINA (cerrado).glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Interiors/INT_Cama-CAMA DE DANIEL.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Interiors/INT_EnciemraFregadero-ENCIEMRA DE COCINA CON FREGADERO (abierto).glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Interiors/INT_EnciemraFregadero-ENCIEMRA DE COCINA CON FREGADERO (cerrado).glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Interiors/INT_Estanteria-ESTANTERIA DE MADERA RURAL.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Interiors/INT_EstanteriaSuepermercado-ESTANTERIA COMERCIAL.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Interiors/INT_MesaMadera-MESA DE MADERA RURAL.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Interiors/INT_MesitaNoche-MESITA DE NOCHE DE DANIEL.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Interiors/INT_SillaMadera-SILLA DE COMEDOR RURAL.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Interiors/INT_Sofa-SOFA DEL SALON.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Interiors/INT-MostradorSupermercado-MOSTRADOR DE CAJA.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        },
+        {
+            "path": "Assets/Models/Props/OBJ_Linterna.glb",
+            "imported": true,
+            "meshes": 1,
+            "materials": 1,
+            "textures": 3,
+            "errors": []
+        }
+    ]
+}

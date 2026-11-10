@@ -1,0 +1,292 @@
+{
+  "source": "OneDrive TheFog; downloaded 2026-11-10",
+  "archiveSha256": "26798f65f22908f861c4805f62b388f95bd7e044076e39c1541c557d2501617b",
+  "assets": [
+    {
+      "file": "Assets/Models/Props/OBJ_Linterna.glb",
+      "bytes": 90165708,
+      "sha256": "9d5b0e4eee5f43e3819e9a977aa43dcb9011fb45cb43fd666aff146bc7f5d813",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Interiors/INT_ArmartioCocina-ARMARIO SUPERIOR DE COCINA (abierto).glb",
+      "bytes": 73835024,
+      "sha256": "0c049960d059413a6f498b5cde001297046f00272d0abab700acbc5d27213775",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Interiors/INT_ArmartioCocina-ARMARIO SUPERIOR DE COCINA (cerrado).glb",
+      "bytes": 81825924,
+      "sha256": "ddf2c0bec6d29f87e56459fde5afe2663a2c44f38d9bafec8b5810725e116556",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Interiors/INT-MostradorSupermercado-MOSTRADOR DE CAJA.glb",
+      "bytes": 86266204,
+      "sha256": "53f1bfc307e517aab9ea410c27d2afa225dca583e0940f0aa70f28b11a3fd9db",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Interiors/INT_EstanteriaSuepermercado-ESTANTERIA COMERCIAL.glb",
+      "bytes": 75124048,
+      "sha256": "073b5bb02f5633a8beb0846796e0a6498e1f7d1f24c6a31ac9a924557032fb8e",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Interiors/INT_EnciemraFregadero-ENCIEMRA DE COCINA CON FREGADERO (cerrado).glb",
+      "bytes": 92634464,
+      "sha256": "57c026870f6e56f06d96dcfe490823a90ff752f1c515dddb4d30241dcb2ebcac",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Interiors/INT_EnciemraFregadero-ENCIEMRA DE COCINA CON FREGADERO (abierto).glb",
+      "bytes": 81974460,
+      "sha256": "2f1a2bb04cb04107c06df7d9fb1cbeb41b7bd513c5eac2a64a01c5f4d1524a8b",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Interiors/INR_Nevera-NEVERA DE COCINA.glb",
+      "bytes": 91231904,
+      "sha256": "d62f89da5332ab2ced8982aa0217e6eb09dbbbe04aac5a0d6e9a831405f36688",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Interiors/INT_MesitaNoche-MESITA DE NOCHE DE DANIEL.glb",
+      "bytes": 87246104,
+      "sha256": "cdd8dcbcaafd5f4f02687ff1eed2cd6a64ff2d5c0bb9a787104326eb1730f778",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Interiors/INT_Estanteria-ESTANTERIA DE MADERA RURAL.glb",
+      "bytes": 85646388,
+      "sha256": "7bca22c4d56a3b362ec0ddfd7a800543f93789c854b86748ea95dcb27094ac78",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Interiors/INT_Armario-ARMARIO DE MADERA RURAL (armario ABIERTO).glb",
+      "bytes": 87509956,
+      "sha256": "e72bbf4c1923d7df97e04d3b51d2a28bb72efdcadfd3aa46fd4f9708e32ce70a",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Interiors/INT_Armario-ARMARIO DE MADERA RURAL (armario cerrado).glb",
+      "bytes": 86760976,
+      "sha256": "4ad85ae1858a5d7349b12651082634b72cc83dd30cdb5f0b5026036b4e6f5dd8",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Interiors/INT_Cama-CAMA DE DANIEL.glb",
+      "bytes": 89832236,
+      "sha256": "4ddf0e3e5913d40c80c2e18416b672f80dd3af2e43ed7d0754a40c992514d8f1",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Interiors/INT_Sofa-SOFA DEL SALON.glb",
+      "bytes": 98462460,
+      "sha256": "2963517216a67c8919ea2cc5b08b1e185f3cbd9e6a8dbaa413271f80a180916f",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Interiors/INT_SillaMadera-SILLA DE COMEDOR RURAL.glb",
+      "bytes": 83163520,
+      "sha256": "389b64644ad46a6c6c4f6273b697e85c95a8f1a8915b1146c274cb5cc9fe5688",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Interiors/INT_MesaMadera-MESA DE MADERA RURAL.glb",
+      "bytes": 87656908,
+      "sha256": "a5ccaca9c3e8d0aa5d5c5fe430c9e372f0421023d2252835397f84486038f509",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Environments/ENV_RejillaAlcantarillado-REJILLA DE VALDARA.glb",
+      "bytes": 87883460,
+      "sha256": "971b53a2aad7e738df748c52f069b538258c9799f81c4e9ce7563c5f5c95f9f2",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Environments/ENV_CartelValdara-CARTEL DE ENTRADA A VALDARA.glb",
+      "bytes": 83688300,
+      "sha256": "372eba10c6fd1485cf342fe8e7e29c60e11386495d3305b2c8c81ec95ce2b712",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Environments/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+      "bytes": 86372896,
+      "sha256": "5f76bbe441fe9fe1932f61e20e6386a34a474ae0d840e96aea907c07a16906d7",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Environments/ENV_Farola-FAROLA DE VALDARA.glb",
+      "bytes": 76366692,
+      "sha256": "63a5fb59e03cbd6b76760401021d4b15e999ab25f7f017628ad37bb1696ca5f3",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Environments/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+      "bytes": 6005816,
+      "sha256": "81216d810ae2b69a5f550f3d98e307cb9a9b707b9f5a4a8f2c768fdd1abf1b0f",
+      "meshes": 1,
+      "materials": 1,
+      "images": 1,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Environments/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+      "bytes": 43747728,
+      "sha256": "6d5157da3b722d7e2ed5f9f4e3602b0f8b2c8e90e9edccaa808e44fdf5dc6798",
+      "meshes": 1,
+      "materials": 1,
+      "images": 1,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Environments/ENV_CasaDaniel.glb",
+      "bytes": 86076780,
+      "sha256": "d9e9956ba5662406b96bfec57d73596445bba13efe556d4ad302d01ba65686d5",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Environments/ENV_EntradaMina.glb",
+      "bytes": 88241272,
+      "sha256": "9a5a38e0d9c3113a896b1b8183940a12b90d8c331a1350cd81afd412cd364903",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Environments/ENV_CasaRural01.glb",
+      "bytes": 82541436,
+      "sha256": "4cbe38a9a2a62caa44372cc6c58d0d31f3588f8613a351f1d44ea02e84ced8dc",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    },
+    {
+      "file": "Assets/Models/Environments/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+      "bytes": 78098428,
+      "sha256": "0d5680020abb1fdebe60329f2db258caa9d149f07b4a577bc232c67cbe1003eb",
+      "meshes": 1,
+      "materials": 1,
+      "images": 3,
+      "animations": 0,
+      "extensionsRequired": [],
+      "externalDependencies": []
+    }
+  ]
+}
