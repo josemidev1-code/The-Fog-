@@ -1,0 +1,27 @@
+[
+  {
+    "source": "INT_Cama-CAMA DE DANIEL.glb",
+    "before": 1500004,
+    "after": 18000
+  },
+  {
+    "source": "INT_MesitaNoche-MESITA DE NOCHE DE DANIEL.glb",
+    "before": 1500000,
+    "after": 10000
+  },
+  {
+    "source": "INT_MesaMadera-MESA DE MADERA RURAL.glb",
+    "before": 1500000,
+    "after": 18000
+  },
+  {
+    "source": "INT_SillaMadera-SILLA DE COMEDOR RURAL.glb",
+    "before": 1500000,
+    "after": 13999
+  },
+  {
+    "source": "INT_Estanteria-ESTANTERIA DE MADERA RURAL.glb",
+    "before": 1496040,
+    "after": 18000
+  }
+]
