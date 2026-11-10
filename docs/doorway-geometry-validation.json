@@ -1,0 +1,34 @@
+{
+  "source": "Assets/Models/Interiors/Generated/INT_Valdara_ParedPuerta_A.glb",
+  "sha256": "8ab36b3aa544c3fa232b742b8e102302b77bdfcf13fdbad68b3f7491f2f1b9d3",
+  "sourceCheck": {
+    "sizeBlenderXYZ": [
+      3.752469062805176,
+      0.2437661588191986,
+      2.700000047683716
+    ],
+    "blockedPortalSamples": [],
+    "sideWallHits": 6,
+    "portalSampling": "15 rays across central 0.46m width, heights 0.15..1.85m; partial geometry check, not CharacterController traversal",
+    "passed": true
+  },
+  "optimizedCheck": {
+    "sizeBlenderXYZ": [
+      3.7526111602783203,
+      0.24368500709533691,
+      2.699890613555908
+    ],
+    "blockedPortalSamples": [],
+    "sideWallHits": 6,
+    "portalSampling": "15 rays across central 0.46m width, heights 0.15..1.85m; partial geometry check, not CharacterController traversal",
+    "passed": true
+  },
+  "trianglesBefore": 50000,
+  "trianglesAfter": 15999,
+  "uniformScale": 3.8303789596833777,
+  "blenderGeometryPassed": true,
+  "unityImportVerified": true,
+  "playModeVerified": true,
+  "status": "Reusable prefab validated; house integration and door leaf still pending",
+  "candidate": "Assets/Models/Optimized/INT_Valdara_ParedPuerta_A.glb"
+}

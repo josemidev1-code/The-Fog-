@@ -1,0 +1,21 @@
+{
+    "passed": true,
+    "checks": [
+        "Module imported at 2.70m height, no error materials",
+        "Gravity settles Daniel on floor",
+        "Forward walking speed matches configured 3.2m/s",
+        "Daniel crosses doorway forwards without collision blockage",
+        "Daniel crosses doorway in reverse direction",
+        "Wall collider blocks Daniel beside doorway",
+        "Sprint speed matches configured 5.2m/s",
+        "Daniel falls from 2m and lands on floor"
+    ],
+    "errors": [],
+    "walkMeasured": 3.17450213432312,
+    "sprintMeasured": 5.199999809265137,
+    "moduleSize": {
+        "x": 3.7526111602783203,
+        "y": 2.699890613555908,
+        "z": 0.24368514120578766
+    }
+}

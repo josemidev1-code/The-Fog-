@@ -1,0 +1,57 @@
+{
+  "asset": "Assets\\Models\\Optimized\\ENV_CasaDaniel.glb",
+  "sha256": "5e94b9699896ad5257a41cf517e71eee344c475ed225ccd1d69d30ad3c1e371d",
+  "blenderBoundsXYZ": {
+    "min": [
+      -0.3771844208240509,
+      -0.38058847188949585,
+      -3.840537465293892e-05
+    ],
+    "max": [
+      0.3123975396156311,
+      0.25766679644584656,
+      0.7858713269233704
+    ],
+    "size": [
+      0.6895819902420044,
+      0.63825523853302,
+      0.7859097123146057
+    ]
+  },
+  "meshes": [
+    {
+      "name": "node_0",
+      "vertices": 108746,
+      "triangles": 100000,
+      "boundaryEdges": 106484,
+      "nonManifoldEdges": 106484,
+      "materials": [
+        "Material.001"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "texture_pbr_20250901",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "texture_pbr_20250901_metallic-texture_pbr_20250901_roughness",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "texture_pbr_20250901_normal",
+      "size": [
+        2048,
+        2048
+      ]
+    }
+  ],
+  "interpretation": "Geometry inventory only; topology is not proof of a playable interior. Door separation, accessible openings and collision traversal remain unverified in Unity."
+}

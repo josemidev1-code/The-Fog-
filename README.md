@@ -46,3 +46,5 @@ El repositorio de destino solo contenía README y reglas de exclusión antes de 
 Conservad los `.meta` de Unity junto a los assets para mantener sus referencias. No subáis `Library`, `Temp`, `Logs` o `UserSettings`. Los modelos binarios están configurados con Git LFS; todos los colaboradores deben tenerlo instalado. Los nombres originales, incluidas sus erratas, se conservan para poder rastrear cada entrega.
 
 La validación comprueba que los 26 modelos se importan como GameObject, contienen mallas y tienen materiales sin el shader interno de error. No sustituye una revisión artística, de escala, colisiones, rendimiento o navegación del juego.
+
+Revisión de modelos reales y pruebas del 11/11/2026: [progreso y límites](docs/real-assets-progress.md). Mesa propia integrada en DanielRoom; módulo de pared con hueco de puerta generado y probado como prefab independiente. Casa completa y puerta móvil pendientes.

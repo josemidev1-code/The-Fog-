@@ -1,0 +1,1009 @@
+{
+    "date": "2026-11-10T23:06:39.0064911Z",
+    "deskSource": "Assets/Models/Optimized/INT_MesaMadera-MESA DE MADERA RURAL.glb",
+    "deskReplaced": true,
+    "renderers": [
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/Suelo",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/Techo",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/Pared izquierda",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/Pared derecha",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/Pared posterior",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/Ventana · antepecho",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/Ventana · dintel",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/Ventana · lateral izquierdo",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/Ventana · lateral derecho",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/Cristal · noche de Valdara",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/Marco ventana",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/Marco ventana",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/Marco ventana",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/Marco horizontal",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Puerta · acceso a torre (sin conexión todavía)",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Tirador puerta",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Zócalo izquierdo",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Zócalo posterior",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Zócalo derecho",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Viga pared posterior",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Viga pared posterior",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Viga pared posterior",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Viga pared posterior",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Viga pared posterior",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Viga pared posterior",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Viga pared posterior",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Tablero de notas",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Parte de guardia",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Parte de guardia",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Parte de guardia",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Parte de guardia",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Cuaderno de Daniel",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "HABITACION · estructura editable/DETALLES HABITACION/Lámpara techo",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "MUEBLES · modelos propios optimizados/Cama de Daniel/INT_Cama-CAMA DE DANIEL",
+            "source": "Assets/Models/Optimized/INT_Cama-CAMA DE DANIEL.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "MUEBLES · modelos propios optimizados/Mesita/INT_MesitaNoche-MESITA DE NOCHE DE DANIEL",
+            "source": "Assets/Models/Optimized/INT_MesitaNoche-MESITA DE NOCHE DE DANIEL.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "MUEBLES · modelos propios optimizados/Estantería/INT_Estanteria-ESTANTERIA DE MADERA RURAL",
+            "source": "Assets/Models/Optimized/INT_Estanteria-ESTANTERIA DE MADERA RURAL.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "MUEBLES · modelos propios optimizados/Silla de trabajo/INT_SillaMadera-SILLA DE COMEDOR RURAL",
+            "source": "Assets/Models/Optimized/INT_SillaMadera-SILLA DE COMEDOR RURAL.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Monitor CRT",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Peana",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Pantalla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Teclado",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Tecla",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/PC PROVISIONAL · sustituir por modelo original/Torre PC",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/Radio de guardia",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/Rejilla radio",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/Rejilla radio",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/Rejilla radio",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/Rejilla radio",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/Rejilla radio",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/Rejilla radio",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/Antena",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/Lámpara de mesa",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/DanielRoom.unity",
+            "hierarchy": "PUESTO DE TELECOMUNICACIONES/Mesa de trabajo · modelo propio/INT_MesaMadera-MESA DE MADERA RURAL",
+            "source": "Assets/Models/Optimized/INT_MesaMadera-MESA DE MADERA RURAL.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Suelo",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Camino/Tramo_1",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Camino/Tramo_2",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Camino/Tramo_3",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Camino/Tramo_4",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Camino/Tramo_5",
+            "source": "Library/unity default resources",
+            "provisional": true
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Hitos/CasaDaniel/ENV_CasaDaniel",
+            "source": "Assets/Models/Optimized/ENV_CasaDaniel.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Hitos/EntradaMina/ENV_EntradaMina",
+            "source": "Assets/Models/Optimized/ENV_EntradaMina.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Hitos/CartelValdara/ENV_CartelValdara-CARTEL DE ENTRADA A VALDARA",
+            "source": "Assets/Models/Optimized/ENV_CartelValdara-CARTEL DE ENTRADA A VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Farolas/Farola_1/ENV_Farola-FAROLA DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Farola-FAROLA DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Farolas/Farola_2/ENV_Farola-FAROLA DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Farola-FAROLA DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Vallas/Valla_Camino_1/ENV_VallaMadera-VALLA RURAL DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Vallas/Valla_Camino_2/ENV_VallaMadera-VALLA RURAL DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Vallas/Valla_Camino_3/ENV_VallaMadera-VALLA RURAL DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Vallas/Valla_Camino_4/ENV_VallaMadera-VALLA RURAL DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Vallas/Valla_Camino_5/ENV_VallaMadera-VALLA RURAL DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Vallas/Valla_Casa_1/ENV_VallaMadera-VALLA RURAL DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Vallas/Valla_Casa_2/ENV_VallaMadera-VALLA RURAL DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Vallas/Valla_Casa_3/ENV_VallaMadera-VALLA RURAL DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Vallas/Valla_Casa_4/ENV_VallaMadera-VALLA RURAL DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/RocaGrande_1/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/RocaGrande_2/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/RocaGrande_3/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/RocaGrande_4/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/RocaGrande_5/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/Roca/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/Roca/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/Roca/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/Roca/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/Roca/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/Roca/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/Roca/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/Roca/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/Roca/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/Roca/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/Roca/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/Roca/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/Roca/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Rocas/Roca/ENV_Roca-ROCA NATURAL DE VALDARA/geometry_0",
+            "source": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arboles/Roble/ENV_Arbofrondoso-ROBLO DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "ENTORNO/Arbustos/Arbusto/ENV_Arbusto-ARBUSTO DE VALDARA/mesh",
+            "source": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "provisional": false
+        },
+        {
+            "scene": "Assets/Scenes/FirstPlayable.unity",
+            "hierarchy": "Jugador/Camara/Linterna/ModeloLinterna/OBJ_Linterna",
+            "source": "Assets/Models/Optimized/OBJ_Linterna.glb",
+            "provisional": false
+        }
+    ],
+    "pending": [
+        "CasaDaniel: exterior and interior are separate; no verified traversable connection",
+        "Door leaf, frame openings, floor and ceiling modules require real generated models and validation",
+        "PC, keyboard, radio, lamp and visible room architecture still provisional; not final assets",
+        "No Discord approval evidence consulted in this pass; new references are proposals"
+    ]
+}

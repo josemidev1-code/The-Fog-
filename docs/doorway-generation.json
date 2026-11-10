@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-11",
+  "assetId": "INT_Valdara_ParedPuerta_A",
+  "classification": "new interior doorway wall, proposal based on existing generated corner; not house replacement",
+  "referenceSheet": "docs/references/INT_Valdara_ParedPuerta_A-four-views.png",
+  "reconstructionInput": "docs/references/INT_Valdara_ParedPuerta_A-front.png",
+  "referenceMethod": "built-in image generation; four-view sheet then front-only reconstruction image",
+  "styleReference": "docs/hunyuan-corner-preview.png",
+  "service": "https://hy3d.tencent.ai/",
+  "model": "3DGeneration-V3.1",
+  "mode": "Image-to-3D",
+  "faceCountSelection": "50k",
+  "materials": "PBR",
+  "freeGenerationsBefore": 5,
+  "freeGenerationsAfter": 4,
+  "paidBalanceVisible": 0,
+  "status": "downloaded, Blender validated, Unity imported and Play Mode traversal checks passed; reusable prefab only, not connected house",
+  "targetDimensionsMeters": [
+    3,
+    2.7,
+    0.15
+  ],
+  "targetOpeningMeters": [
+    1,
+    2.15
+  ],
+  "unityStatus": "verified in isolated Play Mode test",
+  "approvals": "No new Discord approval verified; proposed module only",
+  "original": "Assets/Models/Interiors/Generated/INT_Valdara_ParedPuerta_A.glb",
+  "optimized": "Assets/Models/Optimized/INT_Valdara_ParedPuerta_A.glb",
+  "prefab": "Assets/Prefabs/Modules/INT_Valdara_ParedPuerta_A.prefab",
+  "actualSizeUnityMeters": [
+    3.752611,
+    2.699891,
+    0.243685
+  ],
+  "promptFile": "docs/references/doorway-prompts.md"
+}
