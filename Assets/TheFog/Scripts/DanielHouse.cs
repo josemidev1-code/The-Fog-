@@ -48,7 +48,7 @@ namespace TheFog
             for (int i = 0; i < 8; i++)
             {
                 float y = 3.16f + (i + 0.5f) * 0.21f;
-                float width = 10.6f - (i + 0.6f) * 1.24f;
+                float width = 9.65f - i * 1.29f;
                 foreach (float z in new[] { 1.2f, 10.8f })
                     Surface(zone, "Testero bajo cubierta", new Vector3(0, y, z), new Vector3(width, 0.217f, 0.23f),
                         "Yeso", housePlaster, Mathf.Max(1, Mathf.RoundToInt(width)), 1);

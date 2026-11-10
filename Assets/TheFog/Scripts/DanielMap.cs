@@ -31,7 +31,7 @@ namespace TheFog
         {
             Surface(zone, "Suelo del claro", new Vector3(0, -0.44f, 3f), new Vector3(96f, 0.88f, 103f),
                 "Tierra", grassTint, 32, 35);
-            Track(zone, "Senda desde Valdara", new Vector3(0, 0, -28f), new Vector3(0, 0, 0.5f), 3.7f);
+            Track(zone, "Senda desde Valdara", new Vector3(0, 0, -39f), new Vector3(0, 0, 0.5f), 3.7f);
             Track(zone, "Vereda lateral", new Vector3(0.8f, 0.008f, -6f), new Vector3(11.8f, 0.008f, 3.8f), 2.35f);
             Track(zone, "Acceso a la torre", new Vector3(11.8f, 0.012f, 3.8f), new Vector3(15.5f, 0.012f, 7.4f), 2.1f);
             Track(zone, "Paso a la leñera", new Vector3(-0.9f, 0.016f, -3f), new Vector3(-8.7f, 0.016f, 3.6f), 1.6f);
@@ -44,7 +44,7 @@ namespace TheFog
                 Model(zone, "Exterior/Valla", new Vector3(x, 0, -27.3f), 2.08f);
                 Model(zone, "Exterior/Valla", new Vector3(-x, 0, -27.3f), 2.08f);
             }
-            foreach (float x in new[] { -1.05f, 1.05f })
+            foreach (float x in new[] { -0.76f, 0.76f })
                 Surface(zone, "Poste de la linde", new Vector3(x, 1.18f, -27.3f), new Vector3(0.22f, 2.36f, 0.26f),
                     "Madera", timberTint, 1, 2);
 
@@ -73,6 +73,11 @@ namespace TheFog
                 new Vector3(-9, 0, 15), new Vector3(3, 0, 17), new Vector3(23, 0, 20)
             })
                 Tree(zone, random, position.x, position.z);
+
+            // La senda continúa visualmente entre los árboles del lado de Valdara.
+            foreach (float x in new[] { -13.5f, -8.6f, -4f, 4f, 8.6f, 13.5f })
+                Tree(zone, random, x, -36.5f);
+            Tree(zone, random, 0.7f, -42f);
 
             Model(zone, "Exterior/Roca", new Vector3(7.7f, 0, -11f), 1.85f, 42f);
             Model(zone, "Exterior/Roca", new Vector3(-11.8f, 0, 14.7f), 2.15f, 12f);
