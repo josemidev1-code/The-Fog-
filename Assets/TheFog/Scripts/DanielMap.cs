@@ -6,7 +6,7 @@ namespace TheFog
     internal sealed partial class ValdaraLayout
     {
         static readonly Vector3 DanielSpawn = new Vector3(0f, 0.12f, -23.5f);
-        static readonly Vector3 TowerBase = new Vector3(15.5f, 0f, 13f);
+        static readonly Vector3 TowerBase = new Vector3(16.4f, 0f, 14f);
         static readonly Color danielFog = new Color(0.27f, 0.29f, 0.22f);
         static readonly Color timberTint = new Color(0.74f, 0.68f, 0.53f);
         static readonly Color grassTint = new Color(0.53f, 0.58f, 0.39f);
@@ -22,8 +22,8 @@ namespace TheFog
             RenderSettings.sun.intensity = 0.58f;
 
             BuildDanielGround(Group("01 · Linde y claro"));
-            BuildDanielHouse(Group("02 · Casa e interior"));
-            BuildDanielTower(Group("03 · Torre de vigilancia"));
+            BuildDanielHouse(Group("02 · Fachada de Daniel"));
+            BuildDanielTower(Group("04 · Torre de vigilancia"));
             Player(DanielSpawn, 0f, false, true);
         }
 
@@ -33,7 +33,7 @@ namespace TheFog
                 "Tierra", grassTint, 32, 35);
             Track(zone, "Senda desde Valdara", new Vector3(0, 0, -39f), new Vector3(0, 0, 0.5f), 3.7f);
             Track(zone, "Vereda lateral", new Vector3(0.8f, 0.008f, -6f), new Vector3(11.8f, 0.008f, 3.8f), 2.35f);
-            Track(zone, "Acceso a la torre", new Vector3(11.8f, 0.012f, 3.8f), new Vector3(15.5f, 0.012f, 7.4f), 2.1f);
+            Track(zone, "Acceso a la torre", new Vector3(11.8f, 0.012f, 3.8f), new Vector3(15.54f, 0.012f, 11.15f), 2.1f);
             Track(zone, "Paso a la leñera", new Vector3(-0.9f, 0.016f, -3f), new Vector3(-8.7f, 0.016f, 3.6f), 1.6f);
 
             Portal(zone, "Volver a Valdara", new Vector3(0, 0.04f, -27.3f), 180f,
@@ -117,35 +117,6 @@ namespace TheFog
             for (int i = 0; i < 3; i++)
                 Surface(zone, "Pila de tablas", new Vector3(-9.38f, 0.22f + i * 0.18f, 5.2f),
                     new Vector3(1.65f - i * 0.16f, 0.18f, 0.58f), "Madera", timberTint, 2, 1);
-        }
-
-        void BuildDanielTower(Transform zone)
-        {
-            var tower = Model(zone, "Exterior/TorreVigilancia", TowerBase, 11.6f, 0f, false);
-            // Las colisiones de paso se separan de la malla para poder reemplazar el arte.
-            for (int i = 0; i < 26; i++)
-            {
-                float top = 0.19f * (i + 1);
-                Collision(tower.transform, "Peldaño", TowerBase + new Vector3(0, top - 0.055f, -5.8f + 0.285f * (i + 0.5f)),
-                    new Vector3(1.35f, 0.11f, 0.285f));
-            }
-            Collision(tower.transform, "Piso del mirador", TowerBase + new Vector3(0, 4.84f, 3.65f), new Vector3(3.8f, 0.2f, 4.08f));
-            Collision(tower.transform, "Baranda trasera", TowerBase + new Vector3(0, 5.48f, 5.54f), new Vector3(3.8f, 1.08f, 0.16f));
-            foreach (float side in new[] { -1f, 1f })
-            {
-                Collision(tower.transform, "Baranda lateral", TowerBase + new Vector3(side * 1.83f, 5.48f, 3.65f),
-                    new Vector3(0.16f, 1.08f, 4.08f));
-                Collision(tower.transform, "Baranda frontal", TowerBase + new Vector3(side * 1.33f, 5.48f, 1.67f),
-                    new Vector3(1.16f, 1.08f, 0.16f));
-                var railing = Collision(tower.transform, "Pasamanos de escalera",
-                    TowerBase + new Vector3(side * 0.75f, 3.0f, -2.095f), new Vector3(0.14f, 0.62f, 8.9f));
-                railing.transform.rotation = Quaternion.Euler(-33.69f, 0f, 0f);
-                for (int i = 0; i < 2; i++)
-                    Collision(tower.transform, "Pilar de la torre", TowerBase + new Vector3(side * 1.65f, 2.52f, 1.97f + i * 3.35f),
-                        new Vector3(0.23f, 5.04f, 0.23f));
-            }
-            Point(zone, "Luz de la torre", TowerBase + new Vector3(0, 6.35f, 3.25f), brass, 6f, 1.35f);
-            Sign(zone, "PUESTO DE VIGILANCIA", TowerBase + new Vector3(2.12f, 1.3f, -4.2f), 2.9f);
         }
 
         void Track(Transform zone, string name, Vector3 start, Vector3 end, float width)

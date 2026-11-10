@@ -16,7 +16,9 @@ Las escenas ensamblan el escenario al pulsar Play. Para mover los objetos desde 
 
 Las copias optimizadas viven en `Assets/TheFog/Resources/Modelos`. Incluyen el mobiliario con variantes abiertas y cerradas, los elementos del exterior y la linterna. Las 26 copias suman unos 35 MiB. Los archivos originales se conservan en la carpeta de origen.
 
-La casa usa geometría modular provisional y texturas de 64 píxeles. La cámara del mapa usa un filtro de baja resolución y una paleta de verdes, madera y luz cálida inspirada en la dirección retro de [MOLDRISE](https://picster.itch.io/moldrise). La casa se puede atravesar por la puerta principal. La torre tiene su malla en `Assets/TheFog/Resources/Modelos/Exterior/TorreVigilancia.glb` y las cuatro vistas separadas en `ArtReference/TorreVigilancia`. Sus colisiones son piezas separadas en `DanielMap.cs`, así podéis reemplazar el modelo conservando los peldaños, el mirador y las barandas si mantenéis sus medidas.
+La fachada usa la copia optimizada de `ENV_CasaDaniel.glb`. Su puerta original conecta con el interior amueblado de la misma escena al pulsar **E**. La cámara del mapa usa un filtro de baja resolución y una paleta de verdes, madera y luz cálida inspirada en la dirección retro de [MOLDRISE](https://picster.itch.io/moldrise).
+
+La torre provisional se construye por piezas en `DanielTower.cs`, con cuatro tramos alternos, descansillos, un balcón y una plataforma superior. Al sustituir su arte por una malla definitiva, conservad el trazado y el ancho libre de los tramos y la abertura de la cubierta para que se pueda seguir subiendo.
 
 ## Trabajo en equipo
 
@@ -24,8 +26,8 @@ Podéis repartir las cinco áreas iniciales entre exterior, interiores, interacc
 
 ### Recorrido de comprobación
 
-- En `CasaDaniel`, sigue el sendero, abre la puerta del porche con **E**, cruza el salón y recoge la linterna en la mesita del dormitorio.
-- Sal por la puerta del porche, sigue la señal de la torre, sube hasta el mirador y vuelve a bajar por la escalera.
+- En `CasaDaniel`, sigue el sendero, usa **E** en la puerta de la fachada, cruza el salón y recoge la linterna en la mesita del dormitorio.
+- Sal por la misma puerta, sigue la señal de la torre, sube por los cuatro tramos y vuelve a bajar desde la cubierta.
 - Vuelve al camino. Puedes visitar la tienda y continuar hacia la mina. Antes de recoger la linterna, la puerta de la mina debe indicar que la necesitas.
 - Prueba los dos sentidos de la transición Valdara ↔ CasaDaniel. Al volver a Valdara con la linterna, debe funcionar con **F** y desbloquear la mina.
 - Entra en la mina, prueba **F** y usa **E** frente al aviso del fondo. El objetivo debe cambiar a «Recorrido completado».

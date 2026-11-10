@@ -7,14 +7,32 @@ namespace TheFog
         const float HouseFloor = 0.22f;
         static readonly Color housePlaster = new Color(0.79f, 0.77f, 0.63f);
         static readonly Color insidePlaster = new Color(0.69f, 0.71f, 0.51f);
-        static readonly Color roofTint = new Color(0.62f, 0.51f, 0.44f);
         static readonly Color tileTint = new Color(0.76f, 0.77f, 0.63f);
         static readonly Color stoneTint = new Color(0.58f, 0.59f, 0.49f);
 
-        void BuildDanielHouse(Transform zone)
+        static readonly Vector3 houseCenter = new Vector3(0f, 0f, 5.9f);
+        static readonly Vector3 outsideDoor = new Vector3(-0.47f, 0.22f, 1.30f);
+        static readonly Vector3 interiorOffset = new Vector3(144f, 0f, 0f);
+
+        void BuildDanielHouse(Transform facade)
         {
-            Surface(zone, "Cimientos", new Vector3(0, 0.08f, 6), new Vector3(10.72f, 0.16f, 9.82f),
-                "Piedra", stoneTint, 8, 3);
+            Model(facade, "Exterior/CasaDaniel", houseCenter, 11.8f, 180f, false);
+            Collision(facade, "Volumen de la fachada", new Vector3(0, 2.95f, 5.92f),
+                new Vector3(9.86f, 5.9f, 8.8f));
+            var entry = Collision(facade, "Acceso por la puerta original", outsideDoor + Vector3.up * 1.04f,
+                new Vector3(1.24f, 2.08f, 0.24f));
+            SetHouseDoor(entry, "Entrar en casa de Daniel", interiorOffset + new Vector3(-0.47f, 0.25f, 2.12f), 0f);
+
+            Point(facade, "Luz de la entrada", outsideDoor + new Vector3(0f, 2.53f, -0.6f),
+                new Color(1f, 0.72f, 0.37f), 7.4f, 2.05f);
+
+            var inside = Group("03 · Interior de Daniel");
+            BuildDanielInterior(inside);
+            inside.position = interiorOffset;
+        }
+
+        void BuildDanielInterior(Transform zone)
+        {
             Surface(zone, "Tablones de la casa", new Vector3(0, 0.165f, 6), new Vector3(10.6f, 0.11f, 9.6f),
                 "Madera", timberTint, 10, 11);
             Surface(zone, "Baldosas de la cocina", new Vector3(3.09f, 0.221f, 3.68f), new Vector3(4.18f, 0.014f, 4.72f),
@@ -23,72 +41,35 @@ namespace TheFog
                 "Madera", timberTint, 11, 10);
 
             Wall(zone, -5.3f, -4.14f, 1.2f);
-            Wall(zone, -2.24f, -0.68f, 1.2f);
-            Wall(zone, 0.68f, 2.24f, 1.2f);
+            Wall(zone, -2.24f, -1.12f, 1.2f);
+            Wall(zone, 0.18f, 2.24f, 1.2f);
             Wall(zone, 4.14f, 5.3f, 1.2f);
             Window(zone, -3.19f, 1.2f, 1.9f);
             Window(zone, 3.19f, 1.2f, 1.9f);
-            Wall(zone, -0.68f, 0.68f, 1.2f, 2.38f, 3.12f);
+            Wall(zone, -1.12f, 0.18f, 1.2f, 2.35f, 3.12f);
 
             Wall(zone, -5.3f, 0.75f, 10.8f);
             Wall(zone, 2.9f, 5.3f, 10.8f);
             Window(zone, 1.825f, 10.8f, 2.15f);
-            for (int i = 0; i < 2; i++)
-            {
-                float side = i == 0 ? -5.3f : 5.3f;
+            foreach (float side in new[] { -5.3f, 5.3f })
                 Surface(zone, "Muro lateral", new Vector3(side, 1.67f, 6f), new Vector3(9.6f, 2.9f, 0.24f),
-                    "Yeso", housePlaster, 7, 2, 90f);
-                Surface(zone, "Zócalo de piedra", new Vector3(side, 0.42f, 6f), new Vector3(9.6f, 0.4f, 0.28f),
-                    "Piedra", stoneTint, 7, 1, 90f);
-                var slope = Surface(zone, "Faldón de chapa", new Vector3(side * 0.52f, 3.98f, 6),
-                    new Vector3(5.89f, 0.18f, 10.63f), "Chapa", roofTint, 6, 10);
-                slope.transform.rotation = Quaternion.Euler(0f, 0f, i == 0 ? 18f : -18f);
-            }
+                    "Yeso", insidePlaster, 7, 2, 90f);
 
-            for (int i = 0; i < 8; i++)
-            {
-                float y = 3.16f + (i + 0.5f) * 0.21f;
-                float width = 9.65f - i * 1.29f;
-                foreach (float z in new[] { 1.2f, 10.8f })
-                    Surface(zone, "Testero bajo cubierta", new Vector3(0, y, z), new Vector3(width, 0.217f, 0.23f),
-                        "Yeso", housePlaster, Mathf.Max(1, Mathf.RoundToInt(width)), 1);
-            }
-            Surface(zone, "Chimenea", new Vector3(-2.87f, 4.32f, 8.75f), new Vector3(0.76f, 1.92f, 0.72f),
-                "Piedra", stoneTint, 2, 2);
-            Surface(zone, "Sombrerete", new Vector3(-2.87f, 5.24f, 8.75f), new Vector3(0.94f, 0.16f, 0.9f),
-                "Chapa", roofTint, 2, 1);
-
-            Surface(zone, "Escalón", new Vector3(0, 0.058f, -0.58f), new Vector3(2.65f, 0.116f, 0.66f),
-                "Piedra", stoneTint, 2, 1);
-            Surface(zone, "Porche", new Vector3(0, 0.11f, 0.42f), new Vector3(3.2f, 0.22f, 1.62f),
-                "Madera", timberTint, 4, 2);
-            Surface(zone, "Marquesina", new Vector3(0, 2.91f, 0.35f), new Vector3(3.51f, 0.16f, 1.97f),
-                "Chapa", roofTint, 4, 2);
-            for (int i = 0; i < 2; i++)
-            {
-                float side = i == 0 ? -1f : 1f;
-                Surface(zone, "Pilar del porche", new Vector3(side * 1.47f, 1.55f, -0.25f),
-                    new Vector3(0.17f, 2.65f, 0.17f), "Madera", timberTint, 1, 2);
-                Surface(zone, "Jamba de la puerta", new Vector3(side * 0.68f, 1.29f, 1.17f),
-                    new Vector3(0.14f, 2.14f, 0.31f), "Madera", timberTint, 1, 2);
-            }
-
-            var pivot = new GameObject("Bisagra de la puerta");
-            pivot.transform.SetParent(zone, false);
-            pivot.transform.position = new Vector3(-0.61f, HouseFloor, 1.2f);
-            pivot.AddComponent<DanielDoor>().Configure(106f);
-            var leaf = Surface(pivot.transform, "Puerta principal", new Vector3(0, 1.29f, 1.2f),
-                new Vector3(1.22f, 2.13f, 0.105f), "Madera", new Color(0.51f, 0.51f, 0.35f), 2, 3);
-            var action = leaf.AddComponent<ValdaraAction>();
-            action.kind = ValdaraAction.Kind.HingedDoor;
-            action.prompt = "Abrir puerta";
-            Box(pivot.transform, "Manilla", new Vector3(0.46f, 1.22f, 1.1f),
-                new Vector3(0.12f, 0.08f, 0.18f), new Color(0.36f, 0.3f, 0.18f)).layer = 2;
-
-            var porchLamp = new Color(1f, 0.72f, 0.37f);
-            Box(zone, "Bombilla del porche", new Vector3(0, 2.66f, 0.63f), new Vector3(0.18f, 0.16f, 0.14f), porchLamp);
-            Point(zone, "Luz del porche", new Vector3(0, 2.54f, 0.6f), porchLamp, 7.2f, 2.05f);
+            var exit = Surface(zone, "Puerta principal", new Vector3(-0.47f, 1.28f, 1.2f),
+                new Vector3(1.3f, 2.12f, 0.15f), "Madera", new Color(0.51f, 0.51f, 0.35f), 2, 3);
+            SetHouseDoor(exit, "Salir al claro", new Vector3(outsideDoor.x, 0.09f, outsideDoor.z - 1.37f), 180f);
+            Box(zone, "Manilla", new Vector3(-0.04f, 1.22f, 1.29f),
+                new Vector3(0.12f, 0.08f, 0.14f), new Color(0.36f, 0.3f, 0.18f)).layer = 2;
             FurnishDanielHouse(zone);
+        }
+
+        static void SetHouseDoor(GameObject door, string prompt, Vector3 destination, float facing)
+        {
+            var action = door.AddComponent<ValdaraAction>();
+            action.kind = ValdaraAction.Kind.Door;
+            action.prompt = prompt;
+            action.destination = destination;
+            action.facing = facing;
         }
 
         void Wall(Transform zone, float start, float end, float z, float bottom = HouseFloor, float top = 3.12f,
