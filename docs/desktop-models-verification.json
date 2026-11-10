@@ -1,0 +1,158 @@
+[
+  {
+    "file": "ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+    "sha256": "0d5680020abb1fdebe60329f2db258caa9d149f07b4a577bc232c67cbe1003eb",
+    "projectFile": "Assets\\Models\\Environments\\ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+    "sha256": "6d5157da3b722d7e2ed5f9f4e3602b0f8b2c8e90e9edccaa808e44fdf5dc6798",
+    "projectFile": "Assets\\Models\\Environments\\ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "ENV_CartelValdara-CARTEL DE ENTRADA A VALDARA.glb",
+    "sha256": "372eba10c6fd1485cf342fe8e7e29c60e11386495d3305b2c8c81ec95ce2b712",
+    "projectFile": "Assets\\Models\\Environments\\ENV_CartelValdara-CARTEL DE ENTRADA A VALDARA.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "ENV_CasaDaniel.glb",
+    "sha256": "d9e9956ba5662406b96bfec57d73596445bba13efe556d4ad302d01ba65686d5",
+    "projectFile": "Assets\\Models\\Environments\\ENV_CasaDaniel.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "ENV_CasaRural01.glb",
+    "sha256": "4cbe38a9a2a62caa44372cc6c58d0d31f3588f8613a351f1d44ea02e84ced8dc",
+    "projectFile": "Assets\\Models\\Environments\\ENV_CasaRural01.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "ENV_EntradaMina.glb",
+    "sha256": "9a5a38e0d9c3113a896b1b8183940a12b90d8c331a1350cd81afd412cd364903",
+    "projectFile": "Assets\\Models\\Environments\\ENV_EntradaMina.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "ENV_Farola-FAROLA DE VALDARA.glb",
+    "sha256": "63a5fb59e03cbd6b76760401021d4b15e999ab25f7f017628ad37bb1696ca5f3",
+    "projectFile": "Assets\\Models\\Environments\\ENV_Farola-FAROLA DE VALDARA.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "ENV_RejillaAlcantarillado-REJILLA DE VALDARA.glb",
+    "sha256": "971b53a2aad7e738df748c52f069b538258c9799f81c4e9ce7563c5f5c95f9f2",
+    "projectFile": "Assets\\Models\\Environments\\ENV_RejillaAlcantarillado-REJILLA DE VALDARA.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+    "sha256": "81216d810ae2b69a5f550f3d98e307cb9a9b707b9f5a4a8f2c768fdd1abf1b0f",
+    "projectFile": "Assets\\Models\\Environments\\ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+    "sha256": "5f76bbe441fe9fe1932f61e20e6386a34a474ae0d840e96aea907c07a16906d7",
+    "projectFile": "Assets\\Models\\Environments\\ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "INR_Nevera-NEVERA DE COCINA.glb",
+    "sha256": "d62f89da5332ab2ced8982aa0217e6eb09dbbbe04aac5a0d6e9a831405f36688",
+    "projectFile": "Assets\\Models\\Interiors\\INR_Nevera-NEVERA DE COCINA.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "INT_Armario-ARMARIO DE MADERA RURAL (armario ABIERTO).glb",
+    "sha256": "e72bbf4c1923d7df97e04d3b51d2a28bb72efdcadfd3aa46fd4f9708e32ce70a",
+    "projectFile": "Assets\\Models\\Interiors\\INT_Armario-ARMARIO DE MADERA RURAL (armario ABIERTO).glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "INT_Armario-ARMARIO DE MADERA RURAL (armario cerrado).glb",
+    "sha256": "4ad85ae1858a5d7349b12651082634b72cc83dd30cdb5f0b5026036b4e6f5dd8",
+    "projectFile": "Assets\\Models\\Interiors\\INT_Armario-ARMARIO DE MADERA RURAL (armario cerrado).glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "INT_ArmartioCocina-ARMARIO SUPERIOR DE COCINA (abierto).glb",
+    "sha256": "0c049960d059413a6f498b5cde001297046f00272d0abab700acbc5d27213775",
+    "projectFile": "Assets\\Models\\Interiors\\INT_ArmartioCocina-ARMARIO SUPERIOR DE COCINA (abierto).glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "INT_ArmartioCocina-ARMARIO SUPERIOR DE COCINA (cerrado).glb",
+    "sha256": "ddf2c0bec6d29f87e56459fde5afe2663a2c44f38d9bafec8b5810725e116556",
+    "projectFile": "Assets\\Models\\Interiors\\INT_ArmartioCocina-ARMARIO SUPERIOR DE COCINA (cerrado).glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "INT_Cama-CAMA DE DANIEL.glb",
+    "sha256": "4ddf0e3e5913d40c80c2e18416b672f80dd3af2e43ed7d0754a40c992514d8f1",
+    "projectFile": "Assets\\Models\\Interiors\\INT_Cama-CAMA DE DANIEL.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "INT_EnciemraFregadero-ENCIEMRA DE COCINA CON FREGADERO (abierto).glb",
+    "sha256": "2f1a2bb04cb04107c06df7d9fb1cbeb41b7bd513c5eac2a64a01c5f4d1524a8b",
+    "projectFile": "Assets\\Models\\Interiors\\INT_EnciemraFregadero-ENCIEMRA DE COCINA CON FREGADERO (abierto).glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "INT_EnciemraFregadero-ENCIEMRA DE COCINA CON FREGADERO (cerrado).glb",
+    "sha256": "57c026870f6e56f06d96dcfe490823a90ff752f1c515dddb4d30241dcb2ebcac",
+    "projectFile": "Assets\\Models\\Interiors\\INT_EnciemraFregadero-ENCIEMRA DE COCINA CON FREGADERO (cerrado).glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "INT_Estanteria-ESTANTERIA DE MADERA RURAL.glb",
+    "sha256": "7bca22c4d56a3b362ec0ddfd7a800543f93789c854b86748ea95dcb27094ac78",
+    "projectFile": "Assets\\Models\\Interiors\\INT_Estanteria-ESTANTERIA DE MADERA RURAL.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "INT_EstanteriaSuepermercado-ESTANTERIA COMERCIAL.glb",
+    "sha256": "073b5bb02f5633a8beb0846796e0a6498e1f7d1f24c6a31ac9a924557032fb8e",
+    "projectFile": "Assets\\Models\\Interiors\\INT_EstanteriaSuepermercado-ESTANTERIA COMERCIAL.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "INT_MesaMadera-MESA DE MADERA RURAL.glb",
+    "sha256": "a5ccaca9c3e8d0aa5d5c5fe430c9e372f0421023d2252835397f84486038f509",
+    "projectFile": "Assets\\Models\\Interiors\\INT_MesaMadera-MESA DE MADERA RURAL.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "INT_MesitaNoche-MESITA DE NOCHE DE DANIEL.glb",
+    "sha256": "cdd8dcbcaafd5f4f02687ff1eed2cd6a64ff2d5c0bb9a787104326eb1730f778",
+    "projectFile": "Assets\\Models\\Interiors\\INT_MesitaNoche-MESITA DE NOCHE DE DANIEL.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "INT_SillaMadera-SILLA DE COMEDOR RURAL.glb",
+    "sha256": "389b64644ad46a6c6c4f6273b697e85c95a8f1a8915b1146c274cb5cc9fe5688",
+    "projectFile": "Assets\\Models\\Interiors\\INT_SillaMadera-SILLA DE COMEDOR RURAL.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "INT_Sofa-SOFA DEL SALON.glb",
+    "sha256": "2963517216a67c8919ea2cc5b08b1e185f3cbd9e6a8dbaa413271f80a180916f",
+    "projectFile": "Assets\\Models\\Interiors\\INT_Sofa-SOFA DEL SALON.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "INT-MostradorSupermercado-MOSTRADOR DE CAJA.glb",
+    "sha256": "53f1bfc307e517aab9ea410c27d2afa225dca583e0940f0aa70f28b11a3fd9db",
+    "projectFile": "Assets\\Models\\Interiors\\INT-MostradorSupermercado-MOSTRADOR DE CAJA.glb",
+    "status": "already present, identical"
+  },
+  {
+    "file": "OBJ_Linterna.glb",
+    "sha256": "9d5b0e4eee5f43e3819e9a977aa43dcb9011fb45cb43fd666aff146bc7f5d813",
+    "projectFile": "Assets\\Models\\Props\\OBJ_Linterna.glb",
+    "status": "already present, identical"
+  }
+]

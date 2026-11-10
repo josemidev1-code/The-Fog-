@@ -2,6 +2,8 @@
 
 Proyecto Unity 6000.6.8f1 (URP), preparado para compartir los modelos de OneDrive mediante Git LFS.
 
+Guía para otro ordenador: [ABRIR EN CLASE](docs/ABRIR_EN_CLASE.md). Rama actual: `codex/daniel-room-menu`.
+
 ## Abrir en este equipo
 
 1. En Unity Hub, entra en **Projects → Add → Add project from disk**.
