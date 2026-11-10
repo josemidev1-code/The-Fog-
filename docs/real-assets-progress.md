@@ -32,3 +32,6 @@ La auditoría de la casa en Blender no prueba habitabilidad. Es una malla de 100
 - TheFog.EditorTools.DoorwayChecks.Run: importa/prepara prefab y prueba aislada; sale al terminar, con límite de 1.200 fotogramas.
 - tools/inspect_house.py: inspección de malla en Blender.
 - tools/prepare_doorway.py: prepara y evalúa una descarga en docs/candidates antes de importarla.
+
+## Escena de revisión del módulo
+Assets/Scenes/DoorwayReview.unity permite revisar el prefab con Daniel: WASD, ratón, Mayús y Esc para pausa/liberar cursor. Suelo invisible exclusivamente de prueba; no representa un suelo terminado. No se añadió a las escenas de inicio ni se modificó la casa. Constructor conserva escenas existentes. La prueba física aislada anterior sigue siendo la evidencia de paso; esta escena se compiló y guardó, pendiente de recorrido manual por el usuario.
