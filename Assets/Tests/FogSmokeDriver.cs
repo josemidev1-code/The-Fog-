@@ -59,6 +59,8 @@ namespace TheFog.EditorTools
             keyboard = InputSystem.AddDevice<Keyboard>("FogSmokeKeyboard");
             Application.logMessageReceived += CaptureError;
             Application.runInBackground = true;
+            InputSystem.settings.backgroundBehavior=InputSettings.BackgroundBehavior.IgnoreFocus;
+            InputSystem.settings.editorInputBehaviorInPlayMode=InputSettings.EditorInputBehaviorInPlayMode.AllDeviceInputAlwaysGoesToGameView;
             Time.captureFramerate = 60;
             Bind();
         }

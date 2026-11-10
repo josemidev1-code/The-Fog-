@@ -1,0 +1,86 @@
+[
+  {
+    "source": "ENV_CasaRural01.glb",
+    "sourceHash": "4cbe38a9a2a62caa44372cc6c58d0d31f3588f8613a351f1d44ea02e84ced8dc",
+    "before": 1480958,
+    "after": 40000,
+    "status": "optimized copy; artistic review pending"
+  },
+  {
+    "source": "ENV_RejillaAlcantarillado-REJILLA DE VALDARA.glb",
+    "sourceHash": "971b53a2aad7e738df748c52f069b538258c9799f81c4e9ce7563c5f5c95f9f2",
+    "before": 1502316,
+    "after": 16000,
+    "status": "optimized copy; artistic review pending"
+  },
+  {
+    "source": "INR_Nevera-NEVERA DE COCINA.glb",
+    "sourceHash": "d62f89da5332ab2ced8982aa0217e6eb09dbbbe04aac5a0d6e9a831405f36688",
+    "before": 1499334,
+    "after": 16000,
+    "status": "optimized copy; artistic review pending"
+  },
+  {
+    "source": "INT-MostradorSupermercado-MOSTRADOR DE CAJA.glb",
+    "sourceHash": "53f1bfc307e517aab9ea410c27d2afa225dca583e0940f0aa70f28b11a3fd9db",
+    "before": 1499796,
+    "after": 16000,
+    "status": "optimized copy; artistic review pending"
+  },
+  {
+    "source": "INT_Armario-ARMARIO DE MADERA RURAL (armario ABIERTO).glb",
+    "sourceHash": "e72bbf4c1923d7df97e04d3b51d2a28bb72efdcadfd3aa46fd4f9708e32ce70a",
+    "before": 1500434,
+    "after": 16000,
+    "status": "optimized copy; artistic review pending"
+  },
+  {
+    "source": "INT_Armario-ARMARIO DE MADERA RURAL (armario cerrado).glb",
+    "sourceHash": "4ad85ae1858a5d7349b12651082634b72cc83dd30cdb5f0b5026036b4e6f5dd8",
+    "before": 1499872,
+    "after": 16000,
+    "status": "optimized copy; artistic review pending"
+  },
+  {
+    "source": "INT_ArmartioCocina-ARMARIO SUPERIOR DE COCINA (abierto).glb",
+    "sourceHash": "0c049960d059413a6f498b5cde001297046f00272d0abab700acbc5d27213775",
+    "before": 1500000,
+    "after": 16000,
+    "status": "optimized copy; artistic review pending"
+  },
+  {
+    "source": "INT_ArmartioCocina-ARMARIO SUPERIOR DE COCINA (cerrado).glb",
+    "sourceHash": "ddf2c0bec6d29f87e56459fde5afe2663a2c44f38d9bafec8b5810725e116556",
+    "before": 1499924,
+    "after": 15999,
+    "status": "optimized copy; artistic review pending"
+  },
+  {
+    "source": "INT_EnciemraFregadero-ENCIEMRA DE COCINA CON FREGADERO (abierto).glb",
+    "sourceHash": "2f1a2bb04cb04107c06df7d9fb1cbeb41b7bd513c5eac2a64a01c5f4d1524a8b",
+    "before": 1500090,
+    "after": 16000,
+    "status": "optimized copy; artistic review pending"
+  },
+  {
+    "source": "INT_EnciemraFregadero-ENCIEMRA DE COCINA CON FREGADERO (cerrado).glb",
+    "sourceHash": "57c026870f6e56f06d96dcfe490823a90ff752f1c515dddb4d30241dcb2ebcac",
+    "before": 1500000,
+    "after": 16000,
+    "status": "optimized copy; artistic review pending"
+  },
+  {
+    "source": "INT_EstanteriaSuepermercado-ESTANTERIA COMERCIAL.glb",
+    "sourceHash": "073b5bb02f5633a8beb0846796e0a6498e1f7d1f24c6a31ac9a924557032fb8e",
+    "before": 1500000,
+    "after": 16000,
+    "status": "optimized copy; artistic review pending"
+  },
+  {
+    "source": "INT_Sofa-SOFA DEL SALON.glb",
+    "sourceHash": "2963517216a67c8919ea2cc5b08b1e185f3cbd9e6a8dbaa413271f80a180916f",
+    "before": 1500004,
+    "after": 16000,
+    "status": "optimized copy; artistic review pending"
+  }
+]

@@ -48,3 +48,5 @@ Conservad los `.meta` de Unity junto a los assets para mantener sus referencias.
 La validación comprueba que los 26 modelos se importan como GameObject, contienen mallas y tienen materiales sin el shader interno de error. No sustituye una revisión artística, de escala, colisiones, rendimiento o navegación del juego.
 
 Revisión de modelos reales y pruebas del 11/11/2026: [progreso y límites](docs/real-assets-progress.md). Mesa propia integrada en DanielRoom; módulo de pared con hueco de puerta generado y probado como prefab independiente. Casa completa y puerta móvil pendientes.
+
+Entorno con los 26 modelos del escritorio: Assets/Scenes/DesktopEnvironment.unity. Exterior y zonas abiertas de revisión de mobiliario; no interiores terminados. [Estado y pruebas](docs/desktop-environment-notes.md).

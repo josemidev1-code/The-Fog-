@@ -1,0 +1,11 @@
+# Entorno con los modelos del escritorio
+
+Fuente: C:/Users/josem/Desktop/TheFog. Contiene 26 GLB, sin imágenes 2D independientes. Los originales ya importados se identifican por nombre y SHA-256; no se duplican. Copias optimizadas de recursos restantes en Assets/Models/Optimized; informe environment-optimization.json. La reducción de polígonos requiere revisión artística y no garantiza rendimiento.
+
+Escena: Assets/Scenes/DesktopEnvironment.unity. Parte del exterior FirstPlayable conservando su recorrido y añade la segunda casa y rejilla. Incluye todos los modelos de mobiliario en zonas abiertas de revisión (dormitorio/salón, cocina y comercio), con escala uniforme y MeshColliders. Las versiones abiertas/cerradas de armarios son variantes separadas para comparar, no animaciones implementadas. El armario superior de cocina queda en altura de montaje; falta su pared definitiva.
+
+Esto es una disposición provisional con modelos reales, no un mapa final ni un interior conectado. No hay aprobación de la distribución ni lore nuevo. La casa sigue exterior-only; no se afirma que puertas/ventanas permitan acceso. Suelo y camino proceden del prototipo y son superficies de Unity, no modelos del escritorio ni recursos artísticos finales. No se generaron imágenes para sustituir GLB existentes.
+
+El constructor rechaza sobrescribir la escena si existe. La escena no sustituye DanielRoom ni se añade automáticamente al inicio del juego. Controles de FirstPlayable: WASD, ratón, Mayús, F, Esc. El informe desktop-environment.json enumera los recursos añadidos y exige cobertura 26/26 antes de guardar. Compilar/guardar y ver una captura no equivale a comprobar todo el recorrido en Play Mode.
+
+Prueba actual: DesktopEnvironmentChecks pasó en Play Mode: movimiento con CharacterController, suelo, linterna, presets Bajo/Medio/Alto, pausa, recorrido por los cuatro puntos, interacción de mina y reinicio. Informe: desktop-environment-play-mode.json. Primer intento falló por foco de teclado del test; se corrigió la configuración del Input System para ejecución en segundo plano, sin cambiar controles del juego. La prueba cubre el recorrido exterior, no todos los huecos de muebles ni una casa habitable. Escena compilada y captura inspeccionada.
