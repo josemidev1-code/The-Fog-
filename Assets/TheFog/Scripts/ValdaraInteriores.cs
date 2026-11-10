@@ -4,38 +4,6 @@ namespace TheFog
 {
     internal sealed partial class ValdaraLayout
     {
-        void BuildDaniel(Transform zone)
-        {
-            Room(zone, 140, 12, 14);
-            Portal(zone, "Salir a Valdara", new Vector3(140, 0, -6.7f), 180f, new Vector3(-7, 0.1f, -14.9f), 90f);
-            Box(zone, "Tabique del dormitorio", new Vector3(137.7f, 1.5f, 0.4f), new Vector3(7.3f, 3f, 0.18f), plaster);
-            Sign(zone, "DORMITORIO", new Vector3(142.9f, 2.75f, 0.25f));
-            Sign(zone, "COCINA", new Vector3(144, 2.55f, -0.35f), 1.35f, 90f);
-
-            Model(zone, "Interiores/Sofa", new Vector3(136, 0, -4.8f), 2.4f, 90f);
-            Model(zone, "Interiores/Mesa", new Vector3(138.8f, 0, -2.5f), 1.7f);
-            Model(zone, "Interiores/Silla", new Vector3(138.8f, 0, -3.75f), 1.05f, 180f);
-            Model(zone, "Interiores/Silla", new Vector3(138.8f, 0, -1.25f), 1.05f);
-            Model(zone, "Interiores/EstanteriaRural", new Vector3(134.75f, 0, -1.45f), 1.85f, -90f);
-            Model(zone, "Interiores/FregaderoCerrado", new Vector3(145f, 0, -2.0f), 1.9f, 90f);
-            Model(zone, "Interiores/AlacenaCerrada", new Vector3(145f, 1.66f, -2.0f), 1.55f, 90f);
-            Model(zone, "Interiores/Nevera", new Vector3(145f, 0, -4.35f), 1.95f, 90f);
-
-            Model(zone, "Interiores/Cama", new Vector3(137.8f, 0, 4.7f), 2.4f);
-            var table = Model(zone, "Interiores/Mesita", new Vector3(139.8f, 0, 5.0f), 0.79f);
-            float tableHeight = table.GetComponent<BoxCollider>().size.y;
-            var torch = Model(zone, "Objetos/Linterna", new Vector3(139.8f, tableHeight, 5f), 0.30f);
-            var pickup = torch.AddComponent<ValdaraAction>();
-            pickup.kind = ValdaraAction.Kind.Flashlight;
-            pickup.prompt = "Recoger la linterna";
-            Model(zone, "Interiores/ArmarioAbierto", new Vector3(143.8f, 0, 5.5f), 2.0f);
-            Model(zone, "Interiores/ArmarioCerrado", new Vector3(135.0f, 0, 3.15f), 1.95f, -90f);
-            Point(zone, "Luz del salón", new Vector3(138.6f, 2.8f, -3.2f), brass, 8.6f, 2.0f);
-            Point(zone, "Luz de la cocina", new Vector3(143.9f, 2.65f, -3.2f), brass, 5.5f, 1.7f);
-            Point(zone, "Luz del dormitorio", new Vector3(140.4f, 2.8f, 4.0f), brass, 7.8f, 2.0f);
-            Point(zone, "Luz sobre la mesita", new Vector3(139.8f, tableHeight + 0.38f, 4.7f), brass, 1.25f, 0.75f);
-        }
-
         void BuildMarket(Transform zone)
         {
             Room(zone, 169, 11, 12);

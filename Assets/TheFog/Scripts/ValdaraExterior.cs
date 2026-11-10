@@ -18,8 +18,11 @@ namespace TheFog
 
             Model(zone, "Exterior/CartelValdara", new Vector3(-3.9f, 0, -33), 2.5f, -17f);
             Sign(zone, "VALDARA", new Vector3(-3.9f, 2.45f, -34), 2.45f);
-            Model(zone, "Exterior/CasaDaniel", new Vector3(-9, 0, -7), 8.4f, 0f);
-            Portal(zone, "Casa de Daniel", new Vector3(-7, 0, -13), 0f, new Vector3(140, 0.1f, -5.3f), 0f);
+            Model(zone, "Exterior/Roble", new Vector3(-9, 0, -8), 7.6f, 8f, false);
+            Model(zone, "Exterior/Roble", new Vector3(-14, 0, -11), 6.8f, 62f, false);
+            Model(zone, "Exterior/Valla", new Vector3(-9.4f, 0, -13), 2.9f);
+            Portal(zone, "Senda de Daniel", new Vector3(-7, 0, -13), 0f, DanielSpawn, 0f,
+                ValdaraAction.Kind.Travel, "CasaDaniel");
 
             Model(zone, "Exterior/CasaRural", new Vector3(10, 0, 9.7f), 8.5f, -8f);
             Portal(zone, "Ultramarinos", new Vector3(7.5f, 0, 3.8f), 0f, new Vector3(169, 0.1f, -4.5f), 0f);

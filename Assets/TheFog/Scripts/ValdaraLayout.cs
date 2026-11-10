@@ -32,7 +32,6 @@ namespace TheFog
         {
             Environment(fog, true);
             BuildExterior(Group("01  ·  Camino de Valdara"));
-            BuildDaniel(Group("02  ·  Casa de Daniel"));
             BuildMarket(Group("03  ·  Ultramarinos"));
             BuildMine(Group("04  ·  Galería de la mina"));
             Player(new Vector3(0, 0.15f, -38f), 0f, false);
@@ -56,7 +55,7 @@ namespace TheFog
             RenderSettings.sun = sun;
         }
 
-        void Player(Vector3 position, float yaw, bool catalog)
+        void Player(Vector3 position, float yaw, bool catalog, bool daniel = false)
         {
             var player = Group("Jugador");
             player.SetPositionAndRotation(position, Quaternion.Euler(0f, yaw, 0f));
@@ -72,7 +71,7 @@ namespace TheFog
             head.transform.localPosition = Vector3.up * 1.62f;
             var camera = head.AddComponent<Camera>();
             camera.clearFlags = CameraClearFlags.SolidColor;
-            camera.backgroundColor = catalog ? ink : fog;
+            camera.backgroundColor = daniel ? RenderSettings.fogColor : catalog ? ink : fog;
             camera.nearClipPlane = 0.035f;
             camera.farClipPlane = 85f;
             camera.fieldOfView = 67f;
@@ -91,7 +90,9 @@ namespace TheFog
             beam.shadows = LightShadows.Hard;
             beam.enabled = false;
 
-            player.gameObject.AddComponent<ValdaraPlayer>().Configure(camera, beam, catalog, position, yaw);
+            if (daniel)
+                head.AddComponent<DanielRetroCamera>();
+            player.gameObject.AddComponent<ValdaraPlayer>().Configure(camera, beam, catalog, position, yaw, daniel);
         }
 
         Transform Group(string name)
@@ -187,7 +188,7 @@ namespace TheFog
         }
 
         void Portal(Transform parent, string label, Vector3 floor, float yaw, Vector3 destination, float facing,
-            ValdaraAction.Kind kind = ValdaraAction.Kind.Door)
+            ValdaraAction.Kind kind = ValdaraAction.Kind.Door, string destinationScene = null)
         {
             var door = Box(parent, label, floor + Vector3.up * 1.1f, new Vector3(1.25f, 2.2f, 0.24f), wood, yaw);
             var action = door.AddComponent<ValdaraAction>();
@@ -195,6 +196,7 @@ namespace TheFog
             action.prompt = label;
             action.destination = destination;
             action.facing = facing;
+            action.destinationScene = destinationScene;
             Sign(parent, label, floor + Vector3.up * 2.43f, 2.35f, yaw);
             Point(parent, "Luz de acceso", floor + Vector3.up * 2.55f + Quaternion.Euler(0f, yaw, 0f) * Vector3.back,
                 brass, 4f, 1.25f);

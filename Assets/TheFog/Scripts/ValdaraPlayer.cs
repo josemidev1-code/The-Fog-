@@ -8,6 +8,7 @@ namespace TheFog
         [SerializeField] Camera eyes;
         [SerializeField] Light flashlight;
         [SerializeField] bool catalog;
+        [SerializeField] bool daniel;
         [SerializeField] Vector3 spawn;
         [SerializeField] float spawnFacing;
 
@@ -25,11 +26,31 @@ namespace TheFog
         GUIStyle textStyle;
         GUIStyle centeredStyle;
 
-        public void Configure(Camera view, Light lamp, bool isCatalog, Vector3 start, float facing)
+        struct Arrival
+        {
+            public string scene;
+            public Vector3 position;
+            public float facing;
+            public bool ownsFlashlight;
+            public bool flashlightOn;
+            public bool mineReached;
+            public bool finished;
+        }
+
+        static Arrival arrival;
+
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        static void ClearArrival()
+        {
+            arrival = default;
+        }
+
+        public void Configure(Camera view, Light lamp, bool isCatalog, Vector3 start, float facing, bool isDaniel)
         {
             eyes = view;
             flashlight = lamp;
             catalog = isCatalog;
+            daniel = isDaniel;
             spawn = start;
             spawnFacing = facing;
         }
@@ -37,6 +58,23 @@ namespace TheFog
         void Start()
         {
             controller = GetComponent<CharacterController>();
+            if (arrival.scene == gameObject.scene.name)
+            {
+                ownsFlashlight = arrival.ownsFlashlight;
+                flashlight.enabled = arrival.flashlightOn;
+                mineReached = arrival.mineReached;
+                finished = arrival.finished;
+                Warp(arrival.position, arrival.facing);
+                ClearArrival();
+                if (ownsFlashlight)
+                {
+                    foreach (var action in transform.root.GetComponentsInChildren<ValdaraAction>())
+                    {
+                        if (action.kind == ValdaraAction.Kind.Flashlight)
+                            action.gameObject.SetActive(false);
+                    }
+                }
+            }
             CaptureMouse(true);
         }
 
@@ -104,6 +142,18 @@ namespace TheFog
                 case ValdaraAction.Kind.Door:
                     Warp(action.destination, action.facing);
                     break;
+                case ValdaraAction.Kind.Travel:
+                    arrival = new Arrival
+                    {
+                        scene = action.destinationScene, position = action.destination, facing = action.facing,
+                        ownsFlashlight = ownsFlashlight, flashlightOn = flashlight.enabled,
+                        mineReached = mineReached, finished = finished
+                    };
+                    SceneManager.LoadScene(arrival.scene);
+                    break;
+                case ValdaraAction.Kind.HingedDoor:
+                    action.GetComponentInParent<DanielDoor>().Toggle(action, transform.position);
+                    break;
                 case ValdaraAction.Kind.Flashlight:
                     ownsFlashlight = true;
                     flashlight.enabled = true;
@@ -167,10 +217,14 @@ namespace TheFog
             float width = Mathf.Min(410f, Screen.width - 32f);
             Rect hud = new Rect(16f, 16f, width, 88f);
             GUI.Box(hud, GUIContent.none);
-            GUI.Label(new Rect(28f, 20f, width - 24f, 32f), catalog ? "CATÁLOGO  /  THE FOG" : "THE FOG  /  VALDARA", titleStyle);
+            string place = catalog ? "CATÁLOGO  /  THE FOG" : daniel ? "THE FOG  /  CASA DE DANIEL" : "THE FOG  /  VALDARA";
+            GUI.Label(new Rect(28f, 20f, width - 24f, 32f), place, titleStyle);
 
             string objective = "Encuentra la linterna en casa de Daniel.";
-            if (catalog) objective = "26 modelos originales de Valdara.";
+            if (catalog) objective = "Biblioteca de modelos de Valdara.";
+            else if (daniel) objective = ownsFlashlight
+                ? "Explora el claro y sube a la torre de vigilancia."
+                : "Entra en la casa y busca la linterna en el dormitorio.";
             else if (finished) objective = "Recorrido completado.";
             else if (mineReached) objective = "Busca el aviso al fondo de la galería.";
             else if (ownsFlashlight) objective = "Sigue el camino hasta la mina.";
