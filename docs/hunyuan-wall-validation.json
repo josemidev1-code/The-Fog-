@@ -1,0 +1,20 @@
+{
+  "source": "Assets\\Models\\Interiors\\Generated\\INT_Valdara_Esquina_A.glb",
+  "optimized": "Assets\\Models\\Optimized\\INT_Valdara_Esquina_A.glb",
+  "sourceSha256": "1c0a44233a3ac37b713f899c034e6ef30cc95231a777d0aeceb37e4b8479630f",
+  "trianglesBefore": 50010,
+  "trianglesAfter": 11568,
+  "annotationTrianglesRemoved": 1799,
+  "sourceBoundsBlenderXYZ": [
+    0.8843200206756592,
+    0.3136081397533417,
+    0.7739691734313965
+  ],
+  "uniformScale": 3.649042589567173,
+  "targetHeightMeters": 2.7,
+  "materials": 1,
+  "embeddedImages": 3,
+  "externalDependencies": [],
+  "classification": "corner wall; generated return means this is not a straight tiling panel",
+  "sceneModified": false
+}
