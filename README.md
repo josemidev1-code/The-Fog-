@@ -1,42 +1,57 @@
 # The Fog
 
-Prototipo 3D de Valdara en Unity. La casa de Daniel ocupa un mapa propio con una linde arbolada, un claro, una leñera y una torre de vigilancia. Se puede jugar desde esa escena o llegar por la senda desde Valdara.
+Beta en desarrollo de un juego de terror rural con estética PS1/PS2. La casa original de Daniel guía la dirección visual. El mapa y el arte siguen en construcción.
 
-## Base activa de desarrollo
+## Base activa
 
-La rama de referencia es `unity/casa-daniel`. El primer escenario es **CasaDaniel: casa, torre y bosque**, y ocupa la primera posición de la lista de compilación. DanielRoom y su menú de habitación no forman parte de esta base. Las ramas anteriores se conservan como historial; `develop` y `feature/gameplay-foundation` pertenecen a la propuesta descartada de DanielRoom y no son la base actual.
+La rama de referencia es **`unity/casa-daniel`**. No retomar desde DanielRoom ni desde las ramas antiguas `develop` o `feature/gameplay-foundation`.
 
-Las próximas tareas de jugabilidad deben partir de esta rama, con nombres `feature/casa-<tarea>` o `fix/casa-<problema>`, y volver a ella mediante PR. Primero se consolidará el recorrido casa → bosque → torre → regreso, comprobando colisiones, subida y bajada, interacción y linterna. No se añaden nuevas mecánicas ni historia como parte de este cambio.
+Para continuar, consulta primero [CONTINUAR.md](CONTINUAR.md). El registro detallado está en [docs/registro-avances-2026-11-11.md](docs/registro-avances-2026-11-11.md).
 
-## Abrir el proyecto
+## Abrir y jugar
 
-1. Clona el repositorio y cambia a la rama `unity/casa-daniel`.
-2. En Unity Hub, abre **TheFog** en `Documents/Codex/TheFog` con **Unity 6.6 (6000.6.8f1)**. El proyecto usa **URP 17.6.0**, glTFast y materiales compatibles con ese renderizado.
-3. Abre `Assets/TheFog/Scenes/CasaDaniel.unity` y pulsa **Play**. Si empiezas desde `Valdara.unity`, usa **E** en la puerta de la senda de Daniel para llegar al claro. El catálogo de los 26 modelos de partida se abre desde el menú de pausa.
+1. Clona el repositorio con **Git LFS** instalado. Cambia a `unity/casa-daniel` y ejecuta `git lfs pull` para descargar los modelos originales.
+2. Añade la carpeta del repositorio a Unity Hub y abre con **Unity 6000.6.8f1**. El proyecto usa URP 17.6 y glTFast.
+3. Abre `Assets/TheFog/Scenes/CasaDaniel.unity` y pulsa Play. El inicio aparece dentro del dormitorio de Daniel; elige Jugar.
 
-Usa **WASD** o las flechas para moverte, el **ratón** para mirar, **Mayús** para correr, **E** para interactuar, **F** para controlar la linterna y **Esc** para pausar.
+Controles: WASD o flechas para moverse, ratón para mirar, Mayús para correr, E para interactuar, F para la linterna y Esc para pausar.
 
-## Editar Valdara
+Unity Hub abre la copia local del repositorio. Antes de empezar otra sesión, actualiza esta misma carpeta con Git para tener la versión compartida.
 
-**CasaDaniel ya tiene la jerarquía guardada:** la casa, el bosque, el interior y la torre se pueden ver y editar sin pulsar Play. Usa **The Fog → Abrir casa, torre y bosque** para abrirla y encuadrar el exterior. Los modelos siguen vinculados a los prefabs importados. Las otras escenas conservan su constructor y se pueden materializar con **The Fog → Materializar escena para editar**.
+## Estado jugable
 
-El renderizado global y todos los niveles de calidad usan `Assets/TheFog/Rendering/CasaURP.asset`. El efecto retro es un pase de URP, sin `OnRenderImage`. El aviso de renderizado integrado obsoleto ya no corresponde a esta configuración. La migración no completa el arte provisional de la torre ni sustituye una prueba completa de subida y bajada.
+- Inicio en el dormitorio de Daniel, casa amueblada, linterna, notas legibles y muebles que se abren y cierran.
+- Entrada y salida de la casa mediante fundido a un interior separado.
+- Conexión CasaDaniel ↔ Valdara, tienda y entrada de mina que requiere linterna.
+- Aviso de cierre al fondo de la mina y acceso a créditos al completar el tramo del prototipo.
+- La exposición de modelos se reserva para los créditos.
 
-`Assets/TheFog/Resources/Modelos` usa ahora los **26 GLB originales**, sin decimación ni reducción de texturas. Se restauraron a petición del usuario para comparar la calidad visual. Sus contenidos SHA-256 coinciden con los originales de OneDrive: consulta `docs/original-models-restoration.json`. Las versiones optimizadas anteriores siguen recuperables en el historial de Git y en una copia local de comparación. Los GLB se guardan con Git LFS.
+Recorrido de trabajo: dormitorio → salón/cocina → exterior de Daniel → senda de Valdara → mina. La tienda y vigilancia son desvíos de exploración.
 
-La fachada usa el **original de `ENV_CasaDaniel.glb`**. Su puerta conecta con el interior amueblado de la misma escena al pulsar **E**. El filtro retro está desactivado en la cámara guardada de CasaDaniel para valorar geometría y texturas sin pixelación. La iluminación y la niebla se conservan; la vista Scene del menú de trabajo oculta la niebla para editar.
+## Arte y edición
 
-La torre provisional se construye por piezas en `DanielTower.cs`, con cuatro tramos alternos, descansillos, un balcón y una plataforma superior. Al sustituir su arte por una malla definitiva, conservad el trazado y el ancho libre de los tramos y la abertura de la cubierta para que se pueda seguir subiendo.
+Los 26 modelos originales de partida conservan su geometría y texturas, sin decimación. Se añadieron dos módulos originales de pared. Los GLB usan Git LFS y sus `.meta` deben viajar junto a ellos. La restauración original está documentada en `docs/original-models-restoration.json`.
 
-## Trabajo en equipo
+CasaDaniel contiene una jerarquía materializada. Parte de los detalles recientes, como los módulos interiores y papeles, se añade al entrar en Play. Valdara y Catalogo conservan su constructor. No ejecutar herramientas de regeneración o restauración sin revisar si sobrescriben trabajo manual de la escena.
 
-Podéis repartir las cinco áreas iniciales entre exterior, interiores, interacción y jugador, catálogo y modelos, e iluminación y pruebas. Cread una rama por cambio y revisadla antes de integrarla. Acordad quién guarda cada escena materializada para evitar que dos personas editen el mismo archivo a la vez. Subid siempre cada archivo `.meta` junto a su modelo, escena o script.
+En CasaDaniel están desactivados los elementos provisionales retirados de la torre, vegetación y carteles. Valdara todavía contiene una torre provisional; su modelo definitivo no está resuelto. El efecto retro de CasaDaniel está activo.
 
-### Recorrido de comprobación
+La textura de papel se generó con Gemini Pro. La marca es propia y la fuente provisional es IBM Plex Mono, con su licencia en la carpeta de Tipografia. **La tipografía necesita mejorar y no está aprobada como definitiva.**
 
-- En `CasaDaniel`, sigue el sendero, usa **E** en la puerta de la fachada, cruza el salón y recoge la linterna en la mesita del dormitorio.
-- Sal por la misma puerta, sigue la señal de la torre, sube por los cuatro tramos y vuelve a bajar desde la cubierta.
-- Vuelve al camino. Puedes visitar la tienda y continuar hacia la mina. Antes de recoger la linterna, la puerta de la mina debe indicar que la necesitas.
-- Prueba los dos sentidos de la transición Valdara ↔ CasaDaniel. Al volver a Valdara con la linterna, debe funcionar con **F** y desbloquear la mina.
-- Entra en la mina, prueba **F** y usa **E** frente al aviso del fondo. El objetivo debe cambiar a «Recorrido completado».
-- En el catálogo, comprueba que aparecen los 26 modelos con su nombre.
+## Comprobaciones
+
+Con CasaDaniel abierta, usa **The Fog → Revisar lectura y pausa**. Comprueba notas, apertura/cierre de muebles y suelo en cuatro puntos de Valdara. Guarda capturas y resultados en `docs/prototype-review` y deja Play en Valdara pausada. Al salir de Play se recupera la escena inicial.
+
+La última revisión dio PASS. No sustituye una prueba completa del recorrido ni de todas las colisiones.
+
+Para generar un ejecutable actualizado, usa **The Fog → Generar versión para Windows**. Esta entrega en GitHub contiene el proyecto fuente y no publica una nueva versión ejecutable.
+
+## Próximas prioridades
+
+1. Tipografía más acorde con el juego, legible con tildes y ñ.
+2. Más modelos 3D y decoración coherentes con la casa.
+3. Recorrido completo, colisiones, escala y orientación de accesos.
+4. Torre de vigilancia definitiva y recursos interiores pendientes.
+5. Ambientación sonora y eventos alineados con el GDD del equipo.
+
+Crear ramas `feature/casa-<tarea>` o `fix/casa-<problema>` desde la base activa. Acordar quién edita cada escena para evitar conflictos.

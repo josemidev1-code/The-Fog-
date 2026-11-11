@@ -1,7 +1,9 @@
 using System;
 using System.IO;
+using System.Linq;
 using UnityEditor;
 using UnityEditor.SceneManagement;
+using UnityEditor.Build.Reporting;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
@@ -84,6 +86,39 @@ namespace TheFog
             try { Prepare(); EditorApplication.Exit(0); }
             catch (Exception error) { Debug.LogException(error); EditorApplication.Exit(1); }
         }
+
+        [MenuItem("The Fog/Generar versión para Windows")]
+        static void BuildWindows()
+        {
+            string output = EditorUtility.SaveFilePanel("Generar versión para Windows", "", "TheFog", "exe");
+            if (string.IsNullOrEmpty(output))
+                return;
+
+            if (BuildWindows(output) == BuildResult.Succeeded)
+                EditorUtility.RevealInFinder(output);
+        }
+
+        public static void BuildWindowsBatch()
+        {
+            string[] args = Environment.GetCommandLineArgs();
+            int index = Array.IndexOf(args, "-theFogBuildPath");
+            if (index < 0 || index + 1 >= args.Length)
+            {
+                Debug.LogError("Falta la ruta del ejecutable en -theFogBuildPath.");
+                EditorApplication.Exit(1);
+                return;
+            }
+            EditorApplication.Exit(BuildWindows(args[index + 1]) == BuildResult.Succeeded ? 0 : 1);
+        }
+
+        static BuildResult BuildWindows(string output)
+            => BuildPipeline.BuildPlayer(new BuildPlayerOptions
+            {
+                scenes = EditorBuildSettings.scenes.Where(scene => scene.enabled).Select(scene => scene.path).ToArray(),
+                locationPathName = output,
+                target = BuildTarget.StandaloneWindows64,
+                options = BuildOptions.CompressWithLz4HC
+            }).summary.result;
 
         public static void RestoreOriginalsBatch()
         {

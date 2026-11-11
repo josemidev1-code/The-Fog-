@@ -9,11 +9,14 @@ namespace TheFog
         [SerializeField] bool daniel = false;
         [SerializeField] Shader standardShader = null;
         [SerializeField] Transform constructed;
+        [SerializeField] Transform danielInterior;
 
         void Awake()
         {
             if (constructed == null)
                 Compose(InstantiateModel);
+            else if (daniel && danielInterior != null)
+                new ValdaraLayout(constructed, standardShader, InstantiateModel).BuildDanielModules(danielInterior);
         }
 
         public Transform Compose(Func<GameObject, Transform, GameObject> instantiateModel)

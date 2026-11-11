@@ -13,6 +13,9 @@ namespace TheFog
         static readonly Vector3 houseCenter = new Vector3(0f, 0f, 5.9f);
         static readonly Vector3 outsideDoor = new Vector3(-0.47f, 0.22f, 1.30f);
         static readonly Vector3 interiorOffset = new Vector3(144f, 0f, 0f);
+        internal static readonly Vector3 BedroomStart = interiorOffset + new Vector3(1.10f, 0.25f, 7.9f);
+        internal static readonly Vector3 BedroomTitleCamera = interiorOffset + new Vector3(0.15f, 1.88f, 7.24f);
+        internal static readonly Vector3 BedroomTitleFocus = interiorOffset + new Vector3(0.93f, 1.40f, 9.65f);
 
         void BuildDanielHouse(Transform facade)
         {
@@ -21,14 +24,34 @@ namespace TheFog
                 new Vector3(9.86f, 5.9f, 8.8f));
             var entry = Collision(facade, "Acceso por la puerta original", outsideDoor + Vector3.up * 1.04f,
                 new Vector3(1.24f, 2.08f, 0.24f));
-            SetHouseDoor(entry, "Entrar en casa de Daniel", interiorOffset + new Vector3(-0.47f, 0.25f, 2.12f), 0f);
+            SetHouseDoor(entry, "Entrar en la casa", interiorOffset + new Vector3(-0.47f, 0.25f, 2.12f), 0f, true);
 
             Point(facade, "Luz de la entrada", outsideDoor + new Vector3(0f, 2.53f, -0.6f),
                 new Color(1f, 0.72f, 0.37f), 7.4f, 2.05f);
 
             var inside = Group("03 · Interior de Daniel");
             BuildDanielInterior(inside);
+            BuildDanielModules(inside);
             inside.position = interiorOffset;
+        }
+
+        internal void BuildDanielModules(Transform interior)
+        {
+            if (interior.Find("Detalles de lectura") != null) return;
+            BuildHouseDocuments(interior);
+            var doorPanel = Model(null, "Interiores/ParedPuertaDaniel",
+                new Vector3(1.945f, HouseFloor, 6.02f), 4.17f, 0f, false);
+            doorPanel.transform.SetParent(interior, false);
+            foreach (float x in new[] { 1.34f, 2.55f })
+            {
+                var jamb = Collision(null, "Jamba del dormitorio", new Vector3(x, 1.28f, 6.02f),
+                    new Vector3(0.22f, 2.12f, 0.25f));
+                jamb.transform.SetParent(interior, false);
+            }
+
+            var corner = Model(null, "Interiores/ParedEsquinaDaniel",
+                new Vector3(-2.22f, HouseFloor, 10.34f), 3.25f, 180f, false);
+            corner.transform.SetParent(interior, false);
         }
 
         void BuildDanielInterior(Transform zone)
@@ -63,13 +86,32 @@ namespace TheFog
             FurnishDanielHouse(zone);
         }
 
-        static void SetHouseDoor(GameObject door, string prompt, Vector3 destination, float facing)
+        static void SetHouseDoor(GameObject door, string prompt, Vector3 destination, float facing, bool houseInterior = false)
         {
             var action = door.AddComponent<ValdaraAction>();
             action.kind = ValdaraAction.Kind.Door;
             action.prompt = prompt;
             action.destination = destination;
             action.facing = facing;
+            action.houseInterior = houseInterior;
+        }
+
+        static void HouseNote(GameObject furniture, string prompt, string message)
+        {
+            var note = furniture.AddComponent<ValdaraAction>();
+            note.kind = ValdaraAction.Kind.Read;
+            note.prompt = prompt;
+            note.message = message;
+        }
+
+        static void OpenableFurniture(GameObject furniture, string label, string openModel, float size)
+        {
+            var action = furniture.AddComponent<ValdaraAction>();
+            action.kind = ValdaraAction.Kind.Furniture;
+            action.prompt = "Abrir " + label;
+            action.closePrompt = "Cerrar " + label;
+            action.openModel = openModel;
+            action.modelSize = size;
         }
 
         void Wall(Transform zone, float start, float end, float z, float bottom = HouseFloor, float top = 3.12f,
@@ -110,11 +152,17 @@ namespace TheFog
                 "Yeso", insidePlaster, 4, 2, 90f);
 
             Model(zone, "Interiores/Sofa", new Vector3(-4.0f, HouseFloor, 3.42f), 2.32f, 90f);
-            Model(zone, "Interiores/Mesa", new Vector3(-2.41f, HouseFloor, 4.26f), 1.35f, 6f);
+            var livingTable = Model(zone, "Interiores/Mesa", new Vector3(-2.41f, HouseFloor, 4.26f), 1.35f, 6f);
+            HouseNote(livingTable, "Leer el apunte de Daniel",
+                "He dejado la linterna en la mesita del dormitorio. Tengo que comprobar la entrada de la mina antes del siguiente turno. La niebla ha tapado las marcas de la senda.\n\n— Daniel");
             Model(zone, "Interiores/Silla", new Vector3(-2.45f, HouseFloor, 5.25f), 0.98f, 12f);
-            Model(zone, "Interiores/FregaderoCerrado", new Vector3(4.55f, HouseFloor, 4.65f), 1.92f, 90f);
-            Model(zone, "Interiores/AlacenaCerrada", new Vector3(4.55f, 1.97f, 4.65f), 1.52f, 90f);
-            Model(zone, "Interiores/Nevera", new Vector3(4.53f, HouseFloor, 2.58f), 1.92f, 90f);
+            var sink = Model(zone, "Interiores/FregaderoCerrado", new Vector3(4.55f, HouseFloor, 4.65f), 1.92f, 90f);
+            OpenableFurniture(sink, "el mueble del fregadero", "Interiores/FregaderoAbierto", 1.92f);
+            var cupboard = Model(zone, "Interiores/AlacenaCerrada", new Vector3(4.55f, 1.97f, 4.65f), 1.52f, 90f);
+            OpenableFurniture(cupboard, "la alacena", "Interiores/AlacenaAbierta", 1.52f);
+            var fridge = Model(zone, "Interiores/Nevera", new Vector3(4.53f, HouseFloor, 2.58f), 1.92f, 90f);
+            HouseNote(fridge, "Leer el papel de la nevera",
+                "Turno de vigilancia, 23:40. Si vuelve a sonar el teléfono de la garita, apunta la hora. La línea está cortada desde el lunes.");
 
             Model(zone, "Interiores/ArmarioCerrado", new Vector3(-4.08f, HouseFloor, 9.85f), 2.04f, 180f);
             Model(zone, "Interiores/EstanteriaRural", new Vector3(-4.75f, HouseFloor, 8.05f), 1.89f, -90f);
@@ -127,11 +175,11 @@ namespace TheFog
             pickup.prompt = "Recoger la linterna";
             Model(zone, "Interiores/ArmarioAbierto", new Vector3(4.22f, HouseFloor, 7.24f), 1.94f, 102f);
 
-            Point(zone, "Luz del salón", new Vector3(-1.68f, 2.78f, 3.63f), new Color(1, 0.74f, 0.42f), 6.7f, 1.75f);
-            Point(zone, "Luz de la cocina", new Vector3(3.31f, 2.68f, 4.04f), new Color(0.76f, 0.84f, 0.60f), 5.1f, 1.45f);
-            Point(zone, "Luz del dormitorio", new Vector3(2.0f, 2.64f, 9.36f), new Color(0.98f, 0.70f, 0.38f), 5.3f, 1.5f);
+            Point(zone, "Luz del salón", new Vector3(-1.68f, 2.78f, 3.63f), new Color(1, 0.74f, 0.42f), 7.2f, 2.65f);
+            Point(zone, "Luz de la cocina", new Vector3(3.31f, 2.68f, 4.04f), new Color(0.76f, 0.84f, 0.60f), 5.7f, 2.15f);
+            Point(zone, "Luz del dormitorio", new Vector3(2.0f, 2.64f, 9.36f), new Color(0.98f, 0.70f, 0.38f), 5.9f, 2.35f);
             Point(zone, "Luz sobre la mesita", new Vector3(1.87f, tableTop + 0.44f, 9.52f), brass, 1.4f, 0.72f);
-            Point(zone, "Luz del almacén", new Vector3(-2.97f, 2.71f, 8.5f), new Color(0.75f, 0.78f, 0.53f), 4f, 0.88f);
+            Point(zone, "Luz del almacén", new Vector3(-2.97f, 2.71f, 8.5f), new Color(0.75f, 0.78f, 0.53f), 4.8f, 1.45f);
         }
     }
 }

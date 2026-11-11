@@ -14,12 +14,14 @@ Shader "Hidden/TheFog/DanielRetro"
             half4 Frag(Varyings input) : SV_Target
             {
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(input);
-                float height = min(360.0, _BlitTexture_TexelSize.w);
+                float height = min(480.0, _BlitTexture_TexelSize.w);
                 float2 grid = float2(round(height * _BlitTexture_TexelSize.z / _BlitTexture_TexelSize.w), height);
                 float2 pixel = floor(saturate(input.texcoord) * grid);
                 half3 color = SAMPLE_TEXTURE2D_X(_BlitTexture, sampler_PointClamp, (pixel + 0.5) / grid).rgb;
+                half luma = dot(color, half3(0.2126, 0.7152, 0.0722));
+                color = lerp(color, luma.xxx, 0.18);
                 float dither = (fmod(pixel.x + 2.0 * fmod(pixel.y, 2.0), 4.0) - 1.5) / 128.0;
-                color = floor(max(color + dither, 0) * 39.0 + 0.5) / 39.0;
+                color = floor(max(color + dither, 0) * 47.0 + 0.5) / 47.0;
                 return half4(color, 1);
             }
             ENDHLSL

@@ -4,6 +4,8 @@ namespace TheFog
 {
     internal sealed partial class ValdaraLayout
     {
+        internal static readonly Vector3 CreditsSpawn = new Vector3(0, 0.1f, -3.2f);
+
         static readonly (string path, string label)[] catalogModels =
         {
             ("Exterior/Roble", "Roble"), ("Exterior/Arbusto", "Arbusto"),
@@ -11,6 +13,7 @@ namespace TheFog
             ("Exterior/CasaRural", "Casa rural"), ("Exterior/EntradaMina", "Entrada de la mina"),
             ("Exterior/Farola", "Farola"), ("Exterior/Rejilla", "Rejilla"),
             ("Exterior/Roca", "Roca"), ("Exterior/Valla", "Valla"),
+            ("Exterior/TorreVigilancia", "Torre de vigilancia"),
             ("Interiores/Nevera", "Nevera"), ("Interiores/ArmarioAbierto", "Armario abierto"),
             ("Interiores/ArmarioCerrado", "Armario cerrado"), ("Interiores/AlacenaAbierta", "Alacena abierta"),
             ("Interiores/AlacenaCerrada", "Alacena cerrada"), ("Interiores/Cama", "Cama"),
@@ -26,7 +29,9 @@ namespace TheFog
             Environment(ink, false);
             Transform room = Group("Biblioteca de modelos");
             Box(room, "Suelo", new Vector3(0, -0.35f, 20), new Vector3(25f, 0.7f, 52f), ink);
-            Sign(room, "VALDARA   /   BIBLIOTECA 3D", new Vector3(0, 2.65f, 1.1f), 6.5f);
+            Sign(room, "THE FOG   /   CRÉDITOS", new Vector3(0, 2.65f, 1.1f), 6.5f);
+            Portal(room, "Volver a Valdara", new Vector3(0, 0, -5.4f), 180f, MineReturn, 180f,
+                ValdaraAction.Kind.Travel, "Valdara");
             for (int i = 0; i < catalogModels.Length; i++)
             {
                 var (path, label) = catalogModels[i];
@@ -35,7 +40,7 @@ namespace TheFog
                 Model(room, path, point, path == "Objetos/Linterna" ? 0.84f : 2.4f, 0f);
                 Sign(room, label, point + new Vector3(0, 0.39f, -1.86f), 3.1f);
             }
-            Player(new Vector3(0, 0.1f, -3.2f), 0f, true);
+            Player(CreditsSpawn, 0f, true);
         }
     }
 }

@@ -52,11 +52,11 @@ namespace TheFog
             yield return null;
             Check(GraphicsSettings.currentRenderPipeline is UniversalRenderPipelineAsset, "URP is active");
             var roots = gameObject.scene.GetRootGameObjects();
-            var transforms = roots.SelectMany(root => root.GetComponentsInChildren<Transform>(true)).ToArray();
+            var transforms = roots.SelectMany(root => root.GetComponentsInChildren<Transform>()).ToArray();
             Check(transforms.Any(t => t.name.Contains("Fachada de Daniel")), "House hierarchy is present");
-            Check(transforms.Any(t => t.name.Contains("Torre de vigilancia")), "Tower hierarchy is present");
-            Check(transforms.Any(t => t.name.Contains("Linde y claro")), "Forest hierarchy is present");
-            var renderers = roots.SelectMany(root => root.GetComponentsInChildren<Renderer>(true)).ToArray();
+            Check(transforms.Any(t => t.name == "Suelo del claro"), "Walkable clearing is present");
+            Check(!transforms.Any(t => t.name is "Roble" or "Arbusto" or "Tronco" || t.name.Contains("Torre de vigilancia")), "Provisional tower and vegetation are inactive");
+            var renderers = roots.SelectMany(root => root.GetComponentsInChildren<Renderer>()).ToArray();
             report.renderers = renderers.Length;
             var materials = renderers.SelectMany(r => r.sharedMaterials).Distinct().ToArray();
             report.materials = materials.Length;

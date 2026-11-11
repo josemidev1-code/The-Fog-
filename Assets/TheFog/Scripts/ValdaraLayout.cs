@@ -20,6 +20,7 @@ namespace TheFog
         static readonly Color ink = new Color(0.075f, 0.088f, 0.082f);
         static readonly Color brass = new Color(1f, 0.81f, 0.46f);
         static readonly Color fog = new Color(0.34f, 0.43f, 0.46f);
+        internal static readonly Vector3 ValdaraSpawn = new Vector3(0, 0.15f, -38f);
 
         public ValdaraLayout(Transform stage, Shader shader, Func<GameObject, Transform, GameObject> instantiateModel)
         {
@@ -36,7 +37,7 @@ namespace TheFog
             BuildExterior(Group("01  ·  Camino de Valdara"));
             BuildMarket(Group("03  ·  Ultramarinos"));
             BuildMine(Group("04  ·  Galería de la mina"));
-            Player(new Vector3(0, 0.15f, -38f), 0f, false);
+            Player(ValdaraSpawn, 0f, false);
         }
 
         void Environment(Color background, bool mist)
@@ -122,6 +123,10 @@ namespace TheFog
         }
 
         GameObject Model(Transform parent, string path, Vector3 foot, float longestSide, float yaw = 0f, bool solid = true)
+            => CreateModel(parent, path, foot, longestSide, yaw, solid, instantiateModel);
+
+        internal static GameObject CreateModel(Transform parent, string path, Vector3 foot, float longestSide,
+            float yaw, bool solid, Func<GameObject, Transform, GameObject> instantiateModel)
         {
             var asset = Resources.Load<GameObject>("Modelos/" + path);
             if (asset == null)
@@ -166,15 +171,18 @@ namespace TheFog
             text.fontSize = 64;
             text.characterSize = size;
             text.color = brass;
-            text.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            text.font = Resources.Load<Font>("Tipografia/IBMPlexMono-Regular")
+                ?? Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             title.GetComponent<MeshRenderer>().sharedMaterial = text.font.material;
         }
 
         void Sign(Transform parent, string words, Vector3 position, float width = 2.1f, float yaw = 0f)
         {
             var rotation = Quaternion.Euler(0f, yaw, 0f);
-            Box(parent, words, position, new Vector3(width, 0.55f, 0.10f), ink, yaw);
-            Text(parent, words, position + rotation * new Vector3(0f, 0f, -0.061f), 0.036f, yaw);
+            Surface(parent, "Poste · " + words, new Vector3(position.x, position.y * 0.5f, position.z + 0.08f),
+                new Vector3(0.10f, position.y, 0.12f), "Madera", timberTint, 1, 2, yaw);
+            Surface(parent, words, position, new Vector3(width, 0.42f, 0.10f), "Madera", timberTint, 2, 1, yaw);
+            Text(parent, words, position + rotation * new Vector3(0f, 0f, -0.061f), 0.026f, yaw);
         }
 
         static void Point(Transform parent, string name, Vector3 point, Color color, float range, float intensity)
@@ -190,7 +198,7 @@ namespace TheFog
         }
 
         void Portal(Transform parent, string label, Vector3 floor, float yaw, Vector3 destination, float facing,
-            ValdaraAction.Kind kind = ValdaraAction.Kind.Door, string destinationScene = null)
+            ValdaraAction.Kind kind = ValdaraAction.Kind.Door, string destinationScene = null, bool showSign = false)
         {
             var door = Box(parent, label, floor + Vector3.up * 1.1f, new Vector3(1.25f, 2.2f, 0.24f), wood, yaw);
             var action = door.AddComponent<ValdaraAction>();
@@ -199,7 +207,8 @@ namespace TheFog
             action.destination = destination;
             action.facing = facing;
             action.destinationScene = destinationScene;
-            Sign(parent, label, floor + Vector3.up * 2.43f, 2.35f, yaw);
+            if (showSign)
+                Sign(parent, label, floor + Vector3.up * 2.43f, 2.35f, yaw);
             Point(parent, "Luz de acceso", floor + Vector3.up * 2.55f + Quaternion.Euler(0f, yaw, 0f) * Vector3.back,
                 brass, 4f, 1.25f);
         }
