@@ -141,7 +141,7 @@ namespace TheFog
                     mainTexture = Resources.Load<Texture2D>("Daniel/" + textureName),
                     mainTextureScale = new Vector2(repeatX, repeatY)
                 };
-                material.SetFloat("_Glossiness", 0.1f);
+                material.SetFloat("_Smoothness", 0.1f);
                 danielSurfaces.Add(key, material);
             }
             block.GetComponent<Renderer>().sharedMaterial = material;

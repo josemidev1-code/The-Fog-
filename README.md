@@ -11,18 +11,20 @@ Las próximas tareas de jugabilidad deben partir de esta rama, con nombres `feat
 ## Abrir el proyecto
 
 1. Clona el repositorio y cambia a la rama `unity/casa-daniel`.
-2. En Unity Hub, añade la carpeta clonada como proyecto y ábrela con **Unity 6.3 LTS (6000.3.28f1)**. La primera importación descarga glTFast y convierte los modelos en prefabs reutilizables.
+2. En Unity Hub, abre **TheFog** en `Documents/Codex/TheFog` con **Unity 6.6 (6000.6.8f1)**. El proyecto usa **URP 17.6.0**, glTFast y materiales compatibles con ese renderizado.
 3. Abre `Assets/TheFog/Scenes/CasaDaniel.unity` y pulsa **Play**. Si empiezas desde `Valdara.unity`, usa **E** en la puerta de la senda de Daniel para llegar al claro. El catálogo de los 26 modelos de partida se abre desde el menú de pausa.
 
 Usa **WASD** o las flechas para moverte, el **ratón** para mirar, **Mayús** para correr, **E** para interactuar, **F** para controlar la linterna y **Esc** para pausar.
 
 ## Editar Valdara
 
-Las escenas ensamblan el escenario al pulsar Play. Para mover los objetos desde el editor, abre la escena, elige **The Fog → Materializar escena para editar** y guárdala. Esa escena usará la jerarquía guardada al pulsar Play. Los modelos seguirán vinculados a los prefabs importados. Las escenas de partida también están incluidas en la lista de compilación de Unity.
+**CasaDaniel ya tiene la jerarquía guardada:** la casa, el bosque, el interior y la torre se pueden ver y editar sin pulsar Play. Usa **The Fog → Abrir casa, torre y bosque** para abrirla y encuadrar el exterior. Los modelos siguen vinculados a los prefabs importados. Las otras escenas conservan su constructor y se pueden materializar con **The Fog → Materializar escena para editar**.
 
-Las copias optimizadas viven en `Assets/TheFog/Resources/Modelos`. Incluyen el mobiliario con variantes abiertas y cerradas, los elementos del exterior y la linterna. Las 26 copias suman unos 35 MiB. Los archivos originales se conservan en la carpeta de origen.
+El renderizado global y todos los niveles de calidad usan `Assets/TheFog/Rendering/CasaURP.asset`. El efecto retro es un pase de URP, sin `OnRenderImage`. El aviso de renderizado integrado obsoleto ya no corresponde a esta configuración. La migración no completa el arte provisional de la torre ni sustituye una prueba completa de subida y bajada.
 
-La fachada usa la copia optimizada de `ENV_CasaDaniel.glb`. Su puerta original conecta con el interior amueblado de la misma escena al pulsar **E**. La cámara del mapa usa un filtro de baja resolución y una paleta de verdes, madera y luz cálida inspirada en la dirección retro de [MOLDRISE](https://picster.itch.io/moldrise).
+`Assets/TheFog/Resources/Modelos` usa ahora los **26 GLB originales**, sin decimación ni reducción de texturas. Se restauraron a petición del usuario para comparar la calidad visual. Sus contenidos SHA-256 coinciden con los originales de OneDrive: consulta `docs/original-models-restoration.json`. Las versiones optimizadas anteriores siguen recuperables en el historial de Git y en una copia local de comparación. Los GLB se guardan con Git LFS.
+
+La fachada usa el **original de `ENV_CasaDaniel.glb`**. Su puerta conecta con el interior amueblado de la misma escena al pulsar **E**. El filtro retro está desactivado en la cámara guardada de CasaDaniel para valorar geometría y texturas sin pixelación. La iluminación y la niebla se conservan; la vista Scene del menú de trabajo oculta la niebla para editar.
 
 La torre provisional se construye por piezas en `DanielTower.cs`, con cuatro tramos alternos, descansillos, un balcón y una plataforma superior. Al sustituir su arte por una malla definitiva, conservad el trazado y el ancho libre de los tramos y la abertura de la cubierta para que se pueda seguir subiendo.
 

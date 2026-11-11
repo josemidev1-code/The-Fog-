@@ -6,4 +6,4 @@
 *.unity text eol=lf
 *.prefab text eol=lf
 *.mat text eol=lf
-*.glb binary
+*.glb filter=lfs diff=lfs merge=lfs -text

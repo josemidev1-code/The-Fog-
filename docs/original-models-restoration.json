@@ -1,0 +1,210 @@
+[
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Exterior\\EntradaMina.glb",
+    "original": "ENV_EntradaMina.glb",
+    "originalBytes": 88241272,
+    "optimizedBytes": 2294756,
+    "sha256": "9A5A38E0D9C3113A896B1B8183940A12B90D8C331A1350CD81AFD412CD364903",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Interiores\\AlacenaAbierta.glb",
+    "original": "INT_ArmartioCocina-ARMARIO SUPERIOR DE COCINA (abierto).glb",
+    "originalBytes": 73835024,
+    "optimizedBytes": 953028,
+    "sha256": "0C049960D059413A6F498B5CDE001297046F00272D0ABAB700ACBC5D27213775",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Exterior\\Arbusto.glb",
+    "original": "ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+    "originalBytes": 43747728,
+    "optimizedBytes": 490592,
+    "sha256": "6D5157DA3B722D7E2ED5F9F4E3602B0F8B2C8E90E9EDCCAA808E44FDF5DC6798",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Interiores\\Sofa.glb",
+    "original": "INT_Sofa-SOFA DEL SALON.glb",
+    "originalBytes": 98462460,
+    "optimizedBytes": 1111256,
+    "sha256": "2963517216A67C8919EA2CC5B08B1E185F3CBD9E6A8DBAA413271F80A180916F",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Interiores\\FregaderoAbierto.glb",
+    "original": "INT_EnciemraFregadero-ENCIEMRA DE COCINA CON FREGADERO (abierto).glb",
+    "originalBytes": 81974460,
+    "optimizedBytes": 1121864,
+    "sha256": "2F1A2BB04CB04107C06DF7D9FB1CBEB41B7BD513C5EAC2A64A01C5F4D1524A8B",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Interiores\\Mesita.glb",
+    "original": "INT_MesitaNoche-MESITA DE NOCHE DE DANIEL.glb",
+    "originalBytes": 87246104,
+    "optimizedBytes": 1091860,
+    "sha256": "CDD8DCBCAAFD5F4F02687FF1EED2CD6A64FF2D5C0BB9A787104326EB1730F778",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Interiores\\Nevera.glb",
+    "original": "INR_Nevera-NEVERA DE COCINA.glb",
+    "originalBytes": 91231904,
+    "optimizedBytes": 1402764,
+    "sha256": "D62F89DA5332AB2CED8982AA0217E6EB09DBBBE04AAC5A0D6E9A831405F36688",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Exterior\\CartelValdara.glb",
+    "original": "ENV_CartelValdara-CARTEL DE ENTRADA A VALDARA.glb",
+    "originalBytes": 83688300,
+    "optimizedBytes": 2358124,
+    "sha256": "372EBA10C6FD1485CF342FE8E7E29C60E11386495D3305B2C8C81EC95CE2B712",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Interiores\\ArmarioAbierto.glb",
+    "original": "INT_Armario-ARMARIO DE MADERA RURAL (armario ABIERTO).glb",
+    "originalBytes": 87509956,
+    "optimizedBytes": 1076680,
+    "sha256": "E72BBF4C1923D7DF97E04D3B51D2A28BB72EFDCADFD3AA46FD4F9708E32CE70A",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Interiores\\FregaderoCerrado.glb",
+    "original": "INT_EnciemraFregadero-ENCIEMRA DE COCINA CON FREGADERO (cerrado).glb",
+    "originalBytes": 92634464,
+    "optimizedBytes": 1264952,
+    "sha256": "57C026870F6E56F06D96DCFE490823A90FF752F1C515DDDB4D30241DCB2EBCAC",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Exterior\\Rejilla.glb",
+    "original": "ENV_RejillaAlcantarillado-REJILLA DE VALDARA.glb",
+    "originalBytes": 87883460,
+    "optimizedBytes": 1311164,
+    "sha256": "971B53A2AAD7E738DF748C52F069B538258C9799F81C4E9CE7563C5F5C95F9F2",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Interiores\\Cama.glb",
+    "original": "INT_Cama-CAMA DE DANIEL.glb",
+    "originalBytes": 89832236,
+    "optimizedBytes": 1164612,
+    "sha256": "4DDF0E3E5913D40C80C2E18416B672F80DD3AF2E43ED7D0754A40C992514D8F1",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Interiores\\Mesa.glb",
+    "original": "INT_MesaMadera-MESA DE MADERA RURAL.glb",
+    "originalBytes": 87656908,
+    "optimizedBytes": 1052300,
+    "sha256": "A5CCACA9C3E8D0AA5D5C5FE430C9E372F0421023D2252835397F84486038F509",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Interiores\\EstanteriaRural.glb",
+    "original": "INT_Estanteria-ESTANTERIA DE MADERA RURAL.glb",
+    "originalBytes": 85646388,
+    "optimizedBytes": 1102500,
+    "sha256": "7BCA22C4D56A3B362EC0DDFD7A800543F93789C854B86748EA95DCB27094AC78",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Exterior\\CasaDaniel.glb",
+    "original": "ENV_CasaDaniel.glb",
+    "originalBytes": 86076780,
+    "optimizedBytes": 2329108,
+    "sha256": "D9E9956BA5662406B96BFEC57D73596445BBA13EFE556D4AD302D01BA65686D5",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Interiores\\AlacenaCerrada.glb",
+    "original": "INT_ArmartioCocina-ARMARIO SUPERIOR DE COCINA (cerrado).glb",
+    "originalBytes": 81825924,
+    "optimizedBytes": 911380,
+    "sha256": "DDF2C0BEC6D29F87E56459FDE5AFE2663A2C44F38D9BAFEC8B5810725E116556",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Objetos\\Linterna.glb",
+    "original": "OBJ_Linterna.glb",
+    "originalBytes": 90165708,
+    "optimizedBytes": 1426264,
+    "sha256": "9D5B0E4EEE5F43E3819E9A977AA43DCB9011FB45CB43FD666AFF146BC7F5D813",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Interiores\\ArmarioCerrado.glb",
+    "original": "INT_Armario-ARMARIO DE MADERA RURAL (armario cerrado).glb",
+    "originalBytes": 86760976,
+    "optimizedBytes": 1063292,
+    "sha256": "4AD85AE1858A5D7349B12651082634B72CC83DD30CDB5F0B5026036B4E6F5DD8",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Exterior\\CasaRural.glb",
+    "original": "ENV_CasaRural01.glb",
+    "originalBytes": 82541436,
+    "optimizedBytes": 1541040,
+    "sha256": "4CBE38A9A2A62CAA44372CC6C58D0D31F3588F8613A351F1D44EA02E84CED8DC",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Interiores\\Silla.glb",
+    "original": "INT_SillaMadera-SILLA DE COMEDOR RURAL.glb",
+    "originalBytes": 83163520,
+    "optimizedBytes": 1089988,
+    "sha256": "389B64644AD46A6C6C4F6273B697E85C95A8F1A8915B1146C274CB5CC9FE5688",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Interiores\\Mostrador.glb",
+    "original": "INT-MostradorSupermercado-MOSTRADOR DE CAJA.glb",
+    "originalBytes": 86266204,
+    "optimizedBytes": 1175132,
+    "sha256": "53F1BFC307E517AAB9EA410C27D2AFA225DCA583E0940F0AA70F28B11A3FD9DB",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Exterior\\Valla.glb",
+    "original": "ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+    "originalBytes": 86372896,
+    "optimizedBytes": 1270192,
+    "sha256": "5F76BBE441FE9FE1932F61E20E6386A34A474AE0D840E96AEA907C07A16906D7",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Exterior\\Farola.glb",
+    "original": "ENV_Farola-FAROLA DE VALDARA.glb",
+    "originalBytes": 76366692,
+    "optimizedBytes": 1179296,
+    "sha256": "63A5FB59E03CBD6B76760401021D4B15E999AB25F7F017628AD37BB1696CA5F3",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Interiores\\EstanteriaComercial.glb",
+    "original": "INT_EstanteriaSuepermercado-ESTANTERIA COMERCIAL.glb",
+    "originalBytes": 75124048,
+    "optimizedBytes": 1017956,
+    "sha256": "073B5BB02F5633A8BEB0846796E0A6498E1F7D1F24C6A31AC9A924557032FB8E",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Exterior\\Roble.glb",
+    "original": "ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+    "originalBytes": 78098428,
+    "optimizedBytes": 5337080,
+    "sha256": "0D5680020ABB1FDEBE60329F2DB258CAA9D149F07B4A577BC232C67CBE1003EB",
+    "verified": true
+  },
+  {
+    "asset": "Assets\\TheFog\\Resources\\Modelos\\Exterior\\Roca.glb",
+    "original": "ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+    "originalBytes": 6005816,
+    "optimizedBytes": 376304,
+    "sha256": "81216D810AE2B69A5F550F3D98E307CB9A9B707B9F5A4A8F2C768FDD1ABF1B0F",
+    "verified": true
+  }
+]

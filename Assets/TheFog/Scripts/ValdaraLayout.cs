@@ -24,7 +24,9 @@ namespace TheFog
         public ValdaraLayout(Transform stage, Shader shader, Func<GameObject, Transform, GameObject> instantiateModel)
         {
             this.stage = stage;
-            this.shader = shader != null ? shader : Shader.Find("Standard");
+            this.shader = GraphicsSettings.currentRenderPipeline != null
+                ? Shader.Find("Universal Render Pipeline/Lit")
+                : shader != null ? shader : Shader.Find("Standard");
             this.instantiateModel = instantiateModel;
         }
 
@@ -112,7 +114,7 @@ namespace TheFog
             if (!materials.TryGetValue(color, out Material material))
             {
                 material = new Material(shader) { name = "Valdara-" + ColorUtility.ToHtmlStringRGB(color), color = color };
-                material.SetFloat("_Glossiness", 0.13f);
+                material.SetFloat("_Smoothness", 0.13f);
                 materials.Add(color, material);
             }
             block.GetComponent<Renderer>().sharedMaterial = material;
