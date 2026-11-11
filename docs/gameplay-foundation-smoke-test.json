@@ -1,0 +1,24 @@
+{
+    "unityVersion": "6000.6.8f1",
+    "passed": false,
+    "checks": [
+        "All gameplay modules present",
+        "Player settles on the ground",
+        "Spawn is on the walkable floor",
+        "No missing scripts in scene",
+        "W action moves player through CharacterController",
+        "F action toggles flashlight",
+        "F1 applies Low graphics preset",
+        "F3 applies High graphics preset",
+        "F2 applies Medium graphics preset",
+        "Escape pauses gameplay",
+        "Movement is blocked while paused",
+        "Escape resumes gameplay",
+        "Player traverses all route waypoints with collisions enabled",
+        "E raycast interaction completes provisional route",
+        "R from pause reloads scene and resets route"
+    ],
+    "failures": [
+        "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index"
+    ]
+}
