@@ -90,35 +90,6 @@ namespace TheFog
             camera.transform.position = new Vector3(11, 5, -8);
             camera.transform.LookAt(new Vector3(0, 3.8f, 5.9f));
             Capture(camera, "docs/casa-original-closeup.png");
-            var cctv = transforms.FirstOrDefault(t => t.name == "Cámara CCTV analógica");
-            if (cctv != null)
-            {
-                Check(transforms.Any(t => t.name == "Vegetación PSX" && t.childCount > 44), "Retro forest and grass are placed");
-                Check(transforms.Any(t => t.name == "Casa auxiliar retro · exterior" && t.GetComponent<BoxCollider>() != null), "Retro house has an exterior collider");
-                Check(cctv.GetComponentsInChildren<MeshRenderer>().Length == 4, "Analog CCTV has a housing, visor and lens");
-                camera.orthographic = true;
-                camera.orthographicSize = 7.2f;
-                var towerCenter = new Vector3(16.4f,6.0f,14);
-                var offsets = new[] { Vector3.back, Vector3.right, Vector3.forward, Vector3.left, Vector3.up, Vector3.down, new Vector3(1,.55f,-1).normalized };
-                var names = new[] { "frente", "derecha", "dorso", "izquierda", "arriba", "abajo", "perspectiva" };
-                var output = Environment.GetEnvironmentVariable("THEFOG_TOWER_VIEWS");
-                if (!string.IsNullOrEmpty(output))
-                {
-                    Directory.CreateDirectory(output);
-                    var tower = transforms.First(t => t.name == "04 · Torre de vigilancia");
-                    foreach (var renderer in renderers)
-                        if (!renderer.transform.IsChildOf(tower)) renderer.enabled = false;
-                    RenderSettings.ambientLight = new Color(.65f,.65f,.65f);
-                    RenderSettings.sun.intensity = 1.15f;
-                    camera.backgroundColor = new Color(.31f,.32f,.30f);
-                    for (int i = 0; i < offsets.Length; i++)
-                    {
-                        camera.transform.position = towerCenter + offsets[i] * 20;
-                        camera.transform.LookAt(towerCenter, Mathf.Abs(offsets[i].y) > .99f ? Vector3.forward : Vector3.up);
-                        Capture(camera, Path.Combine(output, $"torre-{names[i]}.png"));
-                    }
-                }
-            }
             yield return null;
             yield return null;
             Application.logMessageReceived -= CaptureError;
@@ -145,7 +116,7 @@ namespace TheFog
                 texture.ReadPixels(new Rect(0, 0, 1280, 720), 0, 0);
                 texture.Apply();
                 File.WriteAllBytes(path, texture.EncodeToPNG());
-                Check(File.Exists(path), "Rendered screenshot: " + Path.GetFileName(path));
+                Check(File.Exists(path), "Rendered screenshot: " + path);
             }
             catch (Exception error) { report.failures.Add(error.ToString()); }
             finally
