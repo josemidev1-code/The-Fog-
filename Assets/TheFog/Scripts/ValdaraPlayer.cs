@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,6 +19,8 @@ namespace TheFog
         bool mineReached;
         bool finished;
         bool paused;
+        bool crossingDoor;
+        float doorFade;
         float pitch;
         float fallSpeed;
         float messageUntil;
@@ -80,6 +83,9 @@ namespace TheFog
 
         void OnDisable()
         {
+            StopAllCoroutines();
+            crossingDoor = false;
+            doorFade = 0f;
             CaptureMouse(false);
         }
 
@@ -91,6 +97,9 @@ namespace TheFog
 
         void Update()
         {
+            if (crossingDoor)
+                return;
+
             if (Input.GetKeyDown(KeyCode.Escape))
                 SetPaused(!paused);
             if (paused)
@@ -107,7 +116,7 @@ namespace TheFog
 
             if (target != null && Input.GetKeyDown(KeyCode.E))
                 Use(target);
-            if (ownsFlashlight && Input.GetKeyDown(KeyCode.F))
+            if (!crossingDoor && ownsFlashlight && Input.GetKeyDown(KeyCode.F))
                 flashlight.enabled = !flashlight.enabled;
         }
 
@@ -140,7 +149,10 @@ namespace TheFog
             switch (action.kind)
             {
                 case ValdaraAction.Kind.Door:
-                    Warp(action.destination, action.facing);
+                    if (daniel)
+                        StartCoroutine(CrossDoor(action.destination, action.facing));
+                    else
+                        Warp(action.destination, action.facing);
                     break;
                 case ValdaraAction.Kind.Travel:
                     arrival = new Arrival
@@ -176,6 +188,28 @@ namespace TheFog
             }
         }
 
+        IEnumerator CrossDoor(Vector3 position, float facing)
+        {
+            crossingDoor = true;
+            target = null;
+            yield return FadeDoor(1f, 0.24f);
+            yield return null;
+            Warp(position, facing);
+            yield return new WaitForSecondsRealtime(0.08f);
+            yield return FadeDoor(0f, 0.28f);
+            crossingDoor = false;
+        }
+
+        IEnumerator FadeDoor(float opacity, float duration)
+        {
+            float speed = 1f / duration;
+            while (doorFade != opacity)
+            {
+                doorFade = Mathf.MoveTowards(doorFade, opacity, speed * Time.unscaledDeltaTime);
+                yield return null;
+            }
+        }
+
         void Warp(Vector3 position, float facing)
         {
             controller.enabled = false;
@@ -207,6 +241,18 @@ namespace TheFog
 
         void OnGUI()
         {
+            if (crossingDoor)
+            {
+                if (Event.current.type == EventType.Repaint)
+                {
+                    var color = GUI.color;
+                    GUI.color = new Color(0f, 0f, 0f, doorFade);
+                    GUI.DrawTexture(new Rect(0f, 0f, Screen.width, Screen.height), Texture2D.whiteTexture);
+                    GUI.color = color;
+                }
+                return;
+            }
+
             if (titleStyle == null)
             {
                 titleStyle = new GUIStyle(GUI.skin.label) { fontSize = 22, fontStyle = FontStyle.Bold };
