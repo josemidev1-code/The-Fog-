@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/TheFog/Scenes/CasaDaniel.unity
+    guid: 9c7a5685aa1176728d42855088977dea
+  - enabled: 1
     path: Assets/TheFog/Scenes/Valdara.unity
     guid: 31c67a032db57a9cfee5696f8572df70
   - enabled: 1
     path: Assets/TheFog/Scenes/Catalogo.unity
     guid: 39630857aa8f9b0cad7244fe2fd16594
-  - enabled: 1
-    path: Assets/TheFog/Scenes/CasaDaniel.unity
-    guid: 9c7a5685aa1176728d42855088977dea
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

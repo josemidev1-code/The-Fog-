@@ -2,6 +2,12 @@
 
 Prototipo 3D de Valdara en Unity. La casa de Daniel ocupa un mapa propio con una linde arbolada, un claro, una leñera y una torre de vigilancia. Se puede jugar desde esa escena o llegar por la senda desde Valdara.
 
+## Base activa de desarrollo
+
+La rama de referencia es `unity/casa-daniel`. El primer escenario es **CasaDaniel: casa, torre y bosque**, y ocupa la primera posición de la lista de compilación. DanielRoom y su menú de habitación no forman parte de esta base. Las ramas anteriores se conservan como historial; `develop` y `feature/gameplay-foundation` pertenecen a la propuesta descartada de DanielRoom y no son la base actual.
+
+Las próximas tareas de jugabilidad deben partir de esta rama, con nombres `feature/casa-<tarea>` o `fix/casa-<problema>`, y volver a ella mediante PR. Primero se consolidará el recorrido casa → bosque → torre → regreso, comprobando colisiones, subida y bajada, interacción y linterna. No se añaden nuevas mecánicas ni historia como parte de este cambio.
+
 ## Abrir el proyecto
 
 1. Clona el repositorio y cambia a la rama `unity/casa-daniel`.
