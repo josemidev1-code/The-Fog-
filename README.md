@@ -26,7 +26,9 @@ El renderizado global y todos los niveles de calidad usan `Assets/TheFog/Renderi
 
 La fachada usa el **original de `ENV_CasaDaniel.glb`**. Su puerta conecta con el interior amueblado de la misma escena al pulsar **E**. El filtro retro está desactivado en la cámara guardada de CasaDaniel para valorar geometría y texturas sin pixelación. La iluminación y la niebla se conservan; la vista Scene del menú de trabajo oculta la niebla para editar.
 
-La torre provisional se construye por piezas en `DanielTower.cs`, con cuatro tramos alternos, descansillos, un balcón y una plataforma superior. Al sustituir su arte por una malla definitiva, conservad el trazado y el ancho libre de los tramos y la abertura de la cubierta para que se pueda seguir subiendo.
+La escena guardada incluye la torre industrial de acero oxidado, cabina de chapa oliva, ventanas, puerta abierta y CCTV analógico. Conserva la escalera de cuatro tramos y sus descansillos. La cámara es un elemento del decorado.
+
+El bosque usa árboles, arbustos y hierba retro de Elegant Crow. Un edificio auxiliar del pack de casas completa el fondo del claro. Las fuentes y licencias están en `Assets/ThirdParty/ElegantCrow/SOURCES.md`.
 
 ## Trabajo en equipo
 
