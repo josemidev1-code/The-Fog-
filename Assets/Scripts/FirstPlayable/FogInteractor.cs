@@ -18,22 +18,24 @@ namespace TheFog.FirstPlayable
 
         void Update()
         {
-            FogInteractable found = controlEnabled ? Find() : null;
-            if (found != current)
-            {
-                current = found;
-                if (hud != null) hud.SetPrompt(current != null ? "[" + keyLabel + "] " + current.prompt : "");
-            }
+            current = controlEnabled ? Find() : null;
+            // El texto puede cambiar sin cambiar el objeto (por ejemplo, una puerta).
+            RefreshPrompt();
 
             if (current != null && input != null && input.InteractPressed)
             {
                 current.Interact(hud);
-                if (!current.CanInteract)
+                if (current == null || !current.CanInteract)
                 {
                     current = null;
-                    if (hud != null) hud.SetPrompt("");
                 }
+                RefreshPrompt();
             }
+        }
+
+        void RefreshPrompt()
+        {
+            if (hud != null) hud.SetPrompt(current != null ? "[" + keyLabel + "] " + current.prompt : "");
         }
 
         FogInteractable Find()
