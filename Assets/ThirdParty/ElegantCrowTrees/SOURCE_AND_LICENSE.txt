@@ -1,0 +1,7 @@
+Retro PSX Style Tree Pack — Elegant Crow
+Source: https://elegantcrow.itch.io/psx-retro-style-tree-pack
+Retrieved: 2026-11-11. Archive tree_pack_1.1.zip, free download, no payment.
+Models declared CC0 by the author: https://creativecommons.org/publicdomain/zero/1.0/
+Publisher states trunk textures come from CC0Textures.com and tree imagery comes mainly from Pixabay, transformed for these assets. See publisher's source/permission statement; do not label the upstream source photos independently CC0.
+Only tree01, tree02 and tree24 FBX meshes and matching textures included here. Unmodified source copies preserved. Unity material settings, instance scales, tint and trunk colliders added for THE FOG. These are external licensed assets authorized by the user's tree-replacement request, not original THE FOG designs, not Hunyuan output. No endorsement by the author or Discord approval claimed.
+Credit: Retro PSX Style Tree Pack by Elegant Crow — https://elegantcrow.itch.io/psx-retro-style-tree-pack

@@ -1,0 +1,44 @@
+{
+  "source": "https://elegantcrow.itch.io/psx-retro-style-tree-pack",
+  "author": "Elegant Crow",
+  "retrieved": "2026-11-11",
+  "archiveSha256": "d0fad700dd1a236cc72433487fd16895fb9a79e995ebd14c7774091d6aab0b0c",
+  "declaredLicense": "CC0 (publisher statement); upstream texture provenance recorded separately",
+  "assets": [
+    {
+      "file": "Assets\\ThirdParty\\ElegantCrowTrees\\SOURCE_AND_LICENSE.txt",
+      "bytes": 1008,
+      "sha256": "e4a25d72d2d70b423ba1e3512a4e794152e16d1b2a5ebbaeb900e0c453d1dd17"
+    },
+    {
+      "file": "Assets\\ThirdParty\\ElegantCrowTrees\\Models\\tree01.fbx",
+      "bytes": 16908,
+      "sha256": "4eb9017b0ca8d60c98c417784531212466c9a2d660cd1135bb0fc89182c56571"
+    },
+    {
+      "file": "Assets\\ThirdParty\\ElegantCrowTrees\\Models\\tree02.fbx",
+      "bytes": 16892,
+      "sha256": "2ed07065e7d3234939d0be86cc83b7078ecdefb4b8bda5d4d8cd16a9b272ccc0"
+    },
+    {
+      "file": "Assets\\ThirdParty\\ElegantCrowTrees\\Models\\tree24.fbx",
+      "bytes": 16940,
+      "sha256": "05ddf9a5e6caf38027091291a207a778a92308bc40ecfe246a0510b657e29fcb"
+    },
+    {
+      "file": "Assets\\ThirdParty\\ElegantCrowTrees\\Textures\\tree01.png",
+      "bytes": 20500,
+      "sha256": "12a3c3e0c17a6fa51f26eb76e08bbb96d6cd9dbbac80c08e63deb45724adfdf6"
+    },
+    {
+      "file": "Assets\\ThirdParty\\ElegantCrowTrees\\Textures\\tree02.png",
+      "bytes": 28107,
+      "sha256": "d31e9d8bc3757c1a3973d5f20139519142c5927c5cfcb5aa49c682003187562d"
+    },
+    {
+      "file": "Assets\\ThirdParty\\ElegantCrowTrees\\Textures\\tree24.png",
+      "bytes": 24780,
+      "sha256": "1c27b2d5d31fce9e83cfa3129a8a19281fe14e0975b78714303f25f0c2f2c779"
+    }
+  ]
+}
