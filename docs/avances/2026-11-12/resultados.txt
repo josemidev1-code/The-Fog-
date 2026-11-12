@@ -1,0 +1,10 @@
+RESULT: FAIL
+Furniture opens and closes: AlacenaCerrada
+Furniture opens and closes: FregaderoCerrado
+Both readable notes have physical paper props
+Reading opened: Leer el papel de la nevera
+Reading opened: Leer el apunte de Daniel
+Walkable ground on main path at z=0
+Walkable ground on main path at z=33
+Missing path ground at z=-30
+Missing path ground at z=46
