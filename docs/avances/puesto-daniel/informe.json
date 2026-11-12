@@ -1,0 +1,128 @@
+{
+    "date": "2026-11-12T11:58:20.5616365+01:00",
+    "pass": true,
+    "checks": [
+        {
+            "name": "La introducción termina y empieza el turno",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "Daniel está de pie en la cabina",
+            "pass": true,
+            "detail": "(0.40, 7.02, -0.90)"
+        },
+        {
+            "name": "Movimiento con colisiones",
+            "pass": true,
+            "detail": "desplazamiento 1,49"
+        },
+        {
+            "name": "Coger la linterna",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "Mirar la consola muestra su indicación",
+            "pass": true,
+            "detail": "Monitor"
+        },
+        {
+            "name": "Sentarse en la consola",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "Cámara 1 activa",
+            "pass": true,
+            "detail": "MINA"
+        },
+        {
+            "name": "Cámara 2 activa",
+            "pass": true,
+            "detail": "CASA RURAL"
+        },
+        {
+            "name": "Cámara 3 activa",
+            "pass": true,
+            "detail": "ENTRADA"
+        },
+        {
+            "name": "Cámara 4 activa",
+            "pass": true,
+            "detail": "CASA DE DANIEL"
+        },
+        {
+            "name": "Registrar una anomalía real",
+            "pass": true,
+            "detail": "niebla 0,086 -> 0,051"
+        },
+        {
+            "name": "Falsa alarma penaliza",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "Levantarse de la consola",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "Apagón: cámaras sin señal",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "El panel ofrece rearmar",
+            "pass": true,
+            "detail": "PanelElectrico"
+        },
+        {
+            "name": "Rearmar el diferencial",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "Registrar un mueble da pilas",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "Leer una nota",
+            "pass": true,
+            "detail": "Plano de cámaras"
+        },
+        {
+            "name": "Cerrar la nota",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "Anomalía no registrada espesa la niebla",
+            "pass": true,
+            "detail": "0,130"
+        },
+        {
+            "name": "Pausa detiene el tiempo",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "Sobrevivir hasta las 06:00 gana",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "Reiniciar el turno",
+            "pass": true,
+            "detail": ""
+        },
+        {
+            "name": "La niebla al 100% termina la partida",
+            "pass": true,
+            "detail": ""
+        }
+    ],
+    "averageFps": 675.4382934570313,
+    "frames": 35176
+}
