@@ -38,7 +38,7 @@ namespace TheFog.EditorTools
         [MenuItem("THE FOG/Construir Puesto de Daniel")]
         public static void Run()
         {
-            log.Clear(); usedModels.Clear(); mats.Clear(); treeMeshes.Clear();
+            log.Clear(); usedModels.Clear(); mats.Clear(); treeMeshes.Clear(); roadCaps.Clear();
             Directory.CreateDirectory(ArtDir);
             var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
 
@@ -147,11 +147,14 @@ namespace TheFog.EditorTools
             ground.transform.localScale = new Vector3(40, 1, 40); ground.GetComponent<Renderer>().sharedMaterial = mats["Suelo"]; ground.isStatic = true;
 
             var roads = Group("Caminos", root);
-            Road(roads, new Vector3(6, 0, -110), new Vector3(6, 0, 30), 4.2f);
-            Road(roads, new Vector3(6, 0, 30), new Vector3(0, 0, 41), 3.4f);
-            Road(roads, new Vector3(6, 0, 4), new Vector3(27, 0, 8), 2.8f);
-            Road(roads, new Vector3(6, 0, -3), new Vector3(-26, 0, -4), 2.8f);
-            Road(roads, new Vector3(6, 0, -3.5f), new Vector3(2.2f, 0, -3.5f), 2.2f); // acceso a la torre
+            // Cada tramo secundario queda unos milímetros por debajo del principal: en los cruces ya no parpadean (z-fighting).
+            // Los finales llegan hasta la boca de la mina y la fachada de cada casa (antes acababan en mitad del campo).
+            // El antiguo tramo de acceso a la torre se quitaba: iba encima del camino oeste y parpadeaba con él.
+            Road(roads, new Vector3(6, 0, -110), new Vector3(6, 0, 30), 4.2f, 0.030f);
+            Road(roads, new Vector3(6, 0, 30), new Vector3(0, 0, 41), 3.4f, 0.027f);
+            Road(roads, new Vector3(0, 0, 41), new Vector3(0, 0, 44.2f), 3.4f, 0.027f); // hasta los raíles de la mina
+            Road(roads, new Vector3(6, 0, 4), new Vector3(30.2f, 0, 8.6f), 2.8f, 0.024f);
+            Road(roads, new Vector3(6, 0, -3), new Vector3(-30.2f, 0, -4.2f), 2.8f, 0.024f);
 
             var siteList = new List<AnomalySite>();
 
@@ -161,6 +164,11 @@ namespace TheFog.EditorTools
             Vector3[] rocks = { new(-9, 0, 47), new(9.5f, 0, 48), new(-14, 0, 52), new(15, 0, 53), new(0, 0, 56), new(-5, 0, 58), new(6, 0, 60) };
             float[] rockH = { 3.8f, 4.2f, 5f, 4.5f, 6f, 5f, 5.5f };
             for (int i = 0; i < rocks.Length; i++) Model("ENV_Roca", mineSite.transform, rocks[i], 47 * i, rockH[i]);
+            // Ladera: la bocamina estaba sola en mitad del llano. Ahora entra en un monte (la mitad trasera queda enterrada).
+            var hill = Group("Ladera", mineSite.transform);
+            Hill(hill, new Vector3(0, -3f, 59.5f), new Vector3(44, 24, 24));
+            Hill(hill, new Vector3(-18f, -4f, 63f), new Vector3(30, 18, 24));
+            Hill(hill, new Vector3(18f, -4f, 62f), new Vector3(30, 16, 22));
             var mineLamp = Lamp(mineSite.transform, new Vector3(-6.5f, 0, 40.5f), 160);
             var mineGlow = PointLight(mineSite.transform, "ResplandorMina", new Vector3(0, 1.6f, 45.5f), new Color(0.45f, 1f, 0.55f), 9f, 13f);
             var mineBeam = Beam(mineSite.transform, new Vector3(-4.5f, 0, 41f), 40);
@@ -269,7 +277,9 @@ namespace TheFog.EditorTools
             var rnd = new System.Random(1998);
             var blocked = new List<(Vector3 p, float r)> { (Vector3.zero, 11f), (new Vector3(0, 0, 48), 14f), (new Vector3(34, 0, 10), 12f), (new Vector3(-34, 0, -5), 12f), (new Vector3(8, 0, -30), 9f),
                 (new Vector3(11.5f, 0, -8.5f), 4f), (new Vector3(17, 0, -23), 6f), (new Vector3(12.6f, 0, -35), 8f),
-                (new Vector3(11.2f, 0, -17.2f), 3.5f) };
+                (new Vector3(11.2f, 0, -17.2f), 3.5f),
+                // Monte de la mina: sin árboles ni maleza enterrados a medias en la ladera.
+                (new Vector3(0, 0, 60f), 14f), (new Vector3(-18f, 0, 63f), 13f), (new Vector3(18f, 0, 62f), 12f) };
             bool Free(Vector3 p, float r)
             {
                 if (Mathf.Abs(p.x - 6) < 5 && p.z < 32) return false; // camino principal
@@ -410,8 +420,13 @@ namespace TheFog.EditorTools
                     Box(shell, "SobrePuerta", new Vector3((doorL + doorR) / 2, Floor + (2.1f + CabinHeight) / 2, -w), new Vector3(doorR - doorL, CabinHeight - 2.1f, t), "Pared");
                     var door = Box(cabin, "Puerta", new Vector3((doorL + doorR) / 2, Floor + 1.05f, -w), new Vector3(doorR - doorL - 0.04f, 2.1f, 0.08f), "MaderaOscura");
                     door.AddComponent<TowerDoor>();
-                    var knob = Box(door.transform, "Pomo", door.transform.position + new Vector3(-0.36f, 0, 0.07f), new Vector3(0.06f, 0.06f, 0.06f), "Metal");
+                    var knob = Prim(PrimitiveType.Sphere, cabin, "Pomo", door.transform.position + new Vector3(-0.36f, 0, 0.07f), new Vector3(0.065f, 0.065f, 0.065f), "Metal");
                     UnityEngine.Object.DestroyImmediate(knob.GetComponent<Collider>());
+                    // Marco de la puerta: tapa el canto de la hoja y la junta con la pared.
+                    float jambDepth = t + 0.05f;
+                    Box(shell, "MarcoPuertaIzq", new Vector3(doorL + 0.035f, Floor + 1.05f, -w), new Vector3(0.07f, 2.1f, jambDepth), "MaderaOscura");
+                    Box(shell, "MarcoPuertaDer", new Vector3(doorR - 0.035f, Floor + 1.05f, -w), new Vector3(0.07f, 2.1f, jambDepth), "MaderaOscura");
+                    Box(shell, "MarcoPuertaSup", new Vector3((doorL + doorR) / 2, Floor + 2.1f - 0.035f, -w), new Vector3(doorR - doorL, 0.07f, jambDepth), "MaderaOscura");
                     var circ = Paper(cabin, "Circular", door.transform.position + new Vector3(0.08f, 0.45f, 0.05f), Quaternion.Euler(90, 0, 0), new Vector2(0.24f, 0.32f));
                     var note = circ.AddComponent<ReadableNote>(); note.title = "Comunicado interno";
                     note.body = "Por orden de la dirección de operaciones, queda restringido el acceso a la zona de extracción entre las 20:00 y las 07:00.\n\nCualquier incidencia observada en la entrada de la mina se comunicará exclusivamente a la empresa.\n\nNo se facilitará información a vecinos ni a terceros.\n\n— Dirección de operaciones";
@@ -496,20 +511,32 @@ namespace TheFog.EditorTools
             var panelGo = Box(elec, "PanelElectrico", new Vector3(0.15f, Floor + 1.45f, -Half + 0.07f), new Vector3(0.46f, 0.6f, 0.12f), "Metal");
             // Cuadro eléctrico real (Poly Haven). El cubo queda invisible como volumen de interacción; palanca y piloto siguen visibles.
             panelGo.GetComponent<Renderer>().enabled = false;
-            Model("power_box_01", elec, new Vector3(0.15f, Floor + 1.13f, -Half + 0.055f), 0, 0.64f);
-            var lever = new GameObject("Palanca").transform; lever.SetParent(panelGo.transform, false); lever.position = panelGo.transform.position + new Vector3(0.05f, 0, 0.08f);
-            Box(lever, "Mango", lever.position + new Vector3(0, 0.1f, 0), new Vector3(0.05f, 0.2f, 0.05f), "Ambar");
-            var lampStatus = Box(panelGo.transform, "Piloto", panelGo.transform.position + new Vector3(-0.14f, 0.2f, 0.07f), new Vector3(0.04f, 0.04f, 0.02f), "Piloto");
+            var powerBox = Model("power_box_01", elec, new Vector3(0.15f, Floor + 1.13f, -Half + 0.055f), 0, 0.64f);
+            // Palanca y piloto colgaban del cubo escalado (0,46 × 0,6 × 0,12): salían deformados y al girar se cizallaban.
+            // Ahora van en un grupo sin escala, pegados al frontal real del cuadro.
+            var pb = Bounds(powerBox.gameObject); float pbFront = pb.max.z;
+            var controls = Group("MandosPanel", elec);
+            var lever = new GameObject("Palanca").transform; lever.SetParent(controls, false); lever.position = new Vector3(pb.center.x + 0.06f, pb.center.y - 0.02f, pbFront + 0.03f);
+            var leverBase = Box(controls, "BasePalanca", lever.position, new Vector3(0.08f, 0.06f, 0.03f), "Carcasa");
+            UnityEngine.Object.DestroyImmediate(leverBase.GetComponent<Collider>());
+            var handle = Box(lever, "Mango", lever.position + new Vector3(0, 0.07f, 0), new Vector3(0.03f, 0.14f, 0.03f), "Ambar");
+            UnityEngine.Object.DestroyImmediate(handle.GetComponent<Collider>());
+            var lampStatus = Box(controls, "Piloto", new Vector3(pb.center.x - 0.14f, pb.center.y + 0.2f, pbFront + 0.01f), new Vector3(0.035f, 0.035f, 0.02f), "Piloto");
             UnityEngine.Object.DestroyImmediate(lampStatus.GetComponent<Collider>());
             var breaker = panelGo.AddComponent<BreakerPanel>(); breaker.lever = lever; breaker.statusLamp = lampStatus.GetComponent<Renderer>();
+            // Arriba = con corriente, abajo = saltado. Ambos ángulos sacan el mango hacia la sala (antes se metía dentro del cuadro).
+            breaker.leverOnEuler = new Vector3(20, 0, 0); breaker.leverOffEuler = new Vector3(160, 0, 0); lever.localRotation = Quaternion.Euler(breaker.leverOnEuler);
             var emergency = PointLight(elec, "LuzEmergencia", new Vector3(1.05f, Floor + 2.45f, -Half + 0.2f), new Color(1f, 0.12f, 0.06f), 2f, 6f);
-            Box(elec, "PilotoEmergencia", new Vector3(1.05f, Floor + 2.6f, -Half + 0.08f), new Vector3(0.18f, 0.08f, 0.08f), "Piloto");
+            emergency.enabled = false; // solo se enciende con el apagón (TowerPower)
+            var emergencyLamp = Box(elec, "PilotoEmergencia", new Vector3(1.05f, Floor + 2.6f, -Half + 0.08f), new Vector3(0.18f, 0.08f, 0.08f), "PilotoApagado");
             var power = elec.gameObject.AddComponent<TowerPower>();
             var flexoGo = new GameObject("LuzFlexo"); flexoGo.transform.SetParent(elec); flexoGo.transform.position = new Vector3(0.78f, deskTopForCapture + 0.48f, 2.34f);
             flexoGo.transform.LookAt(new Vector3(0.25f, deskTopForCapture, 1.95f));
             var flexo = flexoGo.AddComponent<Light>(); flexo.type = LightType.Spot; flexo.color = new Color(1f, 0.70f, 0.40f); flexo.intensity = 9f; flexo.range = 3.2f; flexo.spotAngle = 82f; flexo.innerSpotAngle = 40f; flexo.shadows = LightShadows.Soft;
             power.interiorLights = new[] { lamp1.light, lamp2.light, deskLight, flexo }; power.emissiveRenderers = new[] { lamp1.bulb, lamp2.bulb };
             power.emergencyLight = emergency; power.panel = panelGo.transform;
+            power.bulbOffMaterial = mats["BombillaApagada"];
+            power.emergencyLamp = emergencyLamp.GetComponent<Renderer>(); power.emergencyOnMaterial = mats["Piloto"]; power.emergencyOffMaterial = mats["PilotoApagado"];
             refs.power = power;
             return refs;
         }
@@ -527,10 +554,20 @@ namespace TheFog.EditorTools
 
         static (Light light, Renderer bulb) CeilingLamp(Transform parent, Vector3 pos)
         {
-            Box(parent, "Cable", pos + new Vector3(0, 0.2f, 0), new Vector3(0.015f, 0.3f, 0.015f), "Metal");
-            Box(parent, "Pantalla", pos + new Vector3(0, 0.05f, 0), new Vector3(0.3f, 0.08f, 0.3f), "Metal");
-            var bulb = Box(parent, "Bombilla", pos - new Vector3(0, 0.03f, 0), new Vector3(0.09f, 0.09f, 0.09f), "Bombilla");
-            UnityEngine.Object.DestroyImmediate(bulb.GetComponent<Collider>());
+            // Antes eran cubos (pantalla cuadrada de metal que reflejaba el rojo de emergencia). Ahora: florón, cable, pantalla
+            // esmaltada redonda y bombilla esférica.
+            float ceiling = Floor + CabinHeight - 0.05f, shadeTop = pos.y + 0.1f, cableLen = Mathf.Max(0.02f, ceiling - shadeTop);
+            var parts = new List<GameObject>
+            {
+                Prim(PrimitiveType.Cylinder, parent, "Floron", new Vector3(pos.x, ceiling - 0.015f, pos.z), new Vector3(0.11f, 0.015f, 0.11f), "Esmalte"),
+                Prim(PrimitiveType.Cylinder, parent, "Cable", new Vector3(pos.x, shadeTop + cableLen / 2f, pos.z), new Vector3(0.012f, cableLen / 2f, 0.012f), "Carcasa"),
+                Prim(PrimitiveType.Cylinder, parent, "Casquillo", pos + new Vector3(0, 0.11f, 0), new Vector3(0.09f, 0.025f, 0.09f), "Esmalte"),
+                Prim(PrimitiveType.Cylinder, parent, "Pantalla", pos + new Vector3(0, 0.05f, 0), new Vector3(0.34f, 0.04f, 0.34f), "Esmalte"),
+            };
+            var bulb = Prim(PrimitiveType.Sphere, parent, "Bombilla", pos - new Vector3(0, 0.02f, 0), new Vector3(0.1f, 0.1f, 0.1f), "Bombilla");
+            parts.Add(bulb);
+            foreach (var p in parts) UnityEngine.Object.DestroyImmediate(p.GetComponent<Collider>());
+            bulb.GetComponent<Renderer>().shadowCastingMode = ShadowCastingMode.Off;
             var l = PointLight(parent, "Luz", pos - new Vector3(0, 0.12f, 0), new Color(1f, 0.80f, 0.58f), 1.5f, 6f);
             l.shadows = LightShadows.Soft;
             return (l, bulb.GetComponent<Renderer>());
@@ -640,14 +677,36 @@ namespace TheFog.EditorTools
             return ps;
         }
 
-        static void Road(Transform parent, Vector3 a, Vector3 b, float width)
+        static readonly List<Vector3> roadCaps = new List<Vector3>();
+
+        static void Road(Transform parent, Vector3 a, Vector3 b, float width, float top = 0.03f)
         {
             var go = GameObject.CreatePrimitive(PrimitiveType.Cube); go.name = "Camino"; go.transform.SetParent(parent);
-            go.transform.position = (a + b) / 2 + Vector3.up * 0.015f; go.transform.rotation = Quaternion.LookRotation(b - a);
-            go.transform.localScale = new Vector3(width, 0.03f, (b - a).magnitude + width * 0.5f);
+            go.transform.position = (a + b) / 2 + Vector3.up * (top / 2f); go.transform.rotation = Quaternion.LookRotation(b - a);
+            go.transform.localScale = new Vector3(width, top, (b - a).magnitude + width * 0.5f);
             var rm = new Material(mats["Camino"]) { name = "Camino (tramo)" };
             rm.SetTextureScale("_BaseMap", new Vector2(Mathf.Max(1f, Mathf.Round(width / 2.2f)), Mathf.Max(1f, Mathf.Round(go.transform.localScale.z / 2.2f))));
             go.GetComponent<Renderer>().sharedMaterial = rm; UnityEngine.Object.DestroyImmediate(go.GetComponent<Collider>()); go.isStatic = true;
+            RoadCap(parent, a, width, top); RoadCap(parent, b, width, top);
+        }
+
+        /// <summary>Remate redondo en cada extremo: los caminos ya no acaban en un rectángulo recortado y los cruces se funden.</summary>
+        static void RoadCap(Transform parent, Vector3 p, float width, float roadTop)
+        {
+            foreach (var c in roadCaps) if ((c - p).sqrMagnitude < 0.01f) return; // un solo remate por punto (sin parpadeo)
+            roadCaps.Add(p);
+            float h = roadTop - 0.002f; // justo por debajo de su tramo
+            var go = GameObject.CreatePrimitive(PrimitiveType.Cylinder); go.name = "CaminoRemate"; go.transform.SetParent(parent);
+            go.transform.position = new Vector3(p.x, h / 2f, p.z); go.transform.localScale = new Vector3(width, h / 2f, width);
+            var m = new Material(mats["Camino"]) { name = "Camino (remate)" };
+            float k = Mathf.Max(1f, Mathf.Round(width / 2.2f)); m.SetTextureScale("_BaseMap", new Vector2(k, k));
+            go.GetComponent<Renderer>().sharedMaterial = m; UnityEngine.Object.DestroyImmediate(go.GetComponent<Collider>()); go.isStatic = true;
+        }
+
+        static void Hill(Transform parent, Vector3 center, Vector3 size)
+        {
+            var go = Prim(PrimitiveType.Sphere, parent, "Monte", center, size, "Ladera");
+            UnityEngine.Object.DestroyImmediate(go.GetComponent<Collider>()); go.isStatic = true;
         }
 
         static Transform[] FenceRow(Transform parent, Vector3 start, Vector3 dir, int count, float height = 1.2f, float gap = 0.1f)
@@ -667,9 +726,12 @@ namespace TheFog.EditorTools
         /// <summary>Giro para que el frontal de un modelo generado (ENV_*_01 / PROP_*), que mira a -X, apunte hacia un punto.</summary>
         static float Facing(Vector3 from, Vector3 to) => Yaw(from, to) + 90f;
 
-        static GameObject Box(Transform parent, string name, Vector3 pos, Vector3 size, string mat)
+        static GameObject Box(Transform parent, string name, Vector3 pos, Vector3 size, string mat) => Prim(PrimitiveType.Cube, parent, name, pos, size, mat);
+
+        /// <summary>Primitiva de Unity con material propio. Ojo: el cilindro mide 2 de alto con escala 1 (size.y = media altura).</summary>
+        static GameObject Prim(PrimitiveType type, Transform parent, string name, Vector3 pos, Vector3 size, string mat)
         {
-            var go = GameObject.CreatePrimitive(PrimitiveType.Cube); go.name = name; go.transform.SetParent(parent);
+            var go = GameObject.CreatePrimitive(type); go.name = name; go.transform.SetParent(parent);
             go.transform.position = pos; go.transform.localScale = size; go.GetComponent<Renderer>().sharedMaterial = mats[mat];
             return go;
         }
@@ -759,6 +821,11 @@ namespace TheFog.EditorTools
             Emissive("Bombilla", new Color(1f, 0.8f, 0.55f), 3f);
             Emissive("Ambar", new Color(1f, 0.6f, 0.2f), 1.2f);
             Emissive("Piloto", new Color(1f, 0.12f, 0.06f), 2f);
+            Mat("PilotoApagado", lit, new Color(0.22f, 0.05f, 0.04f), null, Vector2.one, 0.6f);
+            Mat("BombillaApagada", lit, new Color(0.30f, 0.29f, 0.26f), null, Vector2.one, 0.75f);
+            Mat("Esmalte", lit, new Color(0.16f, 0.21f, 0.19f), null, Vector2.one, 0.55f);
+            // Ladera del monte de la mina: misma hierba que el terreno, con un mosaico ajustado a la esfera.
+            Ground("Ladera", lit, "grass_ground", new Color(0.55f, 0.59f, 0.50f), new Vector2(40, 14), 0.05f);
 
             var glass = Mat("Cristal", lit, new Color(0.55f, 0.62f, 0.62f, 0.14f), null, Vector2.one, 0.7f);
             glass.SetFloat("_Surface", 1); glass.SetFloat("_Blend", 0); glass.SetOverrideTag("RenderType", "Transparent");

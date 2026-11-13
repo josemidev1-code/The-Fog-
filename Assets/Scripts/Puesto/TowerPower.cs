@@ -13,6 +13,11 @@ namespace TheFog.Puesto
         public Renderer[] emissiveRenderers;
         public Light emergencyLight;
         public Transform panel;
+        [Tooltip("Material de las bombillas sin corriente. Si falta, las bombillas se ocultan (comportamiento antiguo).")]
+        public Material bulbOffMaterial;
+        [Tooltip("Piloto rojo de emergencia: solo brilla durante el apagón.")]
+        public Renderer emergencyLamp;
+        public Material emergencyOnMaterial, emergencyOffMaterial;
         public float scriptedTripHour = 27.1f; // 03:06
         public int maxRandomTrips = 2;
         public float randomTripChancePerCheck = 0.2f;
@@ -21,6 +26,7 @@ namespace TheFog.Puesto
         public int Trips { get; private set; }
 
         float[] baseIntensity;
+        Material[] bulbOnMaterials;
         AudioSource hum;
         bool scriptedDone;
         int randomTrips;
@@ -30,6 +36,9 @@ namespace TheFog.Puesto
         {
             baseIntensity = new float[interiorLights.Length];
             for (int i = 0; i < interiorLights.Length; i++) baseIntensity[i] = interiorLights[i].intensity;
+            bulbOnMaterials = new Material[emissiveRenderers != null ? emissiveRenderers.Length : 0];
+            for (int i = 0; i < bulbOnMaterials.Length; i++) if (emissiveRenderers[i] != null) bulbOnMaterials[i] = emissiveRenderers[i].sharedMaterial;
+            SetEmergencyLamp(false);
             hum = ProcAudio.Loop(gameObject, ProcAudio.Hum, 0.12f, true, 9f);
             if (emergencyLight != null) emergencyLight.enabled = false;
         }
@@ -79,12 +88,27 @@ namespace TheFog.Puesto
             }
             SetLights(false);
             if (emergencyLight != null && !On) emergencyLight.enabled = true;
+            if (!On) SetEmergencyLamp(true);
         }
 
         void SetLights(bool on)
         {
             for (int i = 0; i < interiorLights.Length; i++) { interiorLights[i].enabled = on; interiorLights[i].intensity = baseIntensity[i]; }
-            foreach (var r in emissiveRenderers) if (r != null) r.enabled = on;
+            if (emissiveRenderers == null) return;
+            for (int i = 0; i < emissiveRenderers.Length; i++)
+            {
+                var r = emissiveRenderers[i]; if (r == null) continue;
+                // La bombilla se queda en su sitio, solo se apaga (antes desaparecía del todo).
+                if (bulbOffMaterial != null && bulbOnMaterials != null && i < bulbOnMaterials.Length) { r.enabled = true; r.sharedMaterial = on ? bulbOnMaterials[i] : bulbOffMaterial; }
+                else r.enabled = on;
+            }
+        }
+
+        void SetEmergencyLamp(bool on)
+        {
+            if (emergencyLamp == null) return;
+            var m = on ? emergencyOnMaterial : emergencyOffMaterial;
+            if (m != null) emergencyLamp.sharedMaterial = m;
         }
 
         public void Restore()
@@ -94,6 +118,7 @@ namespace TheFog.Puesto
             On = true; lastRestore = Time.time;
             SetLights(true);
             if (emergencyLight != null) emergencyLight.enabled = false;
+            SetEmergencyLamp(false);
             hum.Play();
             ProcAudio.PlayAt(ProcAudio.Click, transform.position, 1f, 12f);
             PuestoGame.I.hud.Toast("Vuelve la corriente. El monitor tarda un momento en calentar.");

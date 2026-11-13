@@ -58,7 +58,12 @@ namespace TheFog.Puesto
             density = Mathf.Lerp(density, minDensity * 0.35f, DawnFactor);
             c = Color.Lerp(c, dawnColor, DawnFactor);
             RenderSettings.fogDensity = density; RenderSettings.fogColor = c;
-            var cam = Camera.main; if (cam != null) cam.backgroundColor = c * 0.9f;
+            // El cielo es del mismo color que la niebla: si no, se ve una línea en el horizonte donde acaba el terreno.
+            var cam = Camera.main; if (cam != null) cam.backgroundColor = c;
+            // Las cámaras de seguridad también siguen el color de la niebla (antes se quedaban con el de la noche al amanecer).
+            var g = PuestoGame.I;
+            if (g != null && g.console != null && g.console.feeds != null)
+                foreach (var f in g.console.feeds) if (f != null && f.camera != null) f.camera.backgroundColor = c;
             if (bankRing != null) bankRing.localScale = Vector3.one * Mathf.Lerp(ringFar, ringNear, k) * Mathf.Lerp(1f, 1.6f, DawnFactor);
             if (banks != null)
                 foreach (var b in banks)

@@ -67,6 +67,19 @@ No se encontraron árboles realistas, gratuitos y ligeros (los de Poly Haven tie
 - Un solo cartel de Valdara: el de la anomalía de ENTRADA es ahora `PROP_Senal_Valdara_01`, mirando a la cámara.
 - Retirada la farola generada junto a la caseta (ya había una del camino a dos metros).
 
+### Revisión visual (13/11/2026)
+Correcciones de incoherencias vistas en las capturas. Las de `Assets/Scripts` se aplican ya; las del generador necesitan regenerar la escena (**THE FOG → Construir Puesto de Daniel**).
+- **Palanca y piloto del cuadro eléctrico** colgaban del cubo invisible escalado (0,46 × 0,6 × 0,12): salían aplastados y al girar se deformaban. Ahora van en `MandosPanel`, sin escala, sobre el frontal real de `power_box_01`. La palanca apunta arriba con corriente y abajo cuando salta (antes se metía dentro del cuadro).
+- **Luz de emergencia** encendida al guardar la escena: teñía de rojo la puerta, el panel y las lámparas en el editor y en las capturas. Ahora se guarda apagada, y el piloto rojo de emergencia solo brilla durante el apagón (`TowerPower.emergencyLamp`).
+- **Bombillas**: en el apagón desaparecían. Ahora se quedan en su sitio con un material apagado (`TowerPower.bulbOffMaterial`).
+- **Lámparas de techo**: eran cubos de metal. Ahora llevan florón, cable, pantalla esmaltada redonda y bombilla esférica.
+- **Puerta**: marco de madera y pomo redondo. Antes el pomo era un cubo deformado por la escala de la hoja.
+- **Caminos**: acababan en rectángulos recortados en mitad del campo y parpadeaban en los cruces (z-fighting). Ahora tienen remates redondos y alturas escalonadas, y llegan a la boca de la mina y a la fachada de cada casa. Se ha quitado el tramo de acceso a la torre, que iba encima del camino oeste.
+- **Mina**: la bocamina estaba sola en el llano. Ahora entra en un monte de hierba (`Ladera`, tres volúmenes) que también da fondo a la cámara MINA. No se colocan árboles ni maleza en la ladera.
+- **Cielo y horizonte**: el fondo de la cámara era un 10 % más oscuro que la niebla y marcaba una raya en el horizonte. Las cámaras de seguridad mantenían el color de la noche cuando la niebla se espesaba o amanecía. Ahora todas usan el color actual de la niebla (`FogThreat`).
+
+No se ha podido abrir Unity para esta revisión: los cambios no están compilados ni probados en partida. Tras regenerar, revisad las capturas de `docs/puesto` y pasad la prueba automática.
+
 No se usan los árboles de terceros, la electrónica de Animimo ni los módulos de Hunyuan.
 
 ## Regenerar y probar

@@ -1,8 +1,8 @@
 # Abrir THE FOG en el PC de clase
 
 1. Instala Unity Hub, Unity Editor 6000.6.8f1 y GitHub Desktop. Cada compañero usa su propia cuenta de GitHub, con acceso al repositorio.
-2. En GitHub Desktop: File → Clone repository → URL → https://github.com/josemidev1-code/The-Fog-.git . Guarda el clon en una carpeta local (mejor fuera de OneDrive).
-3. Selecciona la rama codex/daniel-room-menu. Esta es la versión actual; main todavía no contiene el prototipo.
+2. En GitHub Desktop: File → Clone repository → URL → https://github.com/josemidev1-code/TheFog-.git . Guarda el clon en una carpeta local (mejor fuera de OneDrive).
+3. Usa la rama main: contiene la versión actual del prototipo.
 4. Espera a que termine la descarga. Los modelos usan Git LFS. Si ves archivos GLB diminutos o errores de modelos, abre Repository → Open in Terminal y ejecuta:
 
 ```powershell

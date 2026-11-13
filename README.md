@@ -2,7 +2,7 @@
 
 Proyecto Unity 6000.6.8f1 (URP), preparado para compartir los modelos de OneDrive mediante Git LFS.
 
-Guía para otro ordenador: [ABRIR EN CLASE](docs/ABRIR_EN_CLASE.md). Rama actual: `codex/daniel-room-menu`.
+Guía para otro ordenador: [ABRIR EN CLASE](docs/ABRIR_EN_CLASE.md). Rama actual: `main`.
 
 ## Primera versión jugable: Puesto de Daniel
 
@@ -24,8 +24,8 @@ Instala Git LFS y Unity Hub con el editor 6000.6.8f1. Después:
 
 ```powershell
 git lfs install
-git clone --branch codex/daniel-room-menu https://github.com/josemidev1-code/The-Fog-.git
-cd The-Fog-
+git clone https://github.com/josemidev1-code/TheFog-.git
+cd TheFog-
 git lfs pull
 git lfs fsck
 ```
