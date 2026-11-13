@@ -8,6 +8,9 @@
     "com.unity.collab-proxy": "2.13.6",
     "com.unity.modules.vectorgraphics": "1.0.0",
     "com.unity.cloud.gltfast": "6.20.0",
-    "com.unity.modules.screencapture": "1.0.0"
+    "com.unity.modules.screencapture": "1.0.0",
+    "com.unity.modules.particlesystem": "1.0.0",
+    "com.unity.modules.audio": "1.0.0",
+    "com.unity.modules.physics": "1.0.0"
   }
 }

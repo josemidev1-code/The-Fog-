@@ -37,3 +37,7 @@ mono_crash.*.json
 *.sln
 *.slnx
 *.user
+
+# Ejecutables y pruebas automáticas locales
+/[Bb]uilds/
+/autotest/

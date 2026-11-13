@@ -4,6 +4,10 @@ Proyecto Unity 6000.6.8f1 (URP), preparado para compartir los modelos de OneDriv
 
 Guía para otro ordenador: [ABRIR EN CLASE](docs/ABRIR_EN_CLASE.md). Rama actual: `codex/daniel-room-menu`.
 
+## Primera versión jugable: Puesto de Daniel
+
+Abre `Assets/Scenes/PuestoDaniel.unity` y pulsa Play. Es la primera escena de Build Settings: turno de noche en la torre de vigilancia, con cámaras, anomalías, apagones, linterna con pilas y niebla. Usa modelos de la carpeta del equipo, modelos generados con Higgsfield y modelos CC0 de Poly Haven. Controles, sistemas, pruebas y pendientes en [docs/puesto-daniel.md](docs/puesto-daniel.md).
+
 ## Abrir en este equipo
 
 1. En Unity Hub, entra en **Projects → Add → Add project from disk**.

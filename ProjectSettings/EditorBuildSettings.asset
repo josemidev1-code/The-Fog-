@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/PuestoDaniel.unity
+    guid: cb34910436c3c6445981db98cd6ce8d0
+  - enabled: 1
     path: Assets/Scenes/DanielRoom.unity
     guid: 65f736d6824ed1d49928dc32fd7d43fb
   - enabled: 1
