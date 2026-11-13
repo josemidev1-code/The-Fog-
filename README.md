@@ -2,13 +2,19 @@
 
 Proyecto Unity 6000.6.8f1 (URP), preparado para compartir los modelos de OneDrive mediante Git LFS.
 
+Guía para otro ordenador: [ABRIR EN CLASE](docs/ABRIR_EN_CLASE.md). Rama actual: `codex/daniel-room-menu`.
+
+## Primera versión jugable: Puesto de Daniel
+
+Abre `Assets/Scenes/PuestoDaniel.unity` y pulsa Play. Es la primera escena de Build Settings: turno de noche en la torre de vigilancia, con cámaras, anomalías, apagones, linterna con pilas y niebla. Usa modelos de la carpeta del equipo, modelos generados con Higgsfield y modelos CC0 de Poly Haven. Controles, sistemas, pruebas y pendientes en [docs/puesto-daniel.md](docs/puesto-daniel.md).
+
 ## Abrir en este equipo
 
 1. En Unity Hub, entra en **Projects → Add → Add project from disk**.
-2. Selecciona la carpeta `The-Fog-review` de esta copia de trabajo, la que contiene `Assets`, `Packages` y `ProjectSettings`.
+2. Selecciona la carpeta `ProyectoUnity` del escritorio (o la raíz del repositorio clonado), la que contiene `Assets`, `Packages` y `ProjectSettings`.
 3. Usa **Unity 6000.6.8f1**, ya instalado en este equipo. Espera a que termine la importación de paquetes y modelos.
-4. Abre `Assets/Scenes/SampleScene.unity`. Es la escena básica de la plantilla, no un nivel terminado del juego.
-5. Busca los modelos en `Assets/Models`, arrastra uno a la escena y pulsa **F** sobre él en la vista Scene para encuadrarlo.
+4. Abre `Assets/Scenes/DanielRoom.unity` y pulsa Play: menú dentro del PC y habitación de Daniel.
+5. Nueva partida entra a la habitación. WASD y ratón para moverte; E junto al PC o Esc para volver al terminal. Detalles y límites en `docs/daniel-room-notes.md`.
 
 Los GLB se importan con el paquete oficial Unity glTFast, fijado a 6.20.0. Sus materiales y texturas permanecen dentro de los originales. Documentación: https://github.com/Unity-Technologies/com.unity.cloud.gltfast/blob/main/Packages/com.unity.cloud.gltfast/Documentation~/ImportEditor.md
 
@@ -18,13 +24,21 @@ Instala Git LFS y Unity Hub con el editor 6000.6.8f1. Después:
 
 ```powershell
 git lfs install
-git clone --branch codex/onedrive-unity-integration https://github.com/josemidev1-code/The-Fog-.git
+git clone --branch codex/daniel-room-menu https://github.com/josemidev1-code/The-Fog-.git
 cd The-Fog-
 git lfs pull
 git lfs fsck
 ```
 
-Añade esa carpeta desde Unity Hub. Necesitarás descargar aproximadamente 2,1 GB de modelos y espacio adicional para la caché de importación. Los archivos GLB deben ser binarios reales, no pequeños archivos de texto de punteros LFS.
+Añade esa carpeta desde Unity Hub (**Projects → Add → Add project from disk**) y espera a que Unity importe los paquetes y los modelos. La primera importación tarda varios minutos.
+
+Para seguir con el Puesto de Daniel:
+
+1. Abre `Assets/Scenes/PuestoDaniel.unity` (es la primera escena de Build Settings) y pulsa Play.
+2. Para regenerar la escena desde el menú **THE FOG → Construir Puesto de Daniel**. Sobrescribe la escena: los cambios a mano se pierden.
+3. Para el ejecutable de prueba: **THE FOG → Construir Puesto de Daniel** genera `Builds/PuestoDaniel/TheFog.exe`. La prueba automática es `TheFog.exe -puestoAutotest -puestoOut "<ruta absoluta>/autotest"`; con ruta relativa no se guardan las capturas.
+
+El repositorio ocupa unos 2,5 GB en modelos LFS. Los archivos `.glb` y `.gltf` deben ser binarios reales, no punteros LFS de texto: si `git lfs pull` no ha bajado todo, Unity mostrará los modelos vacíos o con errores.
 
 ## Contenido y procedencia
 
@@ -37,10 +51,18 @@ Añade esa carpeta desde Unity Hub. Necesitarás descargar aproximadamente 2,1 G
 
 Se descargaron los 26 archivos disponibles en la carpeta compartida TheFog de OneDrive el 10 de noviembre de 2026. El ZIP conserva sus originales en Descargas. Se verificaron la integridad ZIP, cabeceras GLB y dependencias: 26 hashes distintos, 74 imágenes integradas y ninguna referencia a archivos externos.
 
-El repositorio de destino solo contenía README y reglas de exclusión antes de esta rama (commit `0f6fd5d8aae0ea6d855de1452858ec92b12fce50`). Por ello se incorporó la plantilla oficial URP Blank 17.2.6 incluida con el editor instalado. No se modificó el proyecto privado `My-project`, ni la copia antigua local de Godot `THE-FOG`, ni el proyecto local `UnityCheck`. Este trabajo integra recursos; no convierte escenas ni sistemas de Godot a Unity.
+El repositorio de destino solo contenía README y reglas de exclusión antes de esta rama (commit `0f6fd5d8aae0ea6d855de1452858ec92b12fce50`). Por ello se incorporó la plantilla oficial URP Blank 17.2.6 incluida con el editor instalado. No se modificó el proyecto privado `My-project`, ni la copia antigua local de Godot `THE-FOG`, ni el proyecto local `UnityCheck`. La rama incluye la integración de recursos y un prototipo nuevo en Unity; no convierte escenas ni sistemas de Godot a Unity.
 
 ## Colaboración
 
 Conservad los `.meta` de Unity junto a los assets para mantener sus referencias. No subáis `Library`, `Temp`, `Logs` o `UserSettings`. Los modelos binarios están configurados con Git LFS; todos los colaboradores deben tenerlo instalado. Los nombres originales, incluidas sus erratas, se conservan para poder rastrear cada entrega.
 
 La validación comprueba que los 26 modelos se importan como GameObject, contienen mallas y tienen materiales sin el shader interno de error. No sustituye una revisión artística, de escala, colisiones, rendimiento o navegación del juego.
+
+Revisión de modelos reales y pruebas del 11/11/2026: [progreso y límites](docs/real-assets-progress.md). Mesa propia integrada en DanielRoom; módulo de pared con hueco de puerta generado y probado como prefab independiente. Casa completa y puerta móvil pendientes.
+
+Entorno con los 26 modelos del escritorio: Assets/Scenes/DesktopEnvironment.unity. Exterior y zonas abiertas de revisión de mobiliario; no interiores terminados. [Estado y pruebas](docs/desktop-environment-notes.md).
+
+PlayableStage.unity incorpora ahora suelo 3D generado en Hunyuan, con original de 1,5M conservado y copia jugable validada. [Proceso, pruebas y pendientes](docs/ground-integration-notes.md).
+
+PlayableStage: 18 árboles sustituidos por tres variantes externas de Elegant Crow, originales conservados. [Fuentes, licencia y pruebas](docs/tree-replacement-notes.md).

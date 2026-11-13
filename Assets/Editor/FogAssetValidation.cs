@@ -11,7 +11,9 @@ public static class FogAssetValidation
     [MenuItem("THE FOG/Validate imported models")]
     public static void Run()
     {
-        var paths = Directory.GetFiles("Assets/Models", "*.glb", SearchOption.AllDirectories).OrderBy(p => p).ToArray();
+        var paths = Directory.GetFiles("Assets/Models", "*.glb", SearchOption.AllDirectories)
+            .Where(p => !p.Replace('\\', '/').Contains("/Optimized/"))
+            .OrderBy(p => p).ToArray();
         var entries = paths.Select(path => {
             path = path.Replace('\\', '/');
             var assets = AssetDatabase.LoadAllAssetsAtPath(path);

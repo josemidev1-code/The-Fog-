@@ -1,0 +1,282 @@
+{
+    "saved": true,
+    "scene": "Assets/Scenes/DesktopEnvironment.unity",
+    "additions": [
+        {
+            "id": "ENV_CasaRural01",
+            "source": "Assets/Models/Optimized/ENV_CasaRural01.glb",
+            "zone": "EXTERIOR · modelos propios",
+            "position": {
+                "x": 18.0,
+                "y": 0.0,
+                "z": 34.0
+            },
+            "size": {
+                "x": 7.88195276260376,
+                "y": 6.0,
+                "z": 6.197393417358398
+            },
+            "scale": 9.273699760437012
+        },
+        {
+            "id": "ENV_RejillaAlcantarillado-REJILLA DE VALDARA",
+            "source": "Assets/Models/Optimized/ENV_RejillaAlcantarillado-REJILLA DE VALDARA.glb",
+            "zone": "EXTERIOR · modelos propios",
+            "position": {
+                "x": 1.0,
+                "y": 0.009999999776482582,
+                "z": 18.0
+            },
+            "size": {
+                "x": 0.5275399684906006,
+                "y": 0.054999999701976776,
+                "z": 0.39224323630332947
+            },
+            "scale": 0.5443871021270752
+        },
+        {
+            "id": "INR_Nevera-NEVERA DE COCINA",
+            "source": "Assets/Models/Optimized/INR_Nevera-NEVERA DE COCINA.glb",
+            "zone": "COCINA · disposición abierta provisional",
+            "position": {
+                "x": 15.0,
+                "y": 0.0,
+                "z": 10.0
+            },
+            "size": {
+                "x": 0.8304948806762695,
+                "y": 1.850000023841858,
+                "z": 0.7746481895446777
+            },
+            "scale": 1.7862359285354614
+        },
+        {
+            "id": "INT_Armario-ARMARIO DE MADERA RURAL (armario ABIERTO)",
+            "source": "Assets/Models/Optimized/INT_Armario-ARMARIO DE MADERA RURAL (armario ABIERTO).glb",
+            "zone": "DORMITORIO Y SALÓN · disposición abierta provisional",
+            "position": {
+                "x": 13.0,
+                "y": 0.0,
+                "z": -8.0
+            },
+            "size": {
+                "x": 2.0049664974212646,
+                "y": 2.0,
+                "z": 1.1486804485321045
+            },
+            "scale": 2.398223400115967
+        },
+        {
+            "id": "INT_Armario-ARMARIO DE MADERA RURAL (armario cerrado)",
+            "source": "Assets/Models/Optimized/INT_Armario-ARMARIO DE MADERA RURAL (armario cerrado).glb",
+            "zone": "DORMITORIO Y SALÓN · disposición abierta provisional",
+            "position": {
+                "x": 16.5,
+                "y": 0.0,
+                "z": -8.0
+            },
+            "size": {
+                "x": 1.5919488668441772,
+                "y": 1.9999998807907104,
+                "z": 0.6896042823791504
+            },
+            "scale": 2.188947916030884
+        },
+        {
+            "id": "INT_ArmartioCocina-ARMARIO SUPERIOR DE COCINA (abierto)",
+            "source": "Assets/Models/Optimized/INT_ArmartioCocina-ARMARIO SUPERIOR DE COCINA (abierto).glb",
+            "zone": "COCINA · disposición abierta provisional",
+            "position": {
+                "x": 18.5,
+                "y": 1.5,
+                "z": 10.0
+            },
+            "size": {
+                "x": 1.1727193593978882,
+                "y": 0.7999999523162842,
+                "z": 0.8381959199905396
+            },
+            "scale": 1.3657172918319702
+        },
+        {
+            "id": "INT_ArmartioCocina-ARMARIO SUPERIOR DE COCINA (cerrado)",
+            "source": "Assets/Models/Optimized/INT_ArmartioCocina-ARMARIO SUPERIOR DE COCINA (cerrado).glb",
+            "zone": "COCINA · disposición abierta provisional",
+            "position": {
+                "x": 22.0,
+                "y": 1.5,
+                "z": 10.0
+            },
+            "size": {
+                "x": 1.1950602531433105,
+                "y": 0.800000011920929,
+                "z": 0.41065338253974915
+            },
+            "scale": 1.2403643131256104
+        },
+        {
+            "id": "INT_Cama-CAMA DE DANIEL",
+            "source": "Assets/Models/Optimized/INT_Cama-CAMA DE DANIEL.glb",
+            "zone": "DORMITORIO Y SALÓN · disposición abierta provisional",
+            "position": {
+                "x": 20.0,
+                "y": 0.0,
+                "z": -8.0
+            },
+            "size": {
+                "x": 1.2632554769515991,
+                "y": 1.0,
+                "z": 2.212989330291748
+            },
+            "scale": 2.211202621459961
+        },
+        {
+            "id": "INT_EnciemraFregadero-ENCIEMRA DE COCINA CON FREGADERO (abierto)",
+            "source": "Assets/Models/Optimized/INT_EnciemraFregadero-ENCIEMRA DE COCINA CON FREGADERO (abierto).glb",
+            "zone": "COCINA · disposición abierta provisional",
+            "position": {
+                "x": 15.0,
+                "y": 0.0,
+                "z": 14.0
+            },
+            "size": {
+                "x": 1.678270697593689,
+                "y": 0.9000000357627869,
+                "z": 1.011452078819275
+            },
+            "scale": 1.6911879777908325
+        },
+        {
+            "id": "INT_EnciemraFregadero-ENCIEMRA DE COCINA CON FREGADERO (cerrado)",
+            "source": "Assets/Models/Optimized/INT_EnciemraFregadero-ENCIEMRA DE COCINA CON FREGADERO (cerrado).glb",
+            "zone": "COCINA · disposición abierta provisional",
+            "position": {
+                "x": 18.5,
+                "y": 0.0,
+                "z": 14.0
+            },
+            "size": {
+                "x": 1.2380982637405396,
+                "y": 0.8999999761581421,
+                "z": 0.638979971408844
+            },
+            "scale": 1.3469561338424683
+        },
+        {
+            "id": "INT_Estanteria-ESTANTERIA DE MADERA RURAL",
+            "source": "Assets/Models/Optimized/INT_Estanteria-ESTANTERIA DE MADERA RURAL.glb",
+            "zone": "DORMITORIO Y SALÓN · disposición abierta provisional",
+            "position": {
+                "x": 13.0,
+                "y": 0.0,
+                "z": -4.0
+            },
+            "size": {
+                "x": 1.1845310926437378,
+                "y": 2.0,
+                "z": 0.5561283230781555
+            },
+            "scale": 1.9794093370437622
+        },
+        {
+            "id": "INT_EstanteriaSuepermercado-ESTANTERIA COMERCIAL",
+            "source": "Assets/Models/Optimized/INT_EstanteriaSuepermercado-ESTANTERIA COMERCIAL.glb",
+            "zone": "COMERCIO · disposición abierta provisional",
+            "position": {
+                "x": 17.0,
+                "y": 0.0,
+                "z": 23.0
+            },
+            "size": {
+                "x": 1.4250463247299194,
+                "y": 1.9000000953674316,
+                "z": 0.5479148626327515
+            },
+            "scale": 2.025906801223755
+        },
+        {
+            "id": "INT_MesaMadera-MESA DE MADERA RURAL",
+            "source": "Assets/Models/Optimized/INT_MesaMadera-MESA DE MADERA RURAL.glb",
+            "zone": "DORMITORIO Y SALÓN · disposición abierta provisional",
+            "position": {
+                "x": 16.5,
+                "y": 0.0,
+                "z": -4.0
+            },
+            "size": {
+                "x": 1.7580252885818481,
+                "y": 0.800000011920929,
+                "z": 0.9959154725074768
+            },
+            "scale": 1.788748860359192
+        },
+        {
+            "id": "INT_MesitaNoche-MESITA DE NOCHE DE DANIEL",
+            "source": "Assets/Models/Optimized/INT_MesitaNoche-MESITA DE NOCHE DE DANIEL.glb",
+            "zone": "DORMITORIO Y SALÓN · disposición abierta provisional",
+            "position": {
+                "x": 20.0,
+                "y": 0.0,
+                "z": -4.0
+            },
+            "size": {
+                "x": 0.54878830909729,
+                "y": 0.6499999761581421,
+                "z": 0.46261653304100037
+            },
+            "scale": 0.7916975021362305
+        },
+        {
+            "id": "INT_SillaMadera-SILLA DE COMEDOR RURAL",
+            "source": "Assets/Models/Optimized/INT_SillaMadera-SILLA DE COMEDOR RURAL.glb",
+            "zone": "DORMITORIO Y SALÓN · disposición abierta provisional",
+            "position": {
+                "x": 13.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "size": {
+                "x": 0.5467156767845154,
+                "y": 1.0,
+                "z": 0.5794920921325684
+            },
+            "scale": 1.0418418645858765
+        },
+        {
+            "id": "INT_Sofa-SOFA DEL SALON",
+            "source": "Assets/Models/Optimized/INT_Sofa-SOFA DEL SALON.glb",
+            "zone": "DORMITORIO Y SALÓN · disposición abierta provisional",
+            "position": {
+                "x": 16.5,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "size": {
+                "x": 2.408714771270752,
+                "y": 1.0,
+                "z": 1.1186988353729248
+            },
+            "scale": 2.2021632194519043
+        },
+        {
+            "id": "INT-MostradorSupermercado-MOSTRADOR DE CAJA",
+            "source": "Assets/Models/Optimized/INT-MostradorSupermercado-MOSTRADOR DE CAJA.glb",
+            "zone": "COMERCIO · disposición abierta provisional",
+            "position": {
+                "x": 21.0,
+                "y": 0.0,
+                "z": 23.0
+            },
+            "size": {
+                "x": 2.4884567260742188,
+                "y": 1.0499999523162842,
+                "z": 1.0415830612182617
+            },
+            "scale": 2.3809566497802734
+        }
+    ],
+    "missing": [],
+    "desktopModels": 26,
+    "representedModels": 26,
+    "limitation": "Furniture zones are open review layouts, not finished house interiors. Closed buildings remain exterior-only."
+}

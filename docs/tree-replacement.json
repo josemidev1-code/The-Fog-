@@ -1,0 +1,223 @@
+{
+    "replaced": 18,
+    "originalsPreserved": true,
+    "trees": [
+        {
+            "model": "tree01",
+            "triangles": 52,
+            "height": 8.45458984375,
+            "position": {
+                "x": 33.0192985534668,
+                "y": 0.0,
+                "z": 51.424198150634766
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree02",
+            "triangles": 52,
+            "height": 9.262836456298828,
+            "position": {
+                "x": 10.13126277923584,
+                "y": 0.0,
+                "z": 41.748775482177734
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree24",
+            "triangles": 52,
+            "height": 9.169573783874512,
+            "position": {
+                "x": 35.93395233154297,
+                "y": 0.0,
+                "z": -1.9350895881652832
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree01",
+            "triangles": 52,
+            "height": 10.484811782836914,
+            "position": {
+                "x": -20.80939483642578,
+                "y": 0.0,
+                "z": -6.210482597351074
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree02",
+            "triangles": 52,
+            "height": 9.70793342590332,
+            "position": {
+                "x": -35.15802001953125,
+                "y": 0.0,
+                "z": 26.100543975830078
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree24",
+            "triangles": 52,
+            "height": 8.607203483581543,
+            "position": {
+                "x": -21.951114654541016,
+                "y": 0.0,
+                "z": 35.84653854370117
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree01",
+            "triangles": 52,
+            "height": 10.36646842956543,
+            "position": {
+                "x": -31.099308013916016,
+                "y": 0.0,
+                "z": 0.8114960193634033
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree02",
+            "triangles": 52,
+            "height": 8.223222732543945,
+            "position": {
+                "x": -33.80968475341797,
+                "y": 0.0,
+                "z": -14.500290870666504
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree24",
+            "triangles": 52,
+            "height": 10.358656883239746,
+            "position": {
+                "x": -34.194915771484375,
+                "y": 0.0,
+                "z": 34.13174057006836
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree01",
+            "triangles": 52,
+            "height": 8.73712158203125,
+            "position": {
+                "x": 11.318405151367188,
+                "y": 0.0,
+                "z": 2.050999879837036
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree02",
+            "triangles": 52,
+            "height": 10.755780220031738,
+            "position": {
+                "x": -10.792715072631836,
+                "y": 0.0,
+                "z": -13.518980979919434
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree24",
+            "triangles": 52,
+            "height": 8.791740417480469,
+            "position": {
+                "x": 25.094684600830078,
+                "y": 0.0,
+                "z": 11.302549362182617
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree01",
+            "triangles": 52,
+            "height": 8.030031204223633,
+            "position": {
+                "x": -3.6697964668273926,
+                "y": 0.0,
+                "z": -21.418901443481445
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree02",
+            "triangles": 52,
+            "height": 9.348255157470703,
+            "position": {
+                "x": -3.0694351196289063,
+                "y": 0.0,
+                "z": -13.71688461303711
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree24",
+            "triangles": 52,
+            "height": 8.58709716796875,
+            "position": {
+                "x": -23.818016052246094,
+                "y": 0.0,
+                "z": -12.733506202697754
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree01",
+            "triangles": 52,
+            "height": 8.95916748046875,
+            "position": {
+                "x": -30.672958374023438,
+                "y": 0.0,
+                "z": 42.173973083496094
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree02",
+            "triangles": 52,
+            "height": 8.9000825881958,
+            "position": {
+                "x": 17.866891860961914,
+                "y": 0.0,
+                "z": -21.770177841186523
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        },
+        {
+            "model": "tree24",
+            "triangles": 52,
+            "height": 9.330821990966797,
+            "position": {
+                "x": -25.917537689208984,
+                "y": 0.0,
+                "z": 53.057735443115234
+            },
+            "foliageDoubleSided": true,
+            "alphaClip": true
+        }
+    ],
+    "visualReviewPending": false
+}

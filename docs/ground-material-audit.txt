@@ -1,0 +1,11 @@
+Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb | Material.001 | Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb
+Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb | Follaje_Oliva_PS2_Mate | Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb
+Assets/Models/Optimized/ENV_CartelValdara-CARTEL DE ENTRADA A VALDARA.glb | Material.001 | Assets/Models/Optimized/ENV_CartelValdara-CARTEL DE ENTRADA A VALDARA.glb
+Assets/Models/Optimized/ENV_CasaDaniel.glb | Material.001 | Assets/Models/Optimized/ENV_CasaDaniel.glb
+Assets/Models/Optimized/ENV_CasaRural01.glb | Material.001 | Assets/Models/Optimized/ENV_CasaRural01.glb
+Assets/Models/Optimized/ENV_EntradaMina.glb | Material.001 | Assets/Models/Optimized/ENV_EntradaMina.glb
+Assets/Models/Optimized/ENV_Farola-FAROLA DE VALDARA.glb | Material.001 | Assets/Models/Optimized/ENV_Farola-FAROLA DE VALDARA.glb
+Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb | Roca gris agrietada musgo oliva | Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb
+Assets/Models/Optimized/ENV_SueloRural_A.glb | ENV_SueloRural_A_gameplay | Assets/Models/Optimized/ENV_SueloRural_A.glb
+Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb | Material.001 | Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb
+Assets/Models/Optimized/OBJ_Linterna.glb | Material.001 | Assets/Models/Optimized/OBJ_Linterna.glb

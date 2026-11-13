@@ -1,0 +1,65 @@
+[
+  {
+    "source": "Assets/Models/Props/OBJ_Linterna.glb",
+    "optimized": "OBJ_Linterna.glb",
+    "trianglesBefore": 1500000,
+    "trianglesAfter": 30000,
+    "maxTextureDimension": 2048
+  },
+  {
+    "source": "Assets/Models/Environments/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+    "optimized": "ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+    "trianglesBefore": 118254,
+    "trianglesAfter": 12000,
+    "maxTextureDimension": 2048
+  },
+  {
+    "source": "Assets/Models/Environments/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+    "optimized": "ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+    "trianglesBefore": 1993430,
+    "trianglesAfter": 26834,
+    "maxTextureDimension": 2048
+  },
+  {
+    "source": "Assets/Models/Environments/ENV_CasaDaniel.glb",
+    "optimized": "ENV_CasaDaniel.glb",
+    "trianglesBefore": 1473572,
+    "trianglesAfter": 100000,
+    "maxTextureDimension": 2048
+  },
+  {
+    "source": "Assets/Models/Environments/ENV_EntradaMina.glb",
+    "optimized": "ENV_EntradaMina.glb",
+    "trianglesBefore": 1492634,
+    "trianglesAfter": 80000,
+    "maxTextureDimension": 2048
+  },
+  {
+    "source": "Assets/Models/Environments/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+    "optimized": "ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+    "trianglesBefore": 1498404,
+    "trianglesAfter": 30000,
+    "maxTextureDimension": 2048
+  },
+  {
+    "source": "Assets/Models/Environments/ENV_CartelValdara-CARTEL DE ENTRADA A VALDARA.glb",
+    "optimized": "ENV_CartelValdara-CARTEL DE ENTRADA A VALDARA.glb",
+    "trianglesBefore": 1500000,
+    "trianglesAfter": 20000,
+    "maxTextureDimension": 2048
+  },
+  {
+    "source": "Assets/Models/Environments/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+    "optimized": "ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+    "trianglesBefore": 1500000,
+    "trianglesAfter": 25000,
+    "maxTextureDimension": 2048
+  },
+  {
+    "source": "Assets/Models/Environments/ENV_Farola-FAROLA DE VALDARA.glb",
+    "optimized": "ENV_Farola-FAROLA DE VALDARA.glb",
+    "trianglesBefore": 1500000,
+    "trianglesAfter": 30000,
+    "maxTextureDimension": 2048
+  }
+]

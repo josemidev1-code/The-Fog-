@@ -1,0 +1,1259 @@
+{
+    "unityVersion": "6000.6.8f1",
+    "builtAtUtc": "2026-11-10T11:52:08.2456139Z",
+    "scene": "Assets/Scenes/FirstPlayable.unity",
+    "saved": true,
+    "previewPlayer": true,
+    "previewOverview": true,
+    "warnings": [],
+    "placed": [
+        {
+            "name": "CasaDaniel",
+            "asset": "Assets/Models/Optimized/ENV_CasaDaniel.glb",
+            "sourceSize": {
+                "x": 0.6895819902420044,
+                "y": 0.7859097719192505,
+                "z": 0.6382553577423096
+            },
+            "appliedScale": 7.634464263916016,
+            "finalSize": {
+                "x": 5.264588832855225,
+                "y": 6.0,
+                "z": 4.872737884521484
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "EntradaMina",
+            "asset": "Assets/Models/Optimized/ENV_EntradaMina.glb",
+            "sourceSize": {
+                "x": 0.7368344664573669,
+                "y": 0.6251192688941956,
+                "z": 0.8417381644248962
+            },
+            "appliedScale": 7.198626518249512,
+            "finalSize": {
+                "x": 5.304196357727051,
+                "y": 4.5,
+                "z": 6.059358596801758
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "CartelValdara",
+            "asset": "Assets/Models/Optimized/ENV_CartelValdara-CARTEL DE ENTRADA A VALDARA.glb",
+            "sourceSize": {
+                "x": 0.9982278347015381,
+                "y": 0.8557199239730835,
+                "z": 0.09053213894367218
+            },
+            "appliedScale": 3.038377285003662,
+            "finalSize": {
+                "x": 3.0329928398132324,
+                "y": 2.5999999046325684,
+                "z": 0.27507078647613525
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Farola_1",
+            "asset": "Assets/Models/Optimized/ENV_Farola-FAROLA DE VALDARA.glb",
+            "sourceSize": {
+                "x": 0.37934547662734985,
+                "y": 1.1396660804748535,
+                "z": 0.17187486588954926
+            },
+            "appliedScale": 3.6852898597717285,
+            "finalSize": {
+                "x": 1.3979980945587158,
+                "y": 4.199999809265137,
+                "z": 0.6334087252616882
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Farola_2",
+            "asset": "Assets/Models/Optimized/ENV_Farola-FAROLA DE VALDARA.glb",
+            "sourceSize": {
+                "x": 0.37934547662734985,
+                "y": 1.1396660804748535,
+                "z": 0.17187486588954926
+            },
+            "appliedScale": 3.6852898597717285,
+            "finalSize": {
+                "x": 1.3979980945587158,
+                "y": 4.199999809265137,
+                "z": 0.6334087252616882
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Valla_Camino_1",
+            "asset": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.1693143844604492,
+                "y": 0.3721540868282318,
+                "z": 0.08193022012710571
+            },
+            "appliedScale": 3.358823776245117,
+            "finalSize": {
+                "x": 3.927520990371704,
+                "y": 1.25,
+                "z": 0.2751891613006592
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Valla_Camino_2",
+            "asset": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.1693143844604492,
+                "y": 0.3721540868282318,
+                "z": 0.08193022012710571
+            },
+            "appliedScale": 3.358823776245117,
+            "finalSize": {
+                "x": 3.927520990371704,
+                "y": 1.25,
+                "z": 0.2751891613006592
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Valla_Camino_3",
+            "asset": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.1693143844604492,
+                "y": 0.3721540868282318,
+                "z": 0.08193022012710571
+            },
+            "appliedScale": 3.358823776245117,
+            "finalSize": {
+                "x": 3.927520990371704,
+                "y": 1.25,
+                "z": 0.2751891613006592
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Valla_Camino_4",
+            "asset": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.1693143844604492,
+                "y": 0.3721540868282318,
+                "z": 0.08193022012710571
+            },
+            "appliedScale": 3.358823776245117,
+            "finalSize": {
+                "x": 3.927520990371704,
+                "y": 1.25,
+                "z": 0.2751891613006592
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Valla_Camino_5",
+            "asset": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.1693143844604492,
+                "y": 0.3721540868282318,
+                "z": 0.08193022012710571
+            },
+            "appliedScale": 3.358823776245117,
+            "finalSize": {
+                "x": 3.927520990371704,
+                "y": 1.25,
+                "z": 0.2751891613006592
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Valla_Casa_1",
+            "asset": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.1693143844604492,
+                "y": 0.3721540868282318,
+                "z": 0.08193022012710571
+            },
+            "appliedScale": 3.358823776245117,
+            "finalSize": {
+                "x": 3.927520990371704,
+                "y": 1.25,
+                "z": 0.2751891613006592
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Valla_Casa_2",
+            "asset": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.1693143844604492,
+                "y": 0.3721540868282318,
+                "z": 0.08193022012710571
+            },
+            "appliedScale": 3.358823776245117,
+            "finalSize": {
+                "x": 3.927520990371704,
+                "y": 1.25,
+                "z": 0.2751891613006592
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Valla_Casa_3",
+            "asset": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.1693143844604492,
+                "y": 0.3721540868282318,
+                "z": 0.08193022012710571
+            },
+            "appliedScale": 3.358823776245117,
+            "finalSize": {
+                "x": 3.927520990371704,
+                "y": 1.25,
+                "z": 0.2751891613006592
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Valla_Casa_4",
+            "asset": "Assets/Models/Optimized/ENV_VallaMadera-VALLA RURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.1693143844604492,
+                "y": 0.3721540868282318,
+                "z": 0.08193022012710571
+            },
+            "appliedScale": 3.358823776245117,
+            "finalSize": {
+                "x": 3.927520990371704,
+                "y": 1.25,
+                "z": 0.2751891613006592
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "RocaGrande_1",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 2.280898332595825,
+            "finalSize": {
+                "x": 4.2199296951293945,
+                "y": 3.200000047683716,
+                "z": 4.287955284118652
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "RocaGrande_2",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 2.5660104751586914,
+            "finalSize": {
+                "x": 4.747420310974121,
+                "y": 3.5999999046325684,
+                "z": 4.823949337005615
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "RocaGrande_3",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 2.9936788082122803,
+            "finalSize": {
+                "x": 5.538657188415527,
+                "y": 4.199999809265137,
+                "z": 5.627941131591797
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "RocaGrande_4",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 2.7798449993133545,
+            "finalSize": {
+                "x": 5.143039226531982,
+                "y": 3.9000003337860107,
+                "z": 5.225945949554443
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "RocaGrande_5",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 3.563903570175171,
+            "finalSize": {
+                "x": 6.593639850616455,
+                "y": 5.0,
+                "z": 6.699930191040039
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 8.243408203125,
+            "finalSize": {
+                "x": 8.643509864807129,
+                "y": 8.791740417480469,
+                "z": 8.778483390808105
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 7.7103471755981445,
+            "finalSize": {
+                "x": 8.084576606750488,
+                "y": 8.223221778869629,
+                "z": 8.210822105407715
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 8.070380210876465,
+            "finalSize": {
+                "x": 8.46208381652832,
+                "y": 8.607203483581543,
+                "z": 8.594223976135254
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 9.719921112060547,
+            "finalSize": {
+                "x": 10.191686630249023,
+                "y": 10.36646842956543,
+                "z": 10.350835800170898
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 9.712596893310547,
+            "finalSize": {
+                "x": 10.184006690979004,
+                "y": 10.358656883239746,
+                "z": 10.343036651611328
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 8.192195892333984,
+            "finalSize": {
+                "x": 8.589812278747559,
+                "y": 8.73712158203125,
+                "z": 8.723946571350098
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 8.597676277160645,
+            "finalSize": {
+                "x": 9.014972686767578,
+                "y": 9.169573783874512,
+                "z": 9.155746459960938
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 9.830883979797363,
+            "finalSize": {
+                "x": 10.308034896850586,
+                "y": 10.484811782836914,
+                "z": 10.469001770019531
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 8.400392532348633,
+            "finalSize": {
+                "x": 8.808113098144531,
+                "y": 8.95916748046875,
+                "z": 8.945657730102539
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 8.685121536254883,
+            "finalSize": {
+                "x": 9.106661796569824,
+                "y": 9.262835502624512,
+                "z": 9.248867988586426
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 7.927284240722656,
+            "finalSize": {
+                "x": 8.312042236328125,
+                "y": 8.454588890075684,
+                "z": 8.441840171813965
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 8.748867988586426,
+            "finalSize": {
+                "x": 9.173502922058105,
+                "y": 9.330822944641113,
+                "z": 9.316752433776855
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 9.102458953857422,
+            "finalSize": {
+                "x": 9.544255256652832,
+                "y": 9.70793342590332,
+                "z": 9.693294525146484
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 8.765213012695313,
+            "finalSize": {
+                "x": 9.190640449523926,
+                "y": 9.348255157470703,
+                "z": 9.334157943725586
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 7.529205799102783,
+            "finalSize": {
+                "x": 7.8946428298950195,
+                "y": 8.030031204223633,
+                "z": 8.017922401428223
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 8.344992637634277,
+            "finalSize": {
+                "x": 8.750024795532227,
+                "y": 8.9000825881958,
+                "z": 8.886661529541016
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 10.084952354431152,
+            "finalSize": {
+                "x": 10.574435234069824,
+                "y": 10.755780220031738,
+                "z": 10.739561080932617
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Roble",
+            "asset": "Assets/Models/Optimized/ENV_Arbofrondoso-ROBLO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.048535943031311,
+                "y": 1.06651771068573,
+                "z": 1.0649094581604004
+            },
+            "appliedScale": 8.051527976989746,
+            "finalSize": {
+                "x": 8.442316055297852,
+                "y": 8.58709716796875,
+                "z": 8.574148178100586
+            },
+            "collider": "Trunk"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.7212945222854614,
+            "finalSize": {
+                "x": 1.0699917078018188,
+                "y": 1.3558200597763062,
+                "z": 1.1683349609375
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.7906851768493652,
+            "finalSize": {
+                "x": 1.1729280948638916,
+                "y": 1.4862539768218994,
+                "z": 1.280732274055481
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.6082026362419128,
+            "finalSize": {
+                "x": 0.9022275805473328,
+                "y": 1.1432408094406128,
+                "z": 0.9851515293121338
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.6233722567558289,
+            "finalSize": {
+                "x": 0.924730658531189,
+                "y": 1.1717551946640015,
+                "z": 1.0097229480743408
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.6008152961730957,
+            "finalSize": {
+                "x": 0.8912689685821533,
+                "y": 1.1293548345565796,
+                "z": 0.9731857180595398
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.6126559972763062,
+            "finalSize": {
+                "x": 0.9088338613510132,
+                "y": 1.1516118049621582,
+                "z": 0.9923650026321411
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.627913773059845,
+            "finalSize": {
+                "x": 0.9314677119255066,
+                "y": 1.180292010307312,
+                "z": 1.0170791149139404
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.6733123660087585,
+            "finalSize": {
+                "x": 0.9988134503364563,
+                "y": 1.2656278610229492,
+                "z": 1.090614676475525
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.5744848251342773,
+            "finalSize": {
+                "x": 0.8522094488143921,
+                "y": 1.0798614025115967,
+                "z": 0.9305362701416016
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.7750385999679565,
+            "finalSize": {
+                "x": 1.1497174501419067,
+                "y": 1.4568430185317993,
+                "z": 1.2553882598876953
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.4976349472999573,
+            "finalSize": {
+                "x": 0.7382078766822815,
+                "y": 0.9354063272476196,
+                "z": 0.8060567378997803
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.6729192137718201,
+            "finalSize": {
+                "x": 0.9982302784919739,
+                "y": 1.264888882637024,
+                "z": 1.0899778604507446
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.5549677610397339,
+            "finalSize": {
+                "x": 0.8232572078704834,
+                "y": 1.0431751012802124,
+                "z": 0.8989229798316956
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.7031424045562744,
+            "finalSize": {
+                "x": 1.0430643558502197,
+                "y": 1.3216995000839233,
+                "z": 1.1389325857162476
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.5434861779212952,
+            "finalSize": {
+                "x": 0.806225061416626,
+                "y": 1.0215930938720703,
+                "z": 0.880325436592102
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.5211069583892822,
+            "finalSize": {
+                "x": 0.7730270028114319,
+                "y": 0.9795267581939697,
+                "z": 0.8440760970115662
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.7110574245452881,
+            "finalSize": {
+                "x": 1.0548057556152344,
+                "y": 1.3365774154663086,
+                "z": 1.1517531871795654
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.6351550221443176,
+            "finalSize": {
+                "x": 0.9422096014022827,
+                "y": 1.1939033269882202,
+                "z": 1.028808355331421
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.5506195425987244,
+            "finalSize": {
+                "x": 0.8168069124221802,
+                "y": 1.0350016355514526,
+                "z": 0.8918798565864563
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.5440990328788757,
+            "finalSize": {
+                "x": 0.807134211063385,
+                "y": 1.0227450132369995,
+                "z": 0.8813180923461914
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.5772408843040466,
+            "finalSize": {
+                "x": 0.8562979102134705,
+                "y": 1.085041880607605,
+                "z": 0.935000479221344
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.7776274085044861,
+            "finalSize": {
+                "x": 1.1535577774047852,
+                "y": 1.4617092609405518,
+                "z": 1.2595815658569336
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.6078540086746216,
+            "finalSize": {
+                "x": 0.9017103910446167,
+                "y": 1.1425855159759521,
+                "z": 0.9845868349075317
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.5947195291519165,
+            "finalSize": {
+                "x": 0.882226288318634,
+                "y": 1.117896556854248,
+                "z": 0.9633119106292725
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.6585218906402588,
+            "finalSize": {
+                "x": 0.9768728017807007,
+                "y": 1.2378261089324951,
+                "z": 1.0666574239730835
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Arbusto",
+            "asset": "Assets/Models/Optimized/ENV_Arbusto-ARBUSTO DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.4834325313568115,
+                "y": 1.8797038793563843,
+                "z": 1.6197751760482788
+            },
+            "appliedScale": 0.5343447327613831,
+            "finalSize": {
+                "x": 0.7926643490791321,
+                "y": 1.004409909248352,
+                "z": 0.86551833152771
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Roca",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 0.6733149290084839,
+            "finalSize": {
+                "x": 1.2457115650177002,
+                "y": 0.9446312189102173,
+                "z": 1.2657926082611084
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Roca",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 0.5384595990180969,
+            "finalSize": {
+                "x": 0.996213436126709,
+                "y": 0.7554351091384888,
+                "z": 1.0122724771499634
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Roca",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 0.9019972085952759,
+            "finalSize": {
+                "x": 1.668800711631775,
+                "y": 1.2654623985290527,
+                "z": 1.6957019567489624
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Roca",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 0.7118642926216125,
+            "finalSize": {
+                "x": 1.3170324563980103,
+                "y": 0.99871426820755,
+                "z": 1.3382631540298462
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Roca",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 0.702933132648468,
+            "finalSize": {
+                "x": 1.300508737564087,
+                "y": 0.9861842393875122,
+                "z": 1.3214731216430664
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Roca",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 0.5320391654968262,
+            "finalSize": {
+                "x": 0.9843348860740662,
+                "y": 0.7464275360107422,
+                "z": 1.0002025365829468
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Roca",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 0.4113275110721588,
+            "finalSize": {
+                "x": 0.7610041499137878,
+                "y": 0.577074408531189,
+                "z": 0.7732716202735901
+            },
+            "collider": "None"
+        },
+        {
+            "name": "Roca",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 0.8080440759658813,
+            "finalSize": {
+                "x": 1.4949764013290405,
+                "y": 1.133650302886963,
+                "z": 1.5190755128860474
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Roca",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 1.2431652545928955,
+            "finalSize": {
+                "x": 2.300001621246338,
+                "y": 1.7441061735153198,
+                "z": 2.3370778560638428
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Roca",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 0.6364041566848755,
+            "finalSize": {
+                "x": 1.1774224042892456,
+                "y": 0.8928470611572266,
+                "z": 1.1964025497436523
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Roca",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 0.7299334406852722,
+            "finalSize": {
+                "x": 1.350462555885315,
+                "y": 1.024064540863037,
+                "z": 1.37223219871521
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Roca",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 0.6987890601158142,
+            "finalSize": {
+                "x": 1.2928417921066284,
+                "y": 0.980370283126831,
+                "z": 1.3136825561523438
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Roca",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 0.5942452549934387,
+            "finalSize": {
+                "x": 1.0994234085083008,
+                "y": 0.8336999416351318,
+                "z": 1.1171462535858154
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "Roca",
+            "asset": "Assets/Models/Optimized/ENV_Roca-ROCA NATURAL DE VALDARA.glb",
+            "sourceSize": {
+                "x": 1.8501173257827759,
+                "y": 1.4029560089111328,
+                "z": 1.879941463470459
+            },
+            "appliedScale": 0.9154395461082458,
+            "finalSize": {
+                "x": 1.6936705112457275,
+                "y": 1.2843214273452759,
+                "z": 1.7209727764129639
+            },
+            "collider": "Box"
+        },
+        {
+            "name": "ModeloLinterna",
+            "asset": "Assets/Models/Optimized/OBJ_Linterna.glb",
+            "sourceSize": {
+                "x": 0.47246477007865906,
+                "y": 0.36510753631591797,
+                "z": 1.1749522686004639
+            },
+            "appliedScale": 0.2042636126279831,
+            "finalSize": {
+                "x": 0.09650736302137375,
+                "y": 0.0745781809091568,
+                "z": 0.23999999463558197
+            },
+            "collider": "None"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "passed": true,
+    "prefab": "Assets/Prefabs/Modules/INT_Valdara_Esquina_A.prefab",
+    "meshes": 1,
+    "triangles": 11568,
+    "materials": 1,
+    "size": {
+        "x": 3.2265124320983887,
+        "y": 2.699902057647705,
+        "z": 1.133612871170044
+    },
+    "shaders": [
+        "Shader Graphs/glTF-pbrMetallicRoughness"
+    ],
+    "currentSceneUnchanged": true
+}

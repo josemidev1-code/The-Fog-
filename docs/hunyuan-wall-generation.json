@@ -1,0 +1,18 @@
+{
+  "service": "Tencent HY 3D Global",
+  "serviceUrl": "https://hy3d.tencent.ai/",
+  "date": "2026-11-10",
+  "asset": "INT_Valdara_ParedModular_A",
+  "mode": "Text-to-3D",
+  "model": "3DGeneration-V3.1",
+  "materials": "PBR",
+  "requestedFaceCount": 50000,
+  "freeDailyGenerationsBefore": 5,
+  "freeDailyGenerationsAfterSubmission": 4,
+  "paidBalanceVisible": 0,
+  "status": "downloaded, cleaned, optimized and validated in Unity",
+  "prompt": "Single modular interior wall panel for an old rural house in Valdara, psychological horror game. Rectangular straight wall, 3m wide, 2.7m high, 0.15m thick. Damp faded olive plaster above dark aged wooden wainscoting. Muted brown, grey green palette, simple retro PS2 geometry and weathered textures. Flat aligned edges, solid back and sides. One isolated wall only, no room, no floor, no ceiling, no furniture, no text, no people. Neutral lighting, no baked shadows.",
+  "note": "Generated corner return instead of flat panel. Original preserved; gameplay copy removes dimension annotation geometry and normalizes height. Room scene unchanged.",
+  "sourceFile": "Assets/Models/Interiors/Generated/INT_Valdara_Esquina_A.glb",
+  "prefab": "Assets/Prefabs/Modules/INT_Valdara_Esquina_A.prefab"
+}
