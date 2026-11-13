@@ -30,7 +30,15 @@ git lfs pull
 git lfs fsck
 ```
 
-Añade esa carpeta desde Unity Hub. Necesitarás descargar aproximadamente 2,1 GB de modelos y espacio adicional para la caché de importación. Los archivos GLB deben ser binarios reales, no pequeños archivos de texto de punteros LFS.
+Añade esa carpeta desde Unity Hub (**Projects → Add → Add project from disk**) y espera a que Unity importe los paquetes y los modelos. La primera importación tarda varios minutos.
+
+Para seguir con el Puesto de Daniel:
+
+1. Abre `Assets/Scenes/PuestoDaniel.unity` (es la primera escena de Build Settings) y pulsa Play.
+2. Para regenerar la escena desde el menú **THE FOG → Construir Puesto de Daniel**. Sobrescribe la escena: los cambios a mano se pierden.
+3. Para el ejecutable de prueba: **THE FOG → Construir Puesto de Daniel** genera `Builds/PuestoDaniel/TheFog.exe`. La prueba automática es `TheFog.exe -puestoAutotest -puestoOut "<ruta absoluta>/autotest"`; con ruta relativa no se guardan las capturas.
+
+El repositorio ocupa unos 2,5 GB en modelos LFS. Los archivos `.glb` y `.gltf` deben ser binarios reales, no punteros LFS de texto: si `git lfs pull` no ha bajado todo, Unity mostrará los modelos vacíos o con errores.
 
 ## Contenido y procedencia
 
